@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m \"$(cat <<''EOF''\nDeploy James Bootstrap Shoe Store Template\n\n🛒 Complete Bootstrap Template Deployment:\n- Themeforest James Responsive Bootstrap Shoes Store Template\n- Pure HTML/CSS/Bootstrap implementation\n- All original template pages and assets\n- Responsive design with Bootstrap framework\n\n✨ Template Pages:\n- index.html - Main homepage with hero, categories, products\n- index-2.html - Alternative homepage layout\n- shop.html - Product grid view\n- shop-list.html - Product list view\n- single-product.html - Product detail page\n- cart.html - Shopping cart\n- checkout.html - Checkout process\n- wishlist.html - Wishlist page\n- my-account.html - User account dashboard\n- login.html / register.html - Authentication\n- blog.html - Blog grid\n- blog-details.html - Blog post details\n- about-us.html - About page\n- contact.html - Contact page\n\n📦 Assets Included:\n- Complete CSS framework\n- Bootstrap responsive design\n- Custom fonts\n- All product images\n- JavaScript libraries\n- Icon sets\n\n🚀 Deployed to: https://dealbazaar.ai/\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
