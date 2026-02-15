@@ -150,14 +150,21 @@ export default function EditProductPage() {
                 <span className="text-white">{fmtCurrency(linkedReceipt.receipt.total_amount)}</span>
               </div>
               {linkedReceipt.receipt.file_url && (
-                <a
-                  href={linkedReceipt.receipt.file_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold hover:text-gold-light text-sm"
-                >
-                  View Receipt
-                </a>
+                <div className="w-full mt-2">
+                  <img
+                    src={linkedReceipt.receipt.file_url}
+                    alt="Receipt"
+                    className="max-w-xs max-h-48 rounded-lg border border-gray-700 object-contain"
+                  />
+                  <a
+                    href={linkedReceipt.receipt.file_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mt-1 text-gold hover:text-gold-light text-sm"
+                  >
+                    View full size
+                  </a>
+                </div>
               )}
             </div>
           ) : (
