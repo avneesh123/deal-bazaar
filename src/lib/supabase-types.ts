@@ -19,6 +19,7 @@ export interface DbProduct {
   status: ProductStatus;
   quantity: number;
   featured: boolean;
+  box_number: string | null;
   tags: string[];
   created_at: string;
   updated_at: string;

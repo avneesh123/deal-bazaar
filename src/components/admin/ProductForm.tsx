@@ -29,6 +29,7 @@ export default function ProductForm({ product }: ProductFormProps) {
   const [status, setStatus] = useState<ProductStatus>(product?.status ?? "in_stock");
   const [quantity, setQuantity] = useState(product?.quantity?.toString() ?? "1");
   const [featured, setFeatured] = useState(product?.featured ?? false);
+  const [boxNumber, setBoxNumber] = useState(product?.box_number ?? "");
   const [tags, setTags] = useState(product?.tags?.join(", ") ?? "");
   const [images, setImages] = useState<string[]>(product?.images ?? []);
   const [specs, setSpecs] = useState<{ key: string; value: string }[]>(
@@ -104,6 +105,7 @@ export default function ProductForm({ product }: ProductFormProps) {
       status,
       quantity: parseInt(quantity) || 1,
       featured,
+      box_number: boxNumber.trim() || null,
       tags: tags
         .split(",")
         .map((t) => t.trim())
@@ -189,7 +191,7 @@ export default function ProductForm({ product }: ProductFormProps) {
       </div>
 
       {/* Category + Status */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div>
           <label className={labelClass}>Category</label>
           <select
@@ -222,6 +224,16 @@ export default function ProductForm({ product }: ProductFormProps) {
             onChange={(e) => setQuantity(e.target.value)}
             min={0}
             className={inputClass}
+          />
+        </div>
+        <div>
+          <label className={labelClass}>Box #</label>
+          <input
+            type="text"
+            value={boxNumber}
+            onChange={(e) => setBoxNumber(e.target.value)}
+            className={inputClass}
+            placeholder="e.g. A1, B3"
           />
         </div>
       </div>

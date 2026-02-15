@@ -164,6 +164,7 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                 <th className="p-4 font-medium">Price</th>
                 <th className="p-4 font-medium">Status</th>
                 <th className="p-4 font-medium">Qty</th>
+                <th className="p-4 font-medium">Box #</th>
                 <th className="p-4 font-medium">Actions</th>
               </tr>
             </thead>
@@ -247,6 +248,7 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                     </select>
                   </td>
                   <td className="p-4 text-gray-300">{product.quantity}</td>
+                  <td className="p-4 text-gray-400 text-xs">{product.box_number || "—"}</td>
                   <td className="p-4">
                     <div className="flex gap-3">
                       <Link
@@ -267,7 +269,7 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
               ))}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="p-8 text-center text-gray-500">
+                  <td colSpan={8} className="p-8 text-center text-gray-500">
                     No products found.
                   </td>
                 </tr>
