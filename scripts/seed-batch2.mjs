@@ -3,9 +3,13 @@ import fs from 'fs';
 import path from 'path';
 
 // ── Config ──────────────────────────────────────────────────────────────────
-const SUPABASE_URL = 'https://ajeeaetsshqfeocosxbn.supabase.co';
-const SUPABASE_SERVICE_ROLE_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFqZWVhZXRzc2hxZmVvY29zeGJuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTA4OTI0NSwiZXhwIjoyMDg2NjY1MjQ1fQ.__EDi69pBv9egjhcrfVjqOe3A62yea6GWgkt1nkgsiw';
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
+  console.error('❌ Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars');
+  process.exit(1);
+}
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
