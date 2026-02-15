@@ -21,6 +21,8 @@ export default function ProductForm({ product }: ProductFormProps) {
   const [category, setCategory] = useState<ProductCategory>(product?.category ?? "sneakers");
   const [costPrice, setCostPrice] = useState(product?.cost_price?.toString() ?? "");
   const [sellingPrice, setSellingPrice] = useState(product?.selling_price?.toString() ?? "");
+  const [shippingCost, setShippingCost] = useState(product?.shipping_cost?.toString() ?? "0");
+  const [taxAmount, setTaxAmount] = useState(product?.tax_amount?.toString() ?? "0");
   const [currency] = useState(product?.currency ?? "USD");
   const [description, setDescription] = useState(product?.description ?? "");
   const [shortDescription, setShortDescription] = useState(product?.short_description ?? "");
@@ -94,6 +96,8 @@ export default function ProductForm({ product }: ProductFormProps) {
       category,
       cost_price: costPrice ? parseFloat(costPrice) : null,
       selling_price: parseFloat(sellingPrice),
+      shipping_cost: parseFloat(shippingCost) || 0,
+      tax_amount: parseFloat(taxAmount) || 0,
       currency,
       description,
       short_description: shortDescription,
@@ -129,6 +133,22 @@ export default function ProductForm({ product }: ProductFormProps) {
 
     router.push("/admin/products");
   };
+
+  const autoCalcTax = () => {
+    const cost = parseFloat(costPrice);
+    if (!isNaN(cost)) setTaxAmount((cost * 0.06625).toFixed(2));
+  };
+
+  const costNum = parseFloat(costPrice) || 0;
+  const shippingNum = parseFloat(shippingCost) || 0;
+  const taxNum = parseFloat(taxAmount) || 0;
+  const totalCost = costNum + shippingNum + taxNum;
+  const sellingNum = parseFloat(sellingPrice) || 0;
+  const profit = sellingNum - totalCost;
+  const marginPct = sellingNum > 0 ? (profit / sellingNum) * 100 : 0;
+
+  const fmt = (n: number) =>
+    new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
 
   const inputClass =
     "w-full bg-gray-950 border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold transition-colors";
@@ -206,6 +226,41 @@ export default function ProductForm({ product }: ProductFormProps) {
         </div>
       </div>
 
+      {/* Cost Breakdown Summary */}
+      {isEditing && costNum > 0 && (
+        <div className="bg-gray-950 border border-gray-800 rounded-xl p-5">
+          <h3 className="text-sm font-medium text-gray-300 mb-3">Cost Breakdown</h3>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-3 text-center">
+            <div>
+              <p className="text-xs text-gray-500">Cost</p>
+              <p className="text-sm text-white font-medium">{fmt(costNum)}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500">Shipping</p>
+              <p className="text-sm text-white font-medium">{fmt(shippingNum)}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500">Tax</p>
+              <p className="text-sm text-white font-medium">{fmt(taxNum)}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500">Total Cost</p>
+              <p className="text-sm text-gold font-semibold">{fmt(totalCost)}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500">Selling</p>
+              <p className="text-sm text-white font-medium">{fmt(sellingNum)}</p>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500">Profit</p>
+              <p className={`text-sm font-semibold ${profit >= 0 ? "text-emerald-400" : "text-red-400"}`}>
+                {fmt(profit)} ({marginPct.toFixed(1)}%)
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Pricing */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
@@ -230,6 +285,41 @@ export default function ProductForm({ product }: ProductFormProps) {
             className={inputClass}
             placeholder="0.00"
           />
+        </div>
+      </div>
+
+      {/* Shipping + Tax */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label className={labelClass}>Shipping Cost</label>
+          <input
+            type="number"
+            value={shippingCost}
+            onChange={(e) => setShippingCost(e.target.value)}
+            step="0.01"
+            className={inputClass}
+            placeholder="0.00"
+          />
+        </div>
+        <div>
+          <label className={labelClass}>Tax Amount</label>
+          <div className="flex gap-2">
+            <input
+              type="number"
+              value={taxAmount}
+              onChange={(e) => setTaxAmount(e.target.value)}
+              step="0.01"
+              className={`${inputClass} flex-1`}
+              placeholder="0.00"
+            />
+            <button
+              type="button"
+              onClick={autoCalcTax}
+              className="bg-gray-800 hover:bg-gray-700 text-gold text-xs px-3 py-2 rounded-lg transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Auto NJ 6.625%
+            </button>
+          </div>
         </div>
       </div>
 

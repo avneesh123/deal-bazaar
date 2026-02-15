@@ -248,12 +248,20 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                   </td>
                   <td className="p-4 text-gray-300">{product.quantity}</td>
                   <td className="p-4">
-                    <Link
-                      href={`/admin/products/edit?id=${product.id}`}
-                      className="text-gold hover:text-gold-light text-sm"
-                    >
-                      Edit
-                    </Link>
+                    <div className="flex gap-3">
+                      <Link
+                        href={`/admin/products/edit?id=${product.id}`}
+                        className="text-gold hover:text-gold-light text-sm"
+                      >
+                        Edit
+                      </Link>
+                      <Link
+                        href={`/product/${product.slug}`}
+                        className="text-gray-400 hover:text-gray-300 text-sm"
+                      >
+                        View
+                      </Link>
+                    </div>
                   </td>
                 </tr>
               ))}

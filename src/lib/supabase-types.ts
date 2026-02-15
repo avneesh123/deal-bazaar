@@ -9,6 +9,7 @@ export interface DbProduct {
   cost_price: number | null;
   selling_price: number;
   shipping_cost: number;
+  tax_amount: number;
   currency: string;
   category: ProductCategory;
   description: string;
