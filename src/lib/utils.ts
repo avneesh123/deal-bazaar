@@ -30,5 +30,5 @@ export function getRelatedProducts(product: Product, limit = 4): Product[] {
     .slice(0, limit);
 }
 
-export const WHATSAPP_NUMBER = "1234567890"; // Replace with real number
+export const WHATSAPP_NUMBER = "18609609600";
 export const BRAND_EMAIL = "hello@dealbazaar.ai";
