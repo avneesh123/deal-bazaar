@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
+import { products as staticProducts } from "@/data/products";
 import { fetchAllProducts } from "@/lib/products";
 import type { Product, ProductCategory } from "@/data/products";
 import CategoryFilter from "./CategoryFilter";
@@ -10,13 +11,13 @@ import ProductGrid from "./ProductGrid";
 function ShopContentInner() {
   const searchParams = useSearchParams();
   const category = searchParams.get("category") as ProductCategory | null;
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
+
+  // Stale-while-revalidate: show static data instantly, refresh in background
+  const [products, setProducts] = useState<Product[]>(staticProducts);
 
   useEffect(() => {
-    fetchAllProducts().then((data) => {
-      setProducts(data);
-      setLoading(false);
+    fetchAllProducts().then((fresh) => {
+      setProducts(fresh);
     });
   }, []);
 
@@ -31,29 +32,6 @@ function ShopContentInner() {
     sneakers: sneakers.length,
     jewelry: jewelry.length,
   };
-
-  if (loading) {
-    return (
-      <>
-        <CategoryFilter counts={{ all: 0, sneakers: 0, jewelry: 0 }} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div
-              key={i}
-              className="bg-dark-card rounded-sm border border-dark-border animate-pulse"
-            >
-              <div className="aspect-square bg-dark-secondary" />
-              <div className="p-5 space-y-3">
-                <div className="h-5 bg-dark-secondary rounded w-3/4" />
-                <div className="h-4 bg-dark-secondary rounded w-1/2" />
-                <div className="h-6 bg-dark-secondary rounded w-1/3" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </>
-    );
-  }
 
   return (
     <>
