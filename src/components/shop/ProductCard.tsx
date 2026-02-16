@@ -7,8 +7,16 @@ interface ProductCardProps {
   product: Product;
 }
 
+function isNew(product: Product): boolean {
+  if (!product.createdAt) return false;
+  const days =
+    (Date.now() - new Date(product.createdAt).getTime()) / 86_400_000;
+  return days <= 14;
+}
+
 export default function ProductCard({ product }: ProductCardProps) {
   const size = product.specs?.Size;
+  const productIsNew = isNew(product);
 
   return (
     <Link
@@ -34,10 +42,17 @@ export default function ProductCard({ product }: ProductCardProps) {
         )}
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        {/* Condition badge */}
-        <span className="absolute top-3 left-3 bg-dark/80 text-gold text-xs uppercase tracking-wider px-3 py-1 rounded-sm backdrop-blur-sm">
-          {product.specs?.Condition || product.category}
-        </span>
+        {/* Badges — top left */}
+        <div className="absolute top-3 left-3 flex gap-2">
+          {productIsNew && (
+            <span className="bg-gold text-dark text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm">
+              New
+            </span>
+          )}
+          <span className="bg-dark/80 text-gold text-xs uppercase tracking-wider px-3 py-1 rounded-sm backdrop-blur-sm">
+            {product.specs?.Condition || product.category}
+          </span>
+        </div>
         {/* Size badge */}
         {size && (
           <span className="absolute top-3 right-3 bg-dark/80 text-text-primary text-xs px-3 py-1 rounded-sm backdrop-blur-sm">

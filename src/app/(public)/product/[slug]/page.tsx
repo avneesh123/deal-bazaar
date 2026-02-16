@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { products } from "@/data/products";
-import { getProductBySlug, getRelatedProducts } from "@/lib/utils";
+import {
+  fetchProductBySlug,
+  fetchRelatedProducts,
+  fetchAllSlugs,
+} from "@/lib/products";
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
 import WhatsAppCTA from "@/components/product/WhatsAppCTA";
@@ -10,17 +13,20 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import ProductGrid from "@/components/shop/ProductGrid";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
+export async function generateStaticParams() {
+  const slugs = await fetchAllSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await fetchProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
   return {
     title: product.name,
@@ -30,13 +36,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await fetchProductBySlug(slug);
 
   if (!product) {
     notFound();
   }
 
-  const related = getRelatedProducts(product);
+  const related = await fetchRelatedProducts(product);
 
   return (
     <section className="py-12 md:py-20 px-4">

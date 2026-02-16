@@ -3,13 +3,21 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
+interface CategoryFilterProps {
+  counts: {
+    all: number;
+    sneakers: number;
+    jewelry: number;
+  };
+}
+
 const filters = [
-  { label: "All", value: "" },
-  { label: "Jewelry", value: "jewelry" },
-  { label: "Sneakers", value: "sneakers" },
+  { label: "All", value: "", key: "all" as const },
+  { label: "Sneakers", value: "sneakers", key: "sneakers" as const },
+  { label: "Jewelry", value: "jewelry", key: "jewelry" as const },
 ];
 
-export default function CategoryFilter() {
+export default function CategoryFilter({ counts }: CategoryFilterProps) {
   const searchParams = useSearchParams();
   const active = searchParams.get("category") || "";
 
@@ -17,6 +25,7 @@ export default function CategoryFilter() {
     <div className="flex flex-wrap gap-3 justify-center mb-12">
       {filters.map((f) => {
         const isActive = f.value === active;
+        const count = counts[f.key];
         return (
           <Link
             key={f.value}
@@ -28,6 +37,15 @@ export default function CategoryFilter() {
             }`}
           >
             {f.label}
+            {count > 0 && (
+              <span
+                className={`ml-2 text-xs ${
+                  isActive ? "text-dark/70" : "text-text-secondary/50"
+                }`}
+              >
+                {count}
+              </span>
+            )}
           </Link>
         );
       })}

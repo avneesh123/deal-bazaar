@@ -56,6 +56,7 @@ export interface Product {
   specs: Record<string, string>;
   featured: boolean;
   tags: string[];
+  createdAt?: string;
 }
 
 export const products: Product[] = ${JSON.stringify(
@@ -71,6 +72,7 @@ export const products: Product[] = ${JSON.stringify(
       specs: p.specs,
       featured: p.featured,
       tags: p.tags,
+      createdAt: p.created_at,
     })),
     null,
     2
