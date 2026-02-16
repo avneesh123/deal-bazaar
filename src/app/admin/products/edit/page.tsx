@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import type { DbProduct, DbReceipt } from "@/lib/supabase-types";
 import AdminHeader from "@/components/admin/AdminHeader";
@@ -179,12 +178,12 @@ export default function EditProductPage() {
                 >
                   Link Existing Receipt
                 </button>
-                <Link
+                <a
                   href="/admin/receipts/new"
                   className="bg-gray-800 hover:bg-gray-700 text-gray-300 text-sm px-4 py-2 rounded-lg transition-colors"
                 >
                   Upload New Receipt
-                </Link>
+                </a>
               </div>
               {showLinkDropdown && (
                 <div className="bg-gray-900 border border-gray-700 rounded-lg max-h-48 overflow-y-auto">

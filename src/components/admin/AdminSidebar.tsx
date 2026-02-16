@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -66,12 +65,12 @@ export default function AdminSidebar() {
   return (
     <aside className="fixed left-0 top-0 h-full w-64 bg-gray-950 border-r border-gray-800 flex flex-col z-40">
       <div className="p-6 border-b border-gray-800">
-        <Link href="/admin/dashboard" className="block">
+        <a href="/admin/dashboard" className="block">
           <span className="font-serif text-xl text-gold">Deal Bazaar</span>
           <span className="block text-xs text-gray-500 uppercase tracking-widest mt-1">
             Admin Panel
           </span>
-        </Link>
+        </a>
       </div>
 
       <nav className="flex-1 py-4 overflow-y-auto">
@@ -79,7 +78,7 @@ export default function AdminSidebar() {
           const isActive =
             pathname === item.href || pathname.startsWith(item.href + "/");
           return (
-            <Link
+            <a
               key={item.href}
               href={item.href}
               className={`flex items-center gap-3 px-6 py-3 text-sm transition-colors ${
@@ -90,13 +89,13 @@ export default function AdminSidebar() {
             >
               {item.icon}
               {item.label}
-            </Link>
+            </a>
           );
         })}
       </nav>
 
       <div className="p-4 border-t border-gray-800">
-        <Link
+        <a
           href="/"
           className="flex items-center gap-2 text-gray-500 hover:text-gray-300 text-xs transition-colors"
         >
@@ -104,7 +103,7 @@ export default function AdminSidebar() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
           View Public Site
-        </Link>
+        </a>
       </div>
     </aside>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import type { DbProduct } from "@/lib/supabase-types";
 import AdminHeader from "@/components/admin/AdminHeader";
@@ -30,12 +29,12 @@ export default function ProductsPage() {
         title="Products"
         subtitle={`${products.length} total products`}
         actions={
-          <Link
+          <a
             href="/admin/products/new"
             className="bg-gold text-black font-semibold rounded-lg px-4 py-2 text-sm hover:bg-gold-light transition-colors"
           >
             + New Product
-          </Link>
+          </a>
         }
       />
       <div className="p-8">

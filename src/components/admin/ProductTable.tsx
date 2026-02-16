@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import type { DbProduct, ProductStatus } from "@/lib/supabase-types";
 
@@ -251,18 +250,18 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                   <td className="p-4 text-gray-400 text-xs">{product.box_number || "—"}</td>
                   <td className="p-4">
                     <div className="flex gap-3">
-                      <Link
+                      <a
                         href={`/admin/products/edit?id=${product.id}`}
                         className="text-gold hover:text-gold-light text-sm"
                       >
                         Edit
-                      </Link>
-                      <Link
+                      </a>
+                      <a
                         href={`/product/${product.slug}`}
                         className="text-gray-400 hover:text-gray-300 text-sm"
                       >
                         View
-                      </Link>
+                      </a>
                     </div>
                   </td>
                 </tr>

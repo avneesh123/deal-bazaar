@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import type { DbReceipt } from "@/lib/supabase-types";
 import AdminHeader from "@/components/admin/AdminHeader";
@@ -30,12 +29,12 @@ export default function ReceiptsPage() {
         title="Receipts"
         subtitle={`${receipts.length} purchase receipts`}
         actions={
-          <Link
+          <a
             href="/admin/receipts/new"
             className="bg-gold text-black font-semibold rounded-lg px-4 py-2 text-sm hover:bg-gold-light transition-colors"
           >
             + New Receipt
-          </Link>
+          </a>
         }
       />
       <div className="p-8">
@@ -46,12 +45,12 @@ export default function ReceiptsPage() {
         ) : receipts.length === 0 ? (
           <div className="text-center py-16">
             <p className="text-gray-500 mb-4">No receipts yet.</p>
-            <Link
+            <a
               href="/admin/receipts/new"
               className="text-gold hover:text-gold-light text-sm"
             >
               Upload your first receipt
-            </Link>
+            </a>
           </div>
         ) : (
           <div className="bg-gray-950 border border-gray-800 rounded-xl overflow-hidden">
