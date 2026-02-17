@@ -47,29 +47,29 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         {/* Badges — top left */}
-        <div className="absolute top-3 left-3 flex gap-2">
-          {productIsNew && (
-            <span className="bg-gold text-dark text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm">
-              New
-            </span>
-          )}
-          <span className="bg-dark/80 text-gold text-xs uppercase tracking-wider px-3 py-1 rounded-sm backdrop-blur-sm">
-            {product.specs?.Condition || product.category}
-          </span>
-        </div>
-        {/* Size + discount badges — top right */}
-        <div className="absolute top-3 right-3 flex flex-col items-end gap-2">
-          {size && (
-            <span className="bg-dark/80 text-text-primary text-xs px-3 py-1 rounded-sm backdrop-blur-sm">
-              Size {size}
-            </span>
-          )}
+        <div className="absolute top-3 left-3 flex flex-col items-start gap-2">
           {discount > 0 && (
-            <span className="bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-sm">
+            <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-sm">
               {discount}% OFF
             </span>
           )}
+          <div className="flex gap-2">
+            {productIsNew && (
+              <span className="bg-gold text-dark text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm">
+                New
+              </span>
+            )}
+            <span className="bg-dark/80 text-gold text-xs uppercase tracking-wider px-3 py-1 rounded-sm backdrop-blur-sm">
+              {product.specs?.Condition || product.category}
+            </span>
+          </div>
         </div>
+        {/* Size badge — top right */}
+        {size && (
+          <span className="absolute top-3 right-3 bg-dark/80 text-text-primary text-xs px-3 py-1 rounded-sm backdrop-blur-sm">
+            Size {size}
+          </span>
+        )}
       </div>
 
       {/* Info */}

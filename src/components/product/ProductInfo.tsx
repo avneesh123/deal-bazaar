@@ -26,20 +26,15 @@ export default function ProductInfo({ product }: ProductInfoProps) {
           <p className="text-gold text-3xl font-semibold">
             {formatPrice(product.price, product.currency)}
           </p>
-          {discount > 0 && product.retailPrice && (
-            <>
-              <span className="text-text-secondary/50 text-xl line-through">
-                {formatPrice(product.retailPrice, product.currency)}
-              </span>
-              <span className="bg-emerald-500 text-white text-sm font-bold px-2.5 py-0.5 rounded-sm">
-                {discount}% OFF
-              </span>
-            </>
+          {discount > 0 && (
+            <span className="text-red-500 text-lg font-bold italic">
+              {discount}% OFF
+            </span>
           )}
         </div>
-        {discount > 0 && (
+        {discount > 0 && product.retailPrice && (
           <p className="text-text-secondary text-sm mt-1">
-            Retail price
+            reg. <span className="line-through">{formatPrice(product.retailPrice, product.currency)}</span>
           </p>
         )}
       </div>
