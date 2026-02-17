@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 interface PublishButtonProps {
   repo: string;
@@ -16,9 +17,22 @@ export default function PublishButton({ repo }: PublishButtonProps) {
     setResult(null);
 
     try {
-      const token = process.env.NEXT_PUBLIC_GITHUB_PAT;
+      // Try env var first, then fall back to api_keys table
+      let token = process.env.NEXT_PUBLIC_GITHUB_PAT;
       if (!token) {
-        setResult({ ok: false, message: "GitHub PAT not configured. Set NEXT_PUBLIC_GITHUB_PAT in .env.local" });
+        const { data } = await supabase
+          .from("api_keys")
+          .select("api_key")
+          .eq("service", "github")
+          .single();
+        token = data?.api_key;
+      }
+
+      if (!token) {
+        setResult({
+          ok: false,
+          message: 'GitHub PAT not configured. Add a "github" entry in Settings → API Keys.',
+        });
         setPublishing(false);
         return;
       }
@@ -39,7 +53,7 @@ export default function PublishButton({ repo }: PublishButtonProps) {
       );
 
       if (res.status === 204) {
-        setResult({ ok: true, message: "Deploy triggered! Check GitHub Actions for progress." });
+        setResult({ ok: true, message: "Deploy triggered! Site will update in ~1-2 minutes." });
       } else {
         const body = await res.text();
         setResult({ ok: false, message: `Failed (${res.status}): ${body}` });

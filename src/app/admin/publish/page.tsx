@@ -66,7 +66,7 @@ export default function PublishPage() {
           </p>
         </div>
 
-        <PublishButton repo="apandey/deal-bazaar" />
+        <PublishButton repo="avneesh123/deal-bazaar" />
       </div>
     </>
   );

@@ -6,7 +6,9 @@ import {
   fetchAllSlugs,
 } from "@/lib/products";
 import ProductGallery from "@/components/product/ProductGallery";
-import ProductDetail from "@/components/product/ProductDetail";
+import ProductInfo from "@/components/product/ProductInfo";
+import WhatsAppCTA from "@/components/product/WhatsAppCTA";
+import RequestForm from "@/components/product/RequestForm";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ProductGrid from "@/components/shop/ProductGrid";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -51,7 +53,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <ProductDetail product={product} />
+            <ProductInfo product={product} />
+            <WhatsAppCTA productName={product.name} />
+            <div className="border-t border-dark-border pt-6 mt-6">
+              <p className="text-white font-medium mb-1">Need a different size?</p>
+              <p className="text-text-secondary text-sm mb-4">
+                Let us know what you&apos;re looking for and we&apos;ll try to source it.
+              </p>
+              <RequestForm productName={product.name} category={product.category} />
+            </div>
           </AnimatedSection>
         </div>
 
