@@ -20,6 +20,8 @@ export interface DbProduct {
   quantity: number;
   featured: boolean;
   box_number: string | null;
+  retail_price: number | null;
+  price_sources: { name: string; price: number | null; url: string }[] | null;
   tags: string[];
   created_at: string;
   updated_at: string;

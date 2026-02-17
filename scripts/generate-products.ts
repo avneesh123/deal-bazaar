@@ -54,6 +54,8 @@ export interface Product {
   shortDescription: string;
   images: string[];
   specs: Record<string, string>;
+  retailPrice?: number;
+  priceSources?: { name: string; price: number | null; url: string }[];
   featured: boolean;
   tags: string[];
   createdAt?: string;
@@ -70,6 +72,8 @@ export const products: Product[] = ${JSON.stringify(
       shortDescription: p.short_description,
       images: p.images,
       specs: p.specs,
+      retailPrice: p.retail_price ?? undefined,
+      priceSources: p.price_sources ?? undefined,
       featured: p.featured,
       tags: p.tags,
       createdAt: p.created_at,

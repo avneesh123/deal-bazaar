@@ -11,116 +11,68 @@ import type {
   InternalData,
 } from "./types";
 
-// Claude API tool definitions
+// Claude API tool definitions — kept minimal to reduce token usage
 const TOOLS = [
   {
     name: "search_kicksdb",
-    description:
-      "Search KicksDB for sneaker products by name. Returns product matches with slugs, names, retail prices.",
+    description: "Search KicksDB for sneaker products. Returns IDs, names, retail prices.",
     input_schema: {
       type: "object" as const,
       properties: {
-        query: {
-          type: "string",
-          description: "Product search query, e.g. 'Adidas Campus 00s Dark Grey'",
-        },
+        query: { type: "string", description: "Product search query" },
       },
       required: ["query"],
     },
   },
   {
     name: "get_kicksdb_prices",
-    description:
-      "Get detailed pricing data for a specific product from KicksDB. Includes lowest ask, highest bid, last sale, 30-day average, size-specific prices, and recent sales history.",
+    description: "Get pricing data for a product from KicksDB by slug/ID. Includes sales history.",
     input_schema: {
       type: "object" as const,
       properties: {
-        slug: {
-          type: "string",
-          description: "Product slug from KicksDB search results",
-        },
-        size: {
-          type: "string",
-          description: "Specific shoe size to check, e.g. '12' or '7.5'",
-        },
+        product_id: { type: "string", description: "Product slug from search results" },
+        size: { type: "string", description: "Shoe size, e.g. '12'" },
       },
-      required: ["slug"],
+      required: ["product_id"],
     },
   },
   {
     name: "search_ebay_listings",
-    description:
-      "Search eBay for active listings of a product. Returns current listings with prices, average and median prices.",
+    description: "Search eBay for active listings with prices.",
     input_schema: {
       type: "object" as const,
       properties: {
-        query: {
-          type: "string",
-          description: "Search query for eBay, e.g. 'Adidas Campus 00s Dark Grey size 12K'",
-        },
+        query: { type: "string", description: "eBay search query" },
       },
       required: ["query"],
     },
   },
   {
     name: "query_internal_sales",
-    description:
-      "Query our own Deal Bazaar sales history for similar products. Shows what we've sold, at what price, and our margins.",
+    description: "Query Deal Bazaar's own sales history.",
     input_schema: {
       type: "object" as const,
       properties: {
-        brand: { type: "string", description: "Filter by brand, e.g. 'Adidas'" },
-        model: {
-          type: "string",
-          description: "Filter by model name, e.g. 'Campus'",
-        },
-        category: {
-          type: "string",
-          description: "Filter by category: 'sneakers' or 'jewelry'",
-        },
-        days: {
-          type: "number",
-          description: "Number of days to look back (default: 90)",
-        },
+        brand: { type: "string" },
+        model: { type: "string" },
+        category: { type: "string" },
       },
     },
   },
 ];
 
-const SYSTEM_PROMPT = `You are a sneaker pricing analyst for Deal Bazaar, an online resale store. Given a product query, research current market prices and recommend three pricing tiers.
+const SYSTEM_PROMPT = `Sneaker/jewelry pricing analyst for Deal Bazaar resale store. Research market prices, recommend 3 tiers.
 
-## Pricing Tiers
-1. **QUICK SELL** (1-3 days): Price to move inventory fast. Below market average. Use when we need cash flow or item has been sitting.
-2. **COMPETITIVE** (1-2 weeks): Fair market price that balances speed and profit. This is our default recommendation.
-3. **MAX PROFIT** (30+ days): Premium pricing for patient sellers. Only viable for high-demand items.
+Tiers: QUICK SELL (1-3 days, below market), COMPETITIVE (1-2 weeks, fair price), MAX PROFIT (30+ days, premium).
 
-## Your Process
-1. Parse the query into brand, model, colorway, and size
-2. Search KicksDB for the product — understand retail price and market positioning
-3. Get KicksDB price data — lowest asks, recent sales, 30-day trends
-4. Search eBay for active listings — understand current competition
-5. Check our internal sales history — learn from what we've actually sold
-6. Synthesize all data into three price recommendations
+Process: Search KicksDB → get prices → check eBay → check internal sales → synthesize. Use your own knowledge as fallback when tools fail.
 
-## Rules
-- Always explain your reasoning citing specific data points
-- If data is limited, lower your confidence score and say so
-- Never fabricate prices — if you don't have data, say "insufficient data"
-- Consider platform fees: StockX ~10%, eBay ~13%, our site 0%
-- Account for condition: DS (deadstock/new) commands premium over used
-- Size matters: common sizes (8-11 men's) have more demand; outlier sizes may need discounts
-- Kids sizes generally sell for less than adult sizes
+Rules:
+- ALWAYS give dollar estimates. NEVER ask user for info. If data is limited, lower confidence but still estimate.
+- Cite data points. Consider: StockX fees ~10%, eBay ~13%, our site 0%. DS > used. Common sizes (8-11) = more demand. Kids = less value.
 
-## Response Format
-After researching, respond with a JSON object in this exact format (no markdown, just raw JSON):
-{
-  "parsed": { "brand": "...", "model": "...", "colorway": "...", "size": "..." },
-  "quick_sell": { "price": 0, "reasoning": "..." },
-  "competitive": { "price": 0, "reasoning": "..." },
-  "max_profit": { "price": 0, "reasoning": "..." },
-  "confidence": 0,
-  "overall_reasoning": "..."
-}`;
+Respond with raw JSON only:
+{"parsed":{"brand":"","model":"","colorway":"","size":""},"quick_sell":{"price":0,"reasoning":""},"competitive":{"price":0,"reasoning":""},"max_profit":{"price":0,"reasoning":""},"confidence":0,"overall_reasoning":""}`;
 
 interface ApiKeys {
   anthropic: string;
@@ -175,7 +127,7 @@ async function executeTool(
         };
       }
       const prices = await kicksdb.getProductPrices(
-        toolInput.slug as string,
+        toolInput.product_id as string,
         apiKeys.kicksdb,
         toolInput.size as string | undefined
       );
@@ -247,7 +199,7 @@ export async function runPricingAgent(
     content: string | MessageContent[];
   }> = [{ role: "user", content: query }];
 
-  let maxIterations = 8; // Safety limit
+  let maxIterations = 4; // Safety limit — keeps costs low
   let finalText = "";
 
   while (maxIterations-- > 0) {
@@ -262,7 +214,7 @@ export async function runPricingAgent(
       },
       body: JSON.stringify({
         model: "claude-haiku-4-5-20251001",
-        max_tokens: 4096,
+        max_tokens: 1500,
         system: SYSTEM_PROMPT,
         tools: TOOLS,
         messages,
@@ -303,8 +255,16 @@ export async function runPricingAgent(
       break;
     }
 
-    // Add assistant message to conversation
-    messages.push({ role: "assistant", content: data.content as MessageContent[] });
+    // Keep only the original query + latest exchange to limit context growth
+    const assistantContent = data.content as MessageContent[];
+    if (messages.length > 3) {
+      messages = [
+        messages[0], // original user query
+        { role: "assistant", content: assistantContent },
+      ];
+    } else {
+      messages.push({ role: "assistant", content: assistantContent });
+    }
 
     // Execute tool calls
     const toolResults: MessageContent[] = [];
@@ -347,7 +307,11 @@ export async function runPricingAgent(
           if (!dataSources.includes("Internal")) dataSources.push("Internal");
         }
 
-        const resultStr = JSON.stringify(result);
+        let resultStr = JSON.stringify(result);
+        // Truncate large results to save tokens (KicksDB can return huge payloads)
+        if (resultStr.length > 1500) {
+          resultStr = resultStr.slice(0, 1500) + '..."}';
+        }
         onStep({
           id: sid,
           type: "tool_result",

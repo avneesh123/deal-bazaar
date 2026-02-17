@@ -22,16 +22,17 @@ export async function searchProducts(
   const cached = await getCachedData<KicksDBSearchResult[]>("kicksdb", cacheKey);
   if (cached) return cached;
 
+  // Standard API uses /stockx/products with query param
   const data = (await kicksFetch(
-    `/stockx/search?query=${encodeURIComponent(query)}&limit=5`,
+    `/stockx/products?query=${encodeURIComponent(query)}&limit=5`,
     apiKey
   )) as { data?: Array<Record<string, unknown>> };
 
   const results: KicksDBSearchResult[] = (data.data ?? []).map((item) => ({
-    slug: (item.slug as string) ?? "",
-    name: (item.name as string) ?? "",
-    retail_price: (item.retail_price as number) ?? null,
-    image: (item.image as string) ?? null,
+    slug: (item.slug as string) ?? (item.id as string) ?? "",
+    name: (item.name as string) ?? (item.title as string) ?? "",
+    retail_price: (item.retail_price as number) ?? (item.retailPrice as number) ?? null,
+    image: (item.image as string) ?? (item.thumbnail as string) ?? null,
     brand: (item.brand as string) ?? null,
   }));
 
@@ -40,42 +41,42 @@ export async function searchProducts(
 }
 
 export async function getProductPrices(
-  slug: string,
+  productId: string,
   apiKey: string,
   size?: string
 ): Promise<KicksDBPriceData> {
-  const cacheKey = `prices:${slug}:${size ?? "all"}`;
+  const cacheKey = `prices:${productId}:${size ?? "all"}`;
   const cached = await getCachedData<KicksDBPriceData>("kicksdb", cacheKey);
   if (cached) return cached;
 
-  // Fetch prices and recent sales in parallel
-  const [pricesRes, salesRes] = await Promise.all([
-    kicksFetch(`/stockx/prices/${encodeURIComponent(slug)}`, apiKey).catch(
+  // Fetch product details and sales history in parallel
+  const [productRes, salesRes] = await Promise.all([
+    kicksFetch(`/stockx/products/${encodeURIComponent(productId)}`, apiKey).catch(
       () => null
     ),
     kicksFetch(
-      `/stockx/sales/${encodeURIComponent(slug)}?limit=20`,
+      `/stockx/products/${encodeURIComponent(productId)}/sales?limit=20`,
       apiKey
     ).catch(() => null),
   ]);
 
-  const pricesData = pricesRes as Record<string, unknown> | null;
+  const productData = productRes as Record<string, unknown> | null;
   const salesData = salesRes as { data?: Array<Record<string, unknown>> } | null;
 
-  // Parse size-specific prices
+  // Parse size-specific prices from product data
   const sizePrices: Record<string, { ask: number | null; bid: number | null }> =
     {};
-  const allSizes = (pricesData?.sizes ?? pricesData?.data) as
+  const allSizes = (productData?.sizes ?? productData?.variants ?? productData?.data) as
     | Array<Record<string, unknown>>
     | undefined;
 
   if (Array.isArray(allSizes)) {
     for (const s of allSizes) {
-      const sizeLabel = String(s.size ?? s.us_size ?? "");
+      const sizeLabel = String(s.size ?? s.us_size ?? s.name ?? "");
       if (sizeLabel) {
         sizePrices[sizeLabel] = {
-          ask: (s.lowest_ask as number) ?? (s.ask as number) ?? null,
-          bid: (s.highest_bid as number) ?? (s.bid as number) ?? null,
+          ask: (s.lowest_ask as number) ?? (s.lowestAsk as number) ?? (s.ask as number) ?? null,
+          bid: (s.highest_bid as number) ?? (s.highestBid as number) ?? (s.bid as number) ?? null,
         };
       }
     }
@@ -84,8 +85,8 @@ export async function getProductPrices(
   // Parse recent sales
   const recentSales = ((salesData?.data ?? []) as Array<Record<string, unknown>>).map(
     (s) => ({
-      price: (s.price as number) ?? (s.sale_price as number) ?? 0,
-      date: (s.date as string) ?? (s.created_at as string) ?? "",
+      price: (s.price as number) ?? (s.sale_price as number) ?? (s.amount as number) ?? 0,
+      date: (s.date as string) ?? (s.created_at as string) ?? (s.createdAt as string) ?? "",
       size: String(s.size ?? s.us_size ?? ""),
     })
   );
@@ -107,9 +108,8 @@ export async function getProductPrices(
     lowestAsk = sizePrices[size].ask;
     highestBid = sizePrices[size].bid;
   } else {
-    // Use overall prices
-    lowestAsk = (pricesData?.lowest_ask as number) ?? null;
-    highestBid = (pricesData?.highest_bid as number) ?? null;
+    lowestAsk = (productData?.lowest_ask as number) ?? (productData?.lowestAsk as number) ?? null;
+    highestBid = (productData?.highest_bid as number) ?? (productData?.highestBid as number) ?? null;
   }
 
   const result: KicksDBPriceData = {

@@ -17,6 +17,10 @@ function isNew(product: Product): boolean {
 export default function ProductCard({ product }: ProductCardProps) {
   const size = product.specs?.Size;
   const productIsNew = isNew(product);
+  const discount =
+    product.retailPrice && product.price < product.retailPrice
+      ? Math.round((1 - product.price / product.retailPrice) * 100)
+      : 0;
 
   return (
     <Link
@@ -53,12 +57,19 @@ export default function ProductCard({ product }: ProductCardProps) {
             {product.specs?.Condition || product.category}
           </span>
         </div>
-        {/* Size badge */}
-        {size && (
-          <span className="absolute top-3 right-3 bg-dark/80 text-text-primary text-xs px-3 py-1 rounded-sm backdrop-blur-sm">
-            Size {size}
-          </span>
-        )}
+        {/* Size + discount badges — top right */}
+        <div className="absolute top-3 right-3 flex flex-col items-end gap-2">
+          {size && (
+            <span className="bg-dark/80 text-text-primary text-xs px-3 py-1 rounded-sm backdrop-blur-sm">
+              Size {size}
+            </span>
+          )}
+          {discount > 0 && (
+            <span className="bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-sm">
+              {discount}% OFF
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Info */}
@@ -70,9 +81,16 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.shortDescription}
         </p>
         <div className="flex items-center justify-between">
-          <p className="text-gold font-semibold text-lg">
-            {formatPrice(product.price, product.currency)}
-          </p>
+          <div className="flex items-center gap-2">
+            <p className="text-gold font-semibold text-lg">
+              {formatPrice(product.price, product.currency)}
+            </p>
+            {discount > 0 && product.retailPrice && (
+              <span className="text-text-secondary/50 text-sm line-through">
+                {formatPrice(product.retailPrice, product.currency)}
+              </span>
+            )}
+          </div>
           <span className="text-text-secondary/50 text-xs uppercase">
             {product.specs?.Brand}
           </span>

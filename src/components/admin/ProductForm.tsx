@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
+import { searchProducts, getProductPrices } from "@/lib/pricing/kicksdb";
 import type { DbProduct, ProductCategory, ProductStatus } from "@/lib/supabase-types";
 
 interface ProductFormProps {
@@ -37,6 +38,12 @@ export default function ProductForm({ product }: ProductFormProps) {
       ? Object.entries(product.specs).map(([key, value]) => ({ key, value }))
       : [{ key: "", value: "" }]
   );
+  const [retailPrice, setRetailPrice] = useState(product?.retail_price?.toString() ?? "");
+  const [priceSources, setPriceSources] = useState<{ name: string; price: number | null; url: string }[]>(
+    product?.price_sources ?? []
+  );
+  const [fetchingPrices, setFetchingPrices] = useState(false);
+  const [priceStatus, setPriceStatus] = useState("");
   const [uploading, setUploading] = useState(false);
 
   const generateSlug = (name: string) =>
@@ -48,6 +55,74 @@ export default function ProductForm({ product }: ProductFormProps) {
   const handleNameChange = (value: string) => {
     setName(value);
     if (!isEditing) setSlug(generateSlug(value));
+  };
+
+  const fetchMarketPrices = async () => {
+    if (!name.trim()) return;
+    setFetchingPrices(true);
+    setPriceStatus("Fetching API key...");
+    try {
+      const { data: keyRow } = await supabase
+        .from("api_keys")
+        .select("api_key")
+        .eq("service", "kicksdb")
+        .single();
+      if (!keyRow?.api_key) {
+        setPriceStatus("KicksDB API key not configured. Add it in Settings.");
+        setFetchingPrices(false);
+        return;
+      }
+      const apiKey = keyRow.api_key;
+
+      setPriceStatus("Searching KicksDB...");
+      const results = await searchProducts(name, apiKey);
+      if (results.length === 0) {
+        setPriceStatus("No results found on KicksDB.");
+        setFetchingPrices(false);
+        return;
+      }
+
+      const match = results[0];
+      if (match.retail_price) {
+        setRetailPrice(match.retail_price.toString());
+      }
+
+      const size = specs.find((s) => s.key.toLowerCase() === "size")?.value;
+      setPriceStatus("Fetching prices...");
+      const prices = await getProductPrices(match.slug, apiKey, size);
+
+      const brand = specs.find((s) => s.key.toLowerCase() === "brand")?.value || match.brand || "";
+      const model = specs.find((s) => s.key.toLowerCase() === "model")?.value || name;
+      const searchQuery = encodeURIComponent(`${brand} ${model}`.trim());
+
+      const sources: { name: string; price: number | null; url: string }[] = [
+        {
+          name: "StockX",
+          price: prices.lowest_ask,
+          url: `https://stockx.com/${match.slug}`,
+        },
+      ];
+
+      const brandLower = brand.toLowerCase();
+      if (brandLower.includes("nike") || brandLower.includes("jordan")) {
+        sources.push({ name: "Nike", price: null, url: `https://www.nike.com/w?q=${searchQuery}` });
+      } else if (brandLower.includes("adidas")) {
+        sources.push({ name: "Adidas", price: null, url: `https://www.adidas.com/us/search?q=${searchQuery}` });
+      }
+
+      sources.push({
+        name: "eBay",
+        price: prices.last_sale,
+        url: `https://www.ebay.com/sch/i.html?_nkw=${searchQuery}`,
+      });
+
+      setPriceSources(sources);
+      setPriceStatus(`Found: ${match.name} — Retail $${match.retail_price ?? "N/A"}, StockX Ask $${prices.lowest_ask ?? "N/A"}`);
+    } catch (err) {
+      setPriceStatus(`Error: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setFetchingPrices(false);
+    }
   };
 
   const addSpec = () => setSpecs([...specs, { key: "", value: "" }]);
@@ -112,6 +187,8 @@ export default function ProductForm({ product }: ProductFormProps) {
         .filter(Boolean),
       images,
       specs: specsObj,
+      retail_price: retailPrice ? parseFloat(retailPrice) : null,
+      price_sources: priceSources.length > 0 ? priceSources : null,
     };
 
     if (isEditing) {
@@ -299,6 +376,58 @@ export default function ProductForm({ product }: ProductFormProps) {
           />
         </div>
       </div>
+
+      {/* Retail Price + Fetch Market Prices */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label className={labelClass}>Retail Price (MSRP)</label>
+          <input
+            type="number"
+            value={retailPrice}
+            onChange={(e) => setRetailPrice(e.target.value)}
+            step="0.01"
+            className={inputClass}
+            placeholder="0.00"
+          />
+        </div>
+        <div>
+          <label className={labelClass}>Market Prices</label>
+          <button
+            type="button"
+            onClick={fetchMarketPrices}
+            disabled={fetchingPrices || !name.trim()}
+            className="w-full bg-gray-800 hover:bg-gray-700 text-gold text-sm px-4 py-2.5 rounded-lg transition-colors disabled:opacity-50 cursor-pointer"
+          >
+            {fetchingPrices ? "Fetching..." : "Fetch Market Prices"}
+          </button>
+        </div>
+      </div>
+      {priceStatus && (
+        <p className="text-xs text-gray-400 -mt-4">{priceStatus}</p>
+      )}
+      {priceSources.length > 0 && (
+        <div className="bg-gray-950 border border-gray-800 rounded-xl p-4 -mt-2">
+          <h4 className="text-xs text-gray-400 uppercase tracking-wider mb-2">Price Sources</h4>
+          <div className="space-y-1.5">
+            {priceSources.map((s, i) => (
+              <div key={i} className="flex items-center justify-between text-sm">
+                <span className="text-gray-300">{s.name}</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-white">{s.price ? `$${s.price}` : "—"}</span>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold text-xs hover:underline"
+                  >
+                    View
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Shipping + Tax */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

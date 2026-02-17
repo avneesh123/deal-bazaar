@@ -17,6 +17,8 @@ export function mapDbToProduct(db: DbProduct): Product {
     shortDescription: db.short_description,
     images: db.images || [],
     specs: db.specs || {},
+    retailPrice: db.retail_price ?? undefined,
+    priceSources: db.price_sources ?? undefined,
     featured: db.featured,
     tags: db.tags || [],
     createdAt: db.created_at,
