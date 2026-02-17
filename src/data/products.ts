@@ -109,101 +109,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
-    "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Chain Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
-    "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
-    ],
-    "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
-      "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
-    "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Mesh Bracelet",
-      "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "dragon",
-      "silver",
-      "sterling",
-      "mesh",
-      "luxury"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
     "slug": "moissanite-halo-ring",
     "name": "Moissanite Double Halo Swirl Ring",
     "price": 159,
@@ -300,6 +205,71 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "images": [
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Mesh Bracelet",
+      "Brand": "DealBazaar",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
     "slug": "purple-crystal-charm-bracelet",
     "name": "Purple Crystal Charm Bracelet",
     "price": 75,
@@ -326,6 +296,36 @@ export const products: Product[] = [
       "purple",
       "amethyst",
       "silver"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "images": [
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Chain Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -417,6 +417,24 @@ export const products: Product[] = [
       "Condition": "Brand New",
       "Style Code": "DZ2523-200"
     },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
     "featured": false,
     "tags": [
       "nike",
@@ -483,12 +501,12 @@ export const products: Product[] = [
     "priceSources": [
       {
         "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "StockX",
+        "name": "Walmart",
         "price": 169.99
       },
       {
         "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Nike",
+        "name": "Poshmark",
         "price": 185
       },
       {
@@ -604,32 +622,51 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_3.png"
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_1.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_2.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_3.png"
     ],
     "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
       "Condition": "Brand New"
     },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
     "featured": false,
     "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -664,65 +701,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_3.png"
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_1.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_2.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_3.png"
     ],
     "specs": {
-      "Size": "10.5",
+      "Size": "6.5",
       "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
-    "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_3.png"
-    ],
-    "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -755,6 +759,38 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_1.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_2.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_3.png"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
