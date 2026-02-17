@@ -429,13 +429,13 @@ export default function ProductForm({ product }: ProductFormProps) {
         <div className="space-y-3">
           {priceSources.map((s, i) => (
             <div key={i} className="bg-gray-950 border border-gray-800 rounded-lg p-3 space-y-2">
-              <div className="flex gap-2 items-center">
+              <div className="grid grid-cols-[1fr_100px_auto] gap-2 items-center">
                 <input
                   type="text"
                   value={s.name}
                   onChange={(e) => updatePriceSource(i, "name", e.target.value)}
-                  placeholder="Source (e.g. StockX)"
-                  className={`${inputClass} flex-1`}
+                  placeholder="Source name (e.g. Walmart, StockX)"
+                  className="bg-gray-950 border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold transition-colors"
                 />
                 <input
                   type="number"
@@ -443,12 +443,12 @@ export default function ProductForm({ product }: ProductFormProps) {
                   onChange={(e) => updatePriceSource(i, "price", e.target.value)}
                   placeholder="Price"
                   step="0.01"
-                  className={`${inputClass} w-28`}
+                  className="bg-gray-950 border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold transition-colors"
                 />
                 <button
                   type="button"
                   onClick={() => removePriceSource(i)}
-                  className="text-red-400 hover:text-red-300 px-1 cursor-pointer"
+                  className="text-red-400 hover:text-red-300 px-2 cursor-pointer"
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -460,8 +460,8 @@ export default function ProductForm({ product }: ProductFormProps) {
                   type="text"
                   value={s.url}
                   onChange={(e) => updatePriceSource(i, "url", e.target.value)}
-                  placeholder="https://stockx.com/..."
-                  className={`${inputClass} flex-1`}
+                  placeholder="https://..."
+                  className="bg-gray-950 border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold transition-colors flex-1 min-w-0"
                 />
                 {s.url && (
                   <a
