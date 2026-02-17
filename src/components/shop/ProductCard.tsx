@@ -17,9 +17,15 @@ function isNew(product: Product): boolean {
 export default function ProductCard({ product }: ProductCardProps) {
   const size = product.specs?.Size;
   const productIsNew = isNew(product);
+  const retailPrice =
+    product.retailPrice ??
+    (product.priceSources
+      ?.map((s) => s.price)
+      .filter((p): p is number => p !== null)
+      .sort((a, b) => b - a)[0] ?? null);
   const discount =
-    product.retailPrice && product.price < product.retailPrice
-      ? Math.round((1 - product.price / product.retailPrice) * 100)
+    retailPrice && product.price < retailPrice
+      ? Math.round((1 - product.price / retailPrice) * 100)
       : 0;
 
   return (
@@ -85,9 +91,9 @@ export default function ProductCard({ product }: ProductCardProps) {
             <p className="text-gold font-semibold text-lg">
               {formatPrice(product.price, product.currency)}
             </p>
-            {discount > 0 && product.retailPrice && (
+            {discount > 0 && retailPrice && (
               <span className="text-text-secondary/50 text-sm line-through">
-                {formatPrice(product.retailPrice, product.currency)}
+                {formatPrice(retailPrice, product.currency)}
               </span>
             )}
           </div>

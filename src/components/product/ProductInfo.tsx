@@ -6,9 +6,15 @@ interface ProductInfoProps {
 }
 
 export default function ProductInfo({ product }: ProductInfoProps) {
+  const retailPrice =
+    product.retailPrice ??
+    (product.priceSources
+      ?.map((s) => s.price)
+      .filter((p): p is number => p !== null)
+      .sort((a, b) => b - a)[0] ?? null);
   const discount =
-    product.retailPrice && product.price < product.retailPrice
-      ? Math.round((1 - product.price / product.retailPrice) * 100)
+    retailPrice && product.price < retailPrice
+      ? Math.round((1 - product.price / retailPrice) * 100)
       : 0;
 
   return (
@@ -32,9 +38,9 @@ export default function ProductInfo({ product }: ProductInfoProps) {
             </span>
           )}
         </div>
-        {discount > 0 && product.retailPrice && (
+        {discount > 0 && retailPrice && (
           <p className="text-text-secondary text-sm mt-1">
-            reg. <span className="line-through">{formatPrice(product.retailPrice, product.currency)}</span>
+            reg. <span className="line-through">{formatPrice(retailPrice, product.currency)}</span>
           </p>
         )}
       </div>

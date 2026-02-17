@@ -265,36 +265,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
-    "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
-    ],
-    "specs": {
-      "Type": "Charm Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
     "slug": "emerald-peacock-necklace-set",
     "name": "Emerald Peacock Necklace & Earring Set",
     "price": 189,
@@ -328,6 +298,247 @@ export const products: Product[] = [
       "wedding"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
+    "images": [
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+    ],
+    "specs": {
+      "Type": "Charm Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "q4-sports-em55-i-black-dark-blue",
+    "name": "Q4 Sports EM55-I Black Dark Blue",
+    "price": 40,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Q4 Sports EM55-I basketball shoe in Black/Dark Blue colorway. Features a black mesh upper with metallic gold accents, gold trim along the midsole, and a blue translucent patterned outsole. Lightweight performance basketball shoe. Brand new with OG box. Size 5.5 US / UK 5.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-07.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-47.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-43-18.png"
+    ],
+    "specs": {
+      "Size": "5.5",
+      "Brand": "Q4 Sports",
+      "Color": "Black/Dark Blue",
+      "Model": "EM55-I",
+      "Condition": "Brand New",
+      "Style Code": "Q4-EM01"
+    },
+    "featured": false,
+    "tags": [
+      "q4",
+      "q4-sports",
+      "em55",
+      "basketball",
+      "black",
+      "blue",
+      "gold"
+    ],
+    "createdAt": "2026-02-17T02:54:37.614035+00:00"
+  },
+  {
+    "slug": "nike-air-jordan-1-retro-high-og-black-toe-gs",
+    "name": "Nike Air Jordan 1 Retro High OG Black Toe GS",
+    "price": 85,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG 'Black Toe' 2025 release in Grade School sizing. Classic white/black/varsity red colorway with a black toe box, white mid-panel, and red heel collar. Brand new deadstock with special retro Jordan box featuring Michael Jordan photo. Size 6.5Y (Women's 8).",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-34-50.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-36-14.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-37-38.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-39-15.png"
+    ],
+    "specs": {
+      "Size": "6.5Y",
+      "Brand": "Nike",
+      "Color": "White/Black/Varsity Red",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "black-toe",
+      "retro",
+      "high-og",
+      "gs",
+      "grade-school"
+    ],
+    "createdAt": "2026-02-17T02:54:35.15609+00:00"
+  },
+  {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve-sz10-5",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Features smooth leather overlays in a muted mauve/plum-brown tone with sail/cream leather base panels, white midsole, and dark outsole. Brand new deadstock with original Jordan box. Size 10.5.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-01.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-37.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-31-21.png"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New",
+      "Style Code": "DZ2523-200"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
+    ],
+    "createdAt": "2026-02-17T02:54:31.954562+00:00"
+  },
+  {
+    "slug": "nike-voxn-grey-infrared-black",
+    "name": "Nike Voxn Grey Infrared Black",
+    "price": 80,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Voxn in Wolf Grey/Infrared/Black colorway. Features a translucent mesh upper with heathered grey pattern, infrared red accents, black neoprene collar, and white midsole. Lightweight and modern silhouette. Brand new.",
+    "shortDescription": "Brand new",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-54-02.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-54-32.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-55-10.png"
+    ],
+    "specs": {
+      "Brand": "Nike",
+      "Color": "Wolf Grey/Infrared/Black",
+      "Model": "Voxn",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "voxn",
+      "grey",
+      "infrared",
+      "black",
+      "running"
+    ],
+    "createdAt": "2026-02-16T21:01:25.645884+00:00"
+  },
+  {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve-2",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve (2)",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Sky J Mauve/Sail colorway. White leather upper with mauve overlays and Swoosh. Brand new, deadstock with original mauve Nike box and tissue paper. Size 11.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-50-46.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-51-22.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-51-51.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-52-24.png"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Sky J Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "StockX",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Nike",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
+    ],
+    "createdAt": "2026-02-16T21:01:23.071208+00:00"
+  },
+  {
+    "slug": "nike-little-posite-one-vamposite-black-red",
+    "name": "Nike Little Posite One Vamposite Black Red",
+    "price": 60,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Little Posite One \"Vamposite\" in Black/Gym Red colorway. Features the iconic Foamposite shell upper in black with red interior lining, dripping fangs graphic on the heel, and red outsole with gold midsole accent. Pre-owned in good condition with original box (no lid). Youth size 5Y.",
+    "shortDescription": "Pre-owned with box, no lid",
+    "images": [
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-50-57.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-51-24.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-51-58.png"
+    ],
+    "specs": {
+      "Size": "5Y",
+      "Brand": "Nike",
+      "Model": "Little Posite One",
+      "Colorway": "Vamposite / Black Gym Red",
+      "Condition": "Pre-Owned"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "foamposite",
+      "little-posite",
+      "vamposite",
+      "black",
+      "red",
+      "youth"
+    ],
+    "createdAt": "2026-02-16T19:55:15.967877+00:00"
   },
   {
     "slug": "nike-air-force-1-low-07-lv8-light-smoke-grey",
@@ -423,34 +634,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_3.png"
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_2.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_3.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_4.png"
     ],
     "specs": {
-      "Size": "13",
+      "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
+      "Color": "Triple White",
+      "Style": "Running",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -518,32 +727,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_4.png"
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_1.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_2.png",
+      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_3.png"
     ],
     "specs": {
-      "Size": "10.5",
+      "Size": "13",
       "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
