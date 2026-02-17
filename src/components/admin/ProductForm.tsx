@@ -424,50 +424,56 @@ export default function ProductForm({ product }: ProductFormProps) {
         <p className="text-xs text-gray-400 -mt-4">{priceStatus}</p>
       )}
       {/* Price Sources — editable */}
-      <div className="bg-gray-950 border border-gray-800 rounded-xl p-4 -mt-2">
-        <h4 className="text-xs text-gray-400 uppercase tracking-wider mb-3">Price Sources</h4>
-        <div className="space-y-2">
+      <div>
+        <label className={labelClass}>Price Sources</label>
+        <div className="space-y-3">
           {priceSources.map((s, i) => (
-            <div key={i} className="flex gap-2 items-center">
-              <input
-                type="text"
-                value={s.name}
-                onChange={(e) => updatePriceSource(i, "name", e.target.value)}
-                placeholder="Source (e.g. StockX)"
-                className={`${inputClass} w-28 flex-shrink-0`}
-              />
-              <input
-                type="number"
-                value={s.price ?? ""}
-                onChange={(e) => updatePriceSource(i, "price", e.target.value)}
-                placeholder="Price"
-                step="0.01"
-                className={`${inputClass} w-24 flex-shrink-0`}
-              />
-              <input
-                type="text"
-                value={s.url}
-                onChange={(e) => updatePriceSource(i, "url", e.target.value)}
-                placeholder="https://..."
-                className={`${inputClass} flex-1`}
-              />
-              <a
-                href={s.url || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-gold text-xs whitespace-nowrap hover:underline ${!s.url ? "opacity-30 pointer-events-none" : ""}`}
-              >
-                Open
-              </a>
-              <button
-                type="button"
-                onClick={() => removePriceSource(i)}
-                className="text-red-400 hover:text-red-300 px-1 cursor-pointer flex-shrink-0"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+            <div key={i} className="bg-gray-950 border border-gray-800 rounded-lg p-3 space-y-2">
+              <div className="flex gap-2 items-center">
+                <input
+                  type="text"
+                  value={s.name}
+                  onChange={(e) => updatePriceSource(i, "name", e.target.value)}
+                  placeholder="Source (e.g. StockX)"
+                  className={`${inputClass} flex-1`}
+                />
+                <input
+                  type="number"
+                  value={s.price ?? ""}
+                  onChange={(e) => updatePriceSource(i, "price", e.target.value)}
+                  placeholder="Price"
+                  step="0.01"
+                  className={`${inputClass} w-28`}
+                />
+                <button
+                  type="button"
+                  onClick={() => removePriceSource(i)}
+                  className="text-red-400 hover:text-red-300 px-1 cursor-pointer"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div className="flex gap-2 items-center">
+                <input
+                  type="text"
+                  value={s.url}
+                  onChange={(e) => updatePriceSource(i, "url", e.target.value)}
+                  placeholder="https://stockx.com/..."
+                  className={`${inputClass} flex-1`}
+                />
+                {s.url && (
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold text-xs whitespace-nowrap hover:underline px-2"
+                  >
+                    Open &rarr;
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>
