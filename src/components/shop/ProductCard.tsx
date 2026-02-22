@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
-import { formatPrice } from "@/lib/utils";
+import { formatPrice, thumbnailUrl } from "@/lib/utils";
 
 interface ProductCardProps {
   product: Product;
@@ -37,9 +37,10 @@ export default function ProductCard({ product }: ProductCardProps) {
       <div className="relative aspect-square overflow-hidden bg-dark-secondary">
         {product.images[0] && !product.images[0].includes("placeholder") ? (
           <Image
-            src={product.images[0]}
+            src={thumbnailUrl(product.images[0])}
             alt={product.name}
             fill
+            loading="lazy"
             className="object-cover group-hover:scale-105 transition-transform duration-700"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />

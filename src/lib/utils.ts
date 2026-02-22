@@ -11,3 +11,15 @@ export function getWhatsAppUrl(phoneNumber: string, productName?: string): strin
 
 export const WHATSAPP_NUMBER = "18609609600";
 export const BRAND_EMAIL = "hello@dealbazaar.ai";
+
+/**
+ * Convert a Supabase storage URL to a resized thumbnail URL.
+ * Uses Supabase Image Transforms to serve smaller images.
+ */
+export function thumbnailUrl(url: string, width = 400): string {
+  if (!url.includes("supabase.co/storage/v1/object/public/")) return url;
+  return url.replace(
+    "/storage/v1/object/public/",
+    "/storage/v1/render/image/public/"
+  ) + `?width=${width}&resize=contain&quality=75`;
+}
