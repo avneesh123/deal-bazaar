@@ -9,15 +9,33 @@ const PAGE_SIZE = 12;
 
 interface ProductGridProps {
   products: Product[];
+  hasFilters?: boolean;
+  onClearFilters?: () => void;
 }
 
-export default function ProductGrid({ products }: ProductGridProps) {
+export default function ProductGrid({
+  products,
+  hasFilters,
+  onClearFilters,
+}: ProductGridProps) {
   const [visible, setVisible] = useState(PAGE_SIZE);
 
   if (products.length === 0) {
     return (
       <div className="text-center py-20">
-        <p className="text-text-secondary text-lg">No products found.</p>
+        <p className="text-text-secondary text-lg">
+          {hasFilters
+            ? "No products match your filters."
+            : "No products found."}
+        </p>
+        {hasFilters && onClearFilters && (
+          <button
+            onClick={onClearFilters}
+            className="mt-4 px-6 py-2.5 border border-gold/30 text-gold hover:bg-gold/10 rounded-sm text-sm uppercase tracking-wider transition-colors duration-300"
+          >
+            Clear all filters
+          </button>
+        )}
       </div>
     );
   }
