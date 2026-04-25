@@ -1,17 +1,36 @@
 interface SectionHeadingProps {
   title: string;
   subtitle?: string;
+  number?: string;
+  eyebrow?: string;
 }
 
-export default function SectionHeading({ title, subtitle }: SectionHeadingProps) {
+export default function SectionHeading({
+  title,
+  subtitle,
+  number = "01",
+  eyebrow,
+}: SectionHeadingProps) {
   return (
-    <div className="text-center mb-12">
-      <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-text-primary mb-4">
+    <div className="mb-12 md:mb-16">
+      <div className="flex items-baseline gap-4 mb-5">
+        <span className="numeral text-[10px] tracking-[0.3em] text-ink-soft">
+          § {number}
+        </span>
+        {eyebrow && (
+          <span className="text-[10px] uppercase tracking-[0.32em] text-ink-soft">
+            {eyebrow}
+          </span>
+        )}
+        <span className="flex-1 h-px bg-ink/15" />
+      </div>
+      <h2 className="font-serif display-soft text-[clamp(2.25rem,5vw,4.5rem)] leading-[0.95] text-ink">
         {title}
       </h2>
-      <div className="w-16 h-0.5 bg-gold mx-auto mb-4" />
       {subtitle && (
-        <p className="text-text-secondary text-lg max-w-2xl mx-auto">{subtitle}</p>
+        <p className="text-ink-soft text-[15px] md:text-base max-w-xl mt-4 leading-relaxed">
+          {subtitle}
+        </p>
       )}
     </div>
   );

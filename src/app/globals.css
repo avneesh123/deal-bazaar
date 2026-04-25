@@ -1,9 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #d4af37;
-  --color-gold-light: #f0d060;
-  --color-gold-dark: #b8960c;
+  /* Paper / cream surfaces — warm, never sterile */
+  --color-paper: #f4ede1;
+  --color-paper-deep: #ebe2d2;
+  --color-paper-edge: #dfd2bb;
+
+  /* Ink */
+  --color-ink: #0d0d0d;
+  --color-ink-soft: #5a544a;
+  --color-ink-mute: #8c8474;
+
+  /* Accents — Tanishq oxblood + warm brass */
+  --color-oxblood: #8b1a1a;
+  --color-oxblood-deep: #5e0f0f;
+  --color-brass: #a87c3a;
+  --color-brass-light: #c69a55;
+
+  /* Legacy gold tokens — retained so admin pages keep working */
+  --color-gold: #a87c3a;
+  --color-gold-light: #c69a55;
+  --color-gold-dark: #7d5a26;
   --color-silver: #c0c0c0;
   --color-dark: #0a0a0a;
   --color-dark-secondary: #111111;
@@ -13,16 +30,20 @@
   --color-text-secondary: #a0a0a0;
   --color-whatsapp: #25d366;
 
-  --font-serif: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  /* Typography — Fraunces (display, soft, optical), Archivo (sans), JetBrains (mono) */
+  --font-serif: var(--font-fraunces), "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: var(--font-archivo), "Archivo", system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
 
-  --animate-fade-up: fade-up 0.6s ease-out forwards;
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-slow: marquee 80s linear infinite;
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -30,15 +51,119 @@
   }
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+html {
+  background-color: var(--color-paper);
+}
+
 body {
-  background-color: var(--color-dark);
-  color: var(--color-text-primary);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-sans);
+  font-feature-settings: "ss01", "ss02", "kern", "liga";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.005em;
 }
 
 ::selection {
-  background-color: var(--color-gold);
-  color: var(--color-dark);
+  background-color: var(--color-oxblood);
+  color: var(--color-paper);
+}
+
+/* Subtle paper grain — applied as a fixed pseudo-overlay on the public site */
+.paper-grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.04 0 0 0 0 0.03 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.07;
+  mix-blend-mode: multiply;
+}
+
+/* Hairline rule used in editorial dividers */
+.editorial-rule {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-ink) 6%,
+    var(--color-ink) 94%,
+    transparent 100%
+  );
+  height: 1px;
+}
+
+/* Marquee: keep a "gap" between repeating tracks */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: var(--animate-marquee);
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Display headlines — opt into Fraunces' soft mode + optical sizing */
+.display-soft {
+  font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 500;
+}
+
+.display-italic {
+  font-style: italic;
+  font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+}
+
+/* Editorial numbering — large mono numerals */
+.numeral {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "ss01" on;
+}
+
+/* Smooth, intentional underline that draws on hover */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.link-underline:hover {
+  background-size: 100% 1px;
+}
+
+/* Scroll-triggered word stagger */
+.word-stagger > span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(60%);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.word-stagger.in-view > span {
+  opacity: 1;
+  transform: translateY(0);
 }

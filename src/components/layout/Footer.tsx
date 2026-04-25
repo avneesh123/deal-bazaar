@@ -3,86 +3,168 @@ import { WHATSAPP_NUMBER, BRAND_EMAIL, getWhatsAppUrl } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-secondary border-t border-dark-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Brand */}
-          <div>
-            <h3 className="font-serif text-2xl text-gold mb-4">Deal Bazaar</h3>
-            <p className="text-text-secondary text-sm leading-relaxed">
-              Premium jewelry and sneakers curated for those who demand the
-              extraordinary. Authenticity guaranteed, style delivered.
+    <footer className="relative z-10 bg-ink text-paper mt-12">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 pt-20 md:pt-28 pb-10">
+        {/* Massive editorial wordmark */}
+        <div className="grid grid-cols-12 gap-4 items-end mb-16 md:mb-24">
+          <div className="col-span-12 md:col-span-9">
+            <h2 className="font-serif text-paper leading-[0.9]">
+              <span className="display-soft block text-[14vw] md:text-[10vw] lg:text-[9rem]">
+                Deal
+              </span>
+              <em className="display-italic block text-[14vw] md:text-[10vw] lg:text-[9rem] text-brass-light">
+                Bazaar.
+              </em>
+            </h2>
+          </div>
+          <div className="col-span-12 md:col-span-3 md:pb-4">
+            <p className="text-paper/55 text-[15px] leading-relaxed max-w-xs">
+              An editorial marketplace for authenticated sneakers and fine
+              jewelry. Sourced by hand, shipped with care, never faked.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-text-primary font-semibold uppercase tracking-widest text-sm mb-4">
-              Quick Links
-            </h4>
-            <ul className="space-y-3">
-              {[
-                { href: "/shop?category=jewelry", label: "Jewelry" },
-                { href: "/shop?category=sneakers", label: "Sneakers" },
-                { href: "/about", label: "About Us" },
-                { href: "/contact", label: "Contact" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-text-secondary hover:text-gold transition-colors text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-text-primary font-semibold uppercase tracking-widest text-sm mb-4">
-              Get In Touch
-            </h4>
-            <ul className="space-y-3 text-sm text-text-secondary">
-              <li>
-                <a href={`mailto:${BRAND_EMAIL}`} className="hover:text-gold transition-colors">
-                  {BRAND_EMAIL}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={getWhatsAppUrl(WHATSAPP_NUMBER)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gold transition-colors"
-                >
-                  WhatsApp Us
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
 
-        <div className="border-t border-dark-border mt-12 pt-8 text-center">
-          <p className="text-text-secondary text-xs">
-            &copy; {new Date().getFullYear()} Deal Bazaar. All rights reserved.
+        {/* Link columns */}
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-6 pb-16 md:pb-20 border-t border-paper/15 pt-10">
+          <FooterColumn
+            n="01"
+            title="The shop"
+            links={[
+              { href: "/shop?category=sneakers", label: "Sneakers" },
+              { href: "/shop?category=jewelry", label: "Jewelry" },
+              { href: "/shop", label: "Full archive" },
+            ]}
+          />
+          <FooterColumn
+            n="02"
+            title="The house"
+            links={[
+              { href: "/about", label: "Journal" },
+              { href: "/about", label: "Authentication" },
+              { href: "/contact", label: "Source a piece" },
+            ]}
+          />
+          <FooterColumn
+            n="03"
+            title="Get in touch"
+            links={[
+              { href: `mailto:${BRAND_EMAIL}`, label: BRAND_EMAIL },
+              {
+                href: getWhatsAppUrl(WHATSAPP_NUMBER),
+                label: "WhatsApp us",
+                external: true,
+              },
+              { href: "/contact", label: "Concierge" },
+            ]}
+          />
+
+          {/* Newsletter / signup */}
+          <div className="col-span-2 md:col-span-6 md:pl-10 md:border-l border-paper/15">
+            <div className="flex items-baseline gap-3 mb-4">
+              <span className="numeral text-[10px] tracking-[0.3em] text-paper/45">
+                N° 04
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-paper/45">
+                Subscribe
+              </span>
+            </div>
+            <p className="font-serif display-soft text-2xl md:text-3xl text-paper leading-tight mb-6">
+              First look at every drop —{" "}
+              <em className="display-italic text-brass-light">
+                before it goes public.
+              </em>
+            </p>
+            <form className="flex items-center gap-0 max-w-md border-b border-paper/30 focus-within:border-brass-light transition-colors">
+              <input
+                type="email"
+                placeholder="you@somewhere.com"
+                className="flex-1 bg-transparent py-3 text-[15px] placeholder:text-paper/35 text-paper focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="text-[10px] uppercase tracking-[0.3em] py-3 px-3 text-paper hover:text-brass-light transition-colors"
+              >
+                Submit →
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Bottom strip */}
+        <div className="border-t border-paper/15 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-[0.28em] text-paper/45">
+          <p className="numeral">
+            © {new Date().getFullYear()} Deal Bazaar — All rights reserved
+          </p>
+          <p className="flex items-center gap-3">
+            <span>New York · Mumbai · Worldwide</span>
+            <span className="text-brass-light">✦</span>
+            <span>Issue 04</span>
           </p>
         </div>
       </div>
 
-      {/* Floating WhatsApp Button */}
+      {/* Floating WhatsApp — refined to match palette */}
       <a
         href={getWhatsAppUrl(WHATSAPP_NUMBER)}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        className="fixed bottom-6 right-6 z-50 group flex items-center gap-3 bg-paper text-ink pl-4 pr-5 py-3 shadow-[0_8px_24px_rgba(13,13,13,0.18)] hover:bg-ink hover:text-paper transition-colors duration-300"
         aria-label="Chat on WhatsApp"
       >
-        <svg viewBox="0 0 24 24" className="w-7 h-7 fill-white">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-        </svg>
+        <span className="w-2 h-2 rounded-full bg-[#25d366] animate-pulse" />
+        <span className="text-[10px] uppercase tracking-[0.28em]">
+          Chat — WhatsApp
+        </span>
       </a>
     </footer>
+  );
+}
+
+function FooterColumn({
+  n,
+  title,
+  links,
+}: {
+  n: string;
+  title: string;
+  links: { href: string; label: string; external?: boolean }[];
+}) {
+  return (
+    <div className="col-span-1 md:col-span-2">
+      <div className="flex items-baseline gap-3 mb-5">
+        <span className="numeral text-[10px] tracking-[0.3em] text-paper/45">
+          N° {n}
+        </span>
+        <span className="text-[10px] uppercase tracking-[0.3em] text-paper/45">
+          {title}
+        </span>
+      </div>
+      <ul className="space-y-3">
+        {links.map((link) =>
+          link.external ? (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-paper text-[15px] hover:text-brass-light link-underline pb-0.5 inline-block"
+              >
+                {link.label}
+              </a>
+            </li>
+          ) : (
+            <li key={link.label}>
+              <Link
+                href={link.href}
+                className="text-paper text-[15px] hover:text-brass-light link-underline pb-0.5 inline-block"
+              >
+                {link.label}
+              </Link>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
   );
 }

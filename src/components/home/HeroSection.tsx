@@ -1,82 +1,144 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-dark-secondary">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-dark/60 via-dark/40 to-dark z-10" />
-
-      {/* Decorative gold line pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-0 right-0 h-px bg-gold" />
-        <div className="absolute top-2/4 left-0 right-0 h-px bg-gold" />
-        <div className="absolute top-3/4 left-0 right-0 h-px bg-gold" />
+    <section className="relative pt-8 md:pt-12 pb-20 md:pb-28 overflow-hidden">
+      {/* Decorative corner ornaments — set the editorial tone */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-6 right-6 md:top-10 md:right-12 text-[10px] uppercase tracking-[0.32em] text-ink-mute z-20 text-right"
+      >
+        <div className="numeral mb-1">N° 04</div>
+        <div>Spring / Summer 2026</div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-gold uppercase tracking-[0.3em] text-sm md:text-base mb-6"
-        >
-          Curated Collection
-        </motion.p>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute bottom-12 left-6 md:left-12 text-[10px] uppercase tracking-[0.32em] text-ink-mute z-20 hidden md:block"
+        style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+      >
+        Deal Bazaar — Authenticated · Curated · Delivered
+      </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-text-primary mb-6 leading-tight"
-        >
-          Premium Jewelry
-          <span className="block text-gold">&amp; Sneakers</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-10"
-        >
-          Where luxury meets streetwear. Discover authentic pieces crafted for
-          those who dare to stand out.
-        </motion.p>
-
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+        {/* Top meta strip */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="grid grid-cols-2 md:grid-cols-12 items-end gap-4 mb-10 md:mb-16"
         >
-          <Button href="/shop" variant="primary">
-            Shop Now
-          </Button>
-          <Button href="/about" variant="secondary">
-            Our Story
-          </Button>
+          <div className="col-span-1 md:col-span-3 text-[10px] uppercase tracking-[0.32em] text-ink-soft">
+            <div className="numeral text-ink mb-1">— Vol. 04</div>
+            The Authentication Issue
+          </div>
+          <div className="col-span-1 md:col-span-6 text-[10px] uppercase tracking-[0.32em] text-ink-soft md:text-center">
+            New York · Mumbai · Worldwide
+          </div>
+          <div className="col-span-2 md:col-span-3 text-[10px] uppercase tracking-[0.32em] text-ink-soft md:text-right">
+            <span className="numeral text-ink">{new Date().getFullYear()}</span>{" "}
+            — Issue rotates monthly
+          </div>
+        </motion.div>
+
+        {/* Hero rule */}
+        <div className="editorial-rule mb-10 md:mb-16" />
+
+        {/* Editorial headline — asymmetric, mixed serif-italic */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-end">
+          <div className="md:col-span-9">
+            <motion.h1
+              initial={{ opacity: 0, y: 36 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.2, 0.8, 0.2, 1] }}
+              className="font-serif text-ink leading-[0.92]"
+            >
+              <span className="block display-soft text-[16vw] md:text-[10.5vw] lg:text-[9vw]">
+                Where the
+              </span>
+              <span className="block">
+                <em className="display-italic text-oxblood text-[18vw] md:text-[12vw] lg:text-[10.5vw] leading-[0.85]">
+                  street
+                </em>
+                <span className="display-soft text-[16vw] md:text-[10.5vw] lg:text-[9vw] ml-3 md:ml-6">
+                  meets the
+                </span>
+              </span>
+              <span className="block">
+                <em className="display-italic text-brass text-[18vw] md:text-[12vw] lg:text-[10.5vw] leading-[0.85]">
+                  vault
+                </em>
+                <span className="display-soft text-[16vw] md:text-[10.5vw] lg:text-[9vw]">
+                  .
+                </span>
+              </span>
+            </motion.h1>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.5, ease: [0.2, 0.8, 0.2, 1] }}
+            className="md:col-span-3 md:pb-4"
+          >
+            <p className="text-ink-soft text-[15px] leading-[1.55] max-w-xs">
+              An editorial marketplace for{" "}
+              <span className="text-ink">authenticated sneakers</span> and{" "}
+              <span className="text-ink">fine jewelry</span> — sourced by hand,
+              shipped with care, never faked.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* CTA row + featured spec strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-12 gap-6 items-end"
+        >
+          <div className="md:col-span-7 flex flex-wrap items-center gap-3">
+            <Link
+              href="/shop"
+              className="group inline-flex items-center gap-3 bg-ink text-paper px-7 py-4 text-[11px] uppercase tracking-[0.28em] hover:bg-oxblood transition-colors duration-300"
+            >
+              Enter the archive
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 px-3 py-4 text-[11px] uppercase tracking-[0.28em] text-ink link-underline"
+            >
+              Read the journal
+            </Link>
+          </div>
+
+          {/* Three-up spec strip — Nike does this for headline drops */}
+          <div className="md:col-span-5 grid grid-cols-3 gap-4 border-t border-ink/15 pt-4">
+            <Stat label="Authenticated" value="100%" />
+            <Stat label="In Rotation" value="120+" />
+            <Stat label="Brands Carried" value="40+" />
+          </div>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
-      >
-        <div className="w-5 h-8 border border-text-secondary/30 rounded-full flex items-start justify-center p-1.5">
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1 h-1.5 bg-gold rounded-full"
-          />
-        </div>
-      </motion.div>
     </section>
+  );
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <div>
+      <div className="numeral text-2xl md:text-3xl text-ink leading-none">
+        {value}
+      </div>
+      <div className="mt-1.5 text-[9px] uppercase tracking-[0.28em] text-ink-mute">
+        {label}
+      </div>
+    </div>
   );
 }

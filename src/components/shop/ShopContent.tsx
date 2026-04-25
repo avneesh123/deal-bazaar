@@ -1,9 +1,7 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 import { products as staticProducts } from "@/data/products";
-import { fetchAllProducts } from "@/lib/products";
-import type { Product } from "@/data/products";
 import { useShopFilters } from "@/hooks/useShopFilters";
 import CategoryFilter from "./CategoryFilter";
 import ProductGrid from "./ProductGrid";
@@ -11,15 +9,11 @@ import ShopFilterBar from "./ShopFilterBar";
 import FilterPanel from "./FilterPanel";
 
 function ShopContentInner() {
-  // Stale-while-revalidate: show static data instantly, refresh in background
-  const [products, setProducts] = useState<Product[]>(staticProducts);
+  // Public site reads exclusively from build-time products.ts so it stays up
+  // even when Supabase is paused. Admin still writes to Supabase; a daily/
+  // on-publish rebuild refreshes this data.
+  const products = staticProducts;
   const [panelOpen, setPanelOpen] = useState(false);
-
-  useEffect(() => {
-    fetchAllProducts().then((fresh) => {
-      setProducts(fresh);
-    });
-  }, []);
 
   const {
     filters,

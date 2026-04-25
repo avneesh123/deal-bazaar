@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type ButtonVariant = "primary" | "secondary" | "whatsapp";
+type ButtonVariant = "primary" | "secondary" | "whatsapp" | "ghost";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -14,11 +14,13 @@ interface ButtonProps {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-gold text-dark font-semibold hover:bg-gold-light",
+    "bg-ink text-paper hover:bg-oxblood",
   secondary:
-    "border border-gold text-gold font-semibold hover:bg-gold hover:text-dark",
+    "border border-ink text-ink hover:bg-ink hover:text-paper",
+  ghost:
+    "text-ink hover:text-oxblood underline-offset-4 hover:underline",
   whatsapp:
-    "bg-whatsapp text-white font-semibold hover:brightness-110",
+    "bg-whatsapp text-white hover:brightness-110",
 };
 
 export default function Button({
@@ -31,13 +33,18 @@ export default function Button({
   external,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center px-6 py-3 rounded-sm text-sm tracking-wide uppercase transition-all duration-300 cursor-pointer";
+    "inline-flex items-center justify-center gap-2 px-6 py-4 text-[11px] uppercase tracking-[0.28em] transition-all duration-300 cursor-pointer";
   const classes = `${base} ${variants[variant]} ${className}`;
 
   if (href) {
     if (external) {
       return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes}
+        >
           {children}
         </a>
       );
