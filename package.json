@@ -9,12 +9,18 @@
     "generate": "tsx scripts/generate-products.ts",
     "migrate": "tsx scripts/migrate-products.ts",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bot": "tsx scripts/telegram-bot.ts",
+    "bot:start": "pm2 start ecosystem.config.cjs",
+    "bot:stop": "pm2 stop deal-bazaar-bot",
+    "ebay:sync": "tsx scripts/ebay-crosspost.ts"
   },
   "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.63",
     "@supabase/supabase-js": "^2.95.3",
     "@types/sharp": "^0.31.1",
     "framer-motion": "^11.15.0",
+    "grammy": "^1.40.1",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

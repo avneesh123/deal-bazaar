@@ -18,6 +18,7 @@ create table if not exists products (
   quantity integer not null default 1,
   featured boolean not null default false,
   tags text[] not null default '{}',
+  ebay_listing_id text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );

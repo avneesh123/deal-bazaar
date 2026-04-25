@@ -27,9 +27,9 @@ export const products: Product[] = [
     "description": "The Adidas Cloudfoam Pure SPW in white with coral/pink accents. A lightweight, comfortable sneaker featuring Cloudfoam Plus cushioning and a breathable knit upper. The coral laces and heel tab add a pop of color. Brand new with tags and OG box.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-43-25.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-44-58.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-46-08.png"
+      "/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-43-25.jpg",
+      "/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-44-58.jpg",
+      "/images/products/adidas-cloudfoam-pure-spw-white-coral/AI-Image-Editor-2026-02-14_17-46-08.jpg"
     ],
     "specs": {
       "Size": "7.5",
@@ -58,8 +58,8 @@ export const products: Product[] = [
     "description": "The Adidas Campus 00s in dark grey suede with white leather stripes and a gum sole. A modern take on the classic Campus silhouette with the trefoil logo on the tongue. Kids sizing. Brand new with tags and OG box.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-campus-00s-dark-grey-kids/AI-Image-Editor-2026-02-14_17-42-26.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-campus-00s-dark-grey-kids/AI-Image-Editor-2026-02-14_17-51-49.png"
+      "/images/products/adidas-campus-00s-dark-grey-kids/AI-Image-Editor-2026-02-14_17-42-26.jpg",
+      "/images/products/adidas-campus-00s-dark-grey-kids/AI-Image-Editor-2026-02-14_17-51-49.jpg"
     ],
     "specs": {
       "Size": "12K",
@@ -88,8 +88,8 @@ export const products: Product[] = [
     "description": "The Adidas VL Court 2.0 in a fresh mint green and pink colorway. A clean, retro-inspired court shoe with the iconic three stripes in soft pink against a mint upper. Brand new with tags and OG box.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-vl-court-2-mint-pink/AI-Image-Editor-2026-02-14_17-40-13.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/adidas-vl-court-2-mint-pink/AI-Image-Editor-2026-02-14_17-46-58.png"
+      "/images/products/adidas-vl-court-2-mint-pink/AI-Image-Editor-2026-02-14_17-40-13.jpg",
+      "/images/products/adidas-vl-court-2-mint-pink/AI-Image-Editor-2026-02-14_17-46-58.jpg"
     ],
     "specs": {
       "Size": "6.5",
@@ -107,6 +107,67 @@ export const products: Product[] = [
       "womens"
     ],
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
+  },
+  {
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "images": [
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Mesh Bracelet",
+      "Brand": "DealBazaar",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "makeup-charm-bangle",
+    "name": "Makeup Charm Bangle",
+    "price": 65,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
+    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "images": [
+      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
+      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+    ],
+    "specs": {
+      "Type": "Charm Bangle",
+      "Brand": "DealBazaar",
+      "Style": "Makeup / Beauty",
+      "Material": "Silver Alloy",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "charm",
+      "makeup",
+      "silver",
+      "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
     "slug": "purple-crystal-charm-bracelet",
@@ -174,95 +235,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "makeup-charm-bangle",
-    "name": "Makeup Charm Bangle",
-    "price": 65,
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
-    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
     "images": [
-      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
-      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bangle",
+      "Type": "Chain Bracelet",
       "Brand": "DealBazaar",
-      "Style": "Makeup / Beauty",
-      "Material": "Silver Alloy",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
-      "charm",
-      "makeup",
-      "silver",
-      "gift"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
-    "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
-    ],
-    "specs": {
-      "Type": "Ring",
-      "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "ring",
-      "moissanite",
-      "halo",
-      "silver",
-      "engagement",
-      "gift"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
-    "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Mesh Bracelet",
-      "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "dragon",
+      "cz",
+      "cubic zirconia",
       "silver",
-      "sterling",
-      "mesh",
-      "luxury"
+      "oval"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -300,32 +298,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
     "currency": "USD",
     "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
     "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
     ],
     "specs": {
-      "Type": "Chain Bracelet",
+      "Type": "Ring",
       "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
+      "ring",
+      "moissanite",
+      "halo",
       "silver",
-      "oval"
+      "engagement",
+      "gift"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -338,8 +338,8 @@ export const products: Product[] = [
     "description": "Nike Dunk Low in Light Carbon colorway. Features a clean white leather base with light carbon grey overlays, dark grey Swoosh, padded collar, and classic Dunk Low silhouette. Pre-owned in good condition with OG box. Size 8.5.",
     "shortDescription": "Pre-owned with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-low-light-carbon_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-low-light-carbon_2.png"
+      "/images/products/nike-dunk-low-light-carbon/nike-dunk-low-light-carbon_1.jpg",
+      "/images/products/nike-dunk-low-light-carbon/nike-dunk-low-light-carbon_2.jpg"
     ],
     "specs": {
       "Size": "8.5",
@@ -368,9 +368,9 @@ export const products: Product[] = [
     "description": "Air Jordan 1 Mid in Mauve colorway. Features a premium leather upper in mauve/dusty rose with sail white panels, classic Wings logo, Nike Air branding on the tongue, and a white midsole with dark outsole. Brand new with OG box. Size 10.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-1-mid-mauve_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-1-mid-mauve_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-1-mid-mauve_3.png"
+      "/images/products/air-jordan-1-mid-mauve/air-jordan-1-mid-mauve_1.jpg",
+      "/images/products/air-jordan-1-mid-mauve/air-jordan-1-mid-mauve_2.jpg",
+      "/images/products/air-jordan-1-mid-mauve/air-jordan-1-mid-mauve_3.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -400,9 +400,9 @@ export const products: Product[] = [
     "description": "And1 Attack Mid basketball shoe in Black/Silver colorway. Features a striking exoskeleton cage structure on the forefoot, synthetic leather upper, padded collar, and durable rubber outsole. Pre-owned in good condition. Size 10.",
     "shortDescription": "Pre-owned — basketball shoe",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/and1-attack-mid-black-silver_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/and1-attack-mid-black-silver_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/and1-attack-mid-black-silver_3.png"
+      "/images/products/and1-attack-mid-black-silver/and1-attack-mid-black-silver_1.jpg",
+      "/images/products/and1-attack-mid-black-silver/and1-attack-mid-black-silver_2.jpg",
+      "/images/products/and1-attack-mid-black-silver/and1-attack-mid-black-silver_3.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -430,9 +430,9 @@ export const products: Product[] = [
     "description": "Air Jordan 4 Retro in Fire Red colorway (Grade School). Features the iconic white leather upper with black and fire red accents, visible Air unit in the heel, mesh panels on the sides, and classic Jordan 4 wing eyelets. Pre-owned in good condition. GS Size 3Y.",
     "shortDescription": "Pre-owned — Grade School size",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-4-fire-red-gs_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-4-fire-red-gs_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/air-jordan-4-fire-red-gs_3.png"
+      "/images/products/air-jordan-4-fire-red-gs/air-jordan-4-fire-red-gs_1.jpg",
+      "/images/products/air-jordan-4-fire-red-gs/air-jordan-4-fire-red-gs_2.jpg",
+      "/images/products/air-jordan-4-fire-red-gs/air-jordan-4-fire-red-gs_3.jpg"
     ],
     "specs": {
       "Size": "3Y (GS)",
@@ -463,10 +463,10 @@ export const products: Product[] = [
     "description": "Puma RS Dreamer J. Cole in Ebony & Ivory colorway (Style CB677). A signature basketball shoe from the Dreamville collaboration featuring a white knit upper with black Puma FormStrip, RS cushioning technology, and sleek low-profile design. Brand new with OG box. Size 12.",
     "shortDescription": "Brand new with OG box — J. Cole collaboration",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/puma-rs-dreamer-j-cole-ebony-ivory_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/puma-rs-dreamer-j-cole-ebony-ivory_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/puma-rs-dreamer-j-cole-ebony-ivory_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/puma-rs-dreamer-j-cole-ebony-ivory_4.png"
+      "/images/products/puma-rs-dreamer-j-cole-ebony-ivory/puma-rs-dreamer-j-cole-ebony-ivory_1.jpg",
+      "/images/products/puma-rs-dreamer-j-cole-ebony-ivory/puma-rs-dreamer-j-cole-ebony-ivory_2.jpg",
+      "/images/products/puma-rs-dreamer-j-cole-ebony-ivory/puma-rs-dreamer-j-cole-ebony-ivory_3.jpg",
+      "/images/products/puma-rs-dreamer-j-cole-ebony-ivory/puma-rs-dreamer-j-cole-ebony-ivory_4.jpg"
     ],
     "specs": {
       "Size": "12",
@@ -497,8 +497,8 @@ export const products: Product[] = [
     "description": "Adidas Run 70s 2.0 J in Navy Blue colorway (Style JI2267). A junior retro-inspired running shoe with navy suede and mesh upper, classic three white stripes, gum rubber outsole, and cushioned midsole. Brand new with tags and OG box. Junior Size 6.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-run-70s-2-0-j-navy-blue_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-run-70s-2-0-j-navy-blue_2.png"
+      "/images/products/adidas-run-70s-2-0-j-navy-blue/adidas-run-70s-2-0-j-navy-blue_1.jpg",
+      "/images/products/adidas-run-70s-2-0-j-navy-blue/adidas-run-70s-2-0-j-navy-blue_2.jpg"
     ],
     "specs": {
       "Size": "6 (Junior)",
@@ -529,11 +529,11 @@ export const products: Product[] = [
     "description": "Adidas Samba 62 in Camel/Tan suede colorway. A retro-inspired version of the classic Samba featuring premium tan suede upper, signature three white stripes, vintage-style polka dot outsole, and gum-tone accents. Brand new with OG box. Size 9.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-samba-62-camel-tan_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-samba-62-camel-tan_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-samba-62-camel-tan_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-samba-62-camel-tan_4.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/adidas-samba-62-camel-tan_5.png"
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_1.jpg",
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_2.jpg",
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_3.jpg",
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_4.jpg",
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_5.jpg"
     ],
     "specs": {
       "Size": "9",
@@ -563,10 +563,10 @@ export const products: Product[] = [
     "description": "Nike Dunk High in the iconic Championship Red colorway. Features a red and white leather upper with classic Dunk High silhouette, Nike branding on tongue and heel, and padded collar for comfort. Pre-owned in good condition with OG box. Size 10.",
     "shortDescription": "Pre-owned with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-high-championship-red_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-high-championship-red_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-high-championship-red_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/nike-dunk-high-championship-red_4.png"
+      "/images/products/nike-dunk-high-championship-red/nike-dunk-high-championship-red_1.jpg",
+      "/images/products/nike-dunk-high-championship-red/nike-dunk-high-championship-red_2.jpg",
+      "/images/products/nike-dunk-high-championship-red/nike-dunk-high-championship-red_3.jpg",
+      "/images/products/nike-dunk-high-championship-red/nike-dunk-high-championship-red_4.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -595,10 +595,10 @@ export const products: Product[] = [
     "description": "New Balance FuelCell SuperComp Elite v4 in Volt/Orange colorway (Style NBCELL44). A high-performance carbon-plated racing shoe with energy-returning FuelCell midsole, lightweight upper with engineered support, and bold neon volt/orange design. Brand new with OG box. Size 10.5.",
     "shortDescription": "Brand new with OG box — elite racing shoe",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/new-balance-fuelcell-supercomp-elite-v4-volt_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/new-balance-fuelcell-supercomp-elite-v4-volt_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/new-balance-fuelcell-supercomp-elite-v4-volt_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch8/new-balance-fuelcell-supercomp-elite-v4-volt_4.png"
+      "/images/products/new-balance-fuelcell-supercomp-elite-v4-volt/new-balance-fuelcell-supercomp-elite-v4-volt_1.jpg",
+      "/images/products/new-balance-fuelcell-supercomp-elite-v4-volt/new-balance-fuelcell-supercomp-elite-v4-volt_2.jpg",
+      "/images/products/new-balance-fuelcell-supercomp-elite-v4-volt/new-balance-fuelcell-supercomp-elite-v4-volt_3.jpg",
+      "/images/products/new-balance-fuelcell-supercomp-elite-v4-volt/new-balance-fuelcell-supercomp-elite-v4-volt_4.jpg"
     ],
     "specs": {
       "Size": "10.5",
@@ -628,9 +628,9 @@ export const products: Product[] = [
     "description": "Adidas Kapur Flow in White/Grey colorway (Style ID6640). A lightweight running shoe with a breathable heathered knit upper, Adidas branding on the tongue and heel, and a cushioned EVA midsole with ribbed texture. Brand new with tags and OG box. Size 6.5.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-kapur-flow-white-grey_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-kapur-flow-white-grey_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-kapur-flow-white-grey_3.png"
+      "/images/products/adidas-kapur-flow-white-grey/adidas-kapur-flow-white-grey_1.jpg",
+      "/images/products/adidas-kapur-flow-white-grey/adidas-kapur-flow-white-grey_2.jpg",
+      "/images/products/adidas-kapur-flow-white-grey/adidas-kapur-flow-white-grey_3.jpg"
     ],
     "specs": {
       "Size": "6.5",
@@ -660,9 +660,9 @@ export const products: Product[] = [
     "description": "Nike Air Trainer SC High in White/Black/Gym Red colorway. A classic Bo Jackson cross-training silhouette featuring a white leather upper with black and red overlays, bold 'NIKE' heel branding, perforated toe box, and a sturdy rubber outsole. Pre-owned in good condition. Size 10.",
     "shortDescription": "Pre-owned — classic Bo Jackson trainer",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-air-trainer-sc-high-white-gym-red_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-air-trainer-sc-high-white-gym-red_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-air-trainer-sc-high-white-gym-red_3.png"
+      "/images/products/nike-air-trainer-sc-high-white-gym-red/nike-air-trainer-sc-high-white-gym-red_1.jpg",
+      "/images/products/nike-air-trainer-sc-high-white-gym-red/nike-air-trainer-sc-high-white-gym-red_2.jpg",
+      "/images/products/nike-air-trainer-sc-high-white-gym-red/nike-air-trainer-sc-high-white-gym-red_3.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -692,9 +692,9 @@ export const products: Product[] = [
     "description": "Pharrell Williams x Adidas NMD Human Race in Teal/Green colorway (Style Q46613). An iconic collaboration featuring a teal Primeknit upper with bold white 'Human Race' lettering, Boost midsole for responsive cushioning, and NMD-style plugs. Pre-owned in good condition with OG box. Size 10.",
     "shortDescription": "Pre-owned with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-nmd-human-race-teal_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-nmd-human-race-teal_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-nmd-human-race-teal_3.png"
+      "/images/products/adidas-nmd-human-race-teal/adidas-nmd-human-race-teal_1.jpg",
+      "/images/products/adidas-nmd-human-race-teal/adidas-nmd-human-race-teal_2.jpg",
+      "/images/products/adidas-nmd-human-race-teal/adidas-nmd-human-race-teal_3.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -725,9 +725,9 @@ export const products: Product[] = [
     "description": "Women's Air Jordan 2 Retro SE in White/Black/Gym Red colorway (Style DQ0558-160). A premium mid-top silhouette featuring smooth white leather upper with black and gym red accents, perforated toe box, NIKE heel tabs, signature hangtag, and extra white laces. Brand new with tags and OG box. Women's Size 10.5 (Men's 9).",
     "shortDescription": "Brand new with tags + hangtag + extra laces",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/air-jordan-2-retro-se-white-gym-red_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/air-jordan-2-retro-se-white-gym-red_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/air-jordan-2-retro-se-white-gym-red_3.png"
+      "/images/products/air-jordan-2-retro-se-white-gym-red/air-jordan-2-retro-se-white-gym-red_1.jpg",
+      "/images/products/air-jordan-2-retro-se-white-gym-red/air-jordan-2-retro-se-white-gym-red_2.jpg",
+      "/images/products/air-jordan-2-retro-se-white-gym-red/air-jordan-2-retro-se-white-gym-red_3.jpg"
     ],
     "specs": {
       "Size": "10.5W (9M)",
@@ -757,9 +757,9 @@ export const products: Product[] = [
     "description": "Adidas x Bad Bunny Campus 'Chalky Brown' (Style ID2529). A premium collaboration featuring dusty pink/brown suede upper with tonal brown three-stripe branding, padded leather collar, cream rubber cupsole, and signature Bad Bunny eye logo on the tongue. Includes dust bag and extra brown leather laces. Brand new with OG box. Size 9.5.",
     "shortDescription": "Brand new with OG box + dust bag + extra laces",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-bad-bunny-campus-chalky-brown_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-bad-bunny-campus-chalky-brown_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-bad-bunny-campus-chalky-brown_3.png"
+      "/images/products/adidas-bad-bunny-campus-chalky-brown/adidas-bad-bunny-campus-chalky-brown_1.jpg",
+      "/images/products/adidas-bad-bunny-campus-chalky-brown/adidas-bad-bunny-campus-chalky-brown_2.jpg",
+      "/images/products/adidas-bad-bunny-campus-chalky-brown/adidas-bad-bunny-campus-chalky-brown_3.jpg"
     ],
     "specs": {
       "Size": "9.5",
@@ -789,9 +789,9 @@ export const products: Product[] = [
     "description": "Adidas Jogit M in Core Black with grey three-stripe overlays and speckled sole detail (Style JR0863). A versatile running shoe featuring knit upper, OrthoLite comfort insole, and durable rubber outsole. Brand new with tags and OG box. Size 11.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-jogit-m-core-black_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-jogit-m-core-black_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/adidas-jogit-m-core-black_3.png"
+      "/images/products/adidas-jogit-m-core-black/adidas-jogit-m-core-black_1.jpg",
+      "/images/products/adidas-jogit-m-core-black/adidas-jogit-m-core-black_2.jpg",
+      "/images/products/adidas-jogit-m-core-black/adidas-jogit-m-core-black_3.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -821,9 +821,9 @@ export const products: Product[] = [
     "description": "Nike Revolution 7 in Hot Fuchsia/Metallic Red Bronze colorway (Style FB2208-501). A lightweight women's running shoe with breathable mesh upper, Nike Comfort Footbed insole, and cushioned midsole. Brand new with tags and OG box. Women's Size 6.5 (Men's 5).",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-revolution-7-hot-fuchsia_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-revolution-7-hot-fuchsia_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch7/nike-revolution-7-hot-fuchsia_3.png"
+      "/images/products/nike-revolution-7-hot-fuchsia/nike-revolution-7-hot-fuchsia_1.jpg",
+      "/images/products/nike-revolution-7-hot-fuchsia/nike-revolution-7-hot-fuchsia_2.jpg",
+      "/images/products/nike-revolution-7-hot-fuchsia/nike-revolution-7-hot-fuchsia_3.jpg"
     ],
     "specs": {
       "Size": "6.5W (5M)",
@@ -853,9 +853,9 @@ export const products: Product[] = [
     "description": "Nike Dunk Low SE 'Animal Pack' in White with leopard print Swoosh and gold glitter heel accents. A clean white leather upper paired with eye-catching animal print details on the Swoosh for a bold yet versatile look. Brand new with OG box. Women's Size 8 (Men's 6.5).",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-dunk-low-se-animal-pack-white_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-dunk-low-se-animal-pack-white_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-dunk-low-se-animal-pack-white_3.png"
+      "/images/products/nike-dunk-low-se-animal-pack-white/nike-dunk-low-se-animal-pack-white_1.jpg",
+      "/images/products/nike-dunk-low-se-animal-pack-white/nike-dunk-low-se-animal-pack-white_2.jpg",
+      "/images/products/nike-dunk-low-se-animal-pack-white/nike-dunk-low-se-animal-pack-white_3.jpg"
     ],
     "specs": {
       "Size": "8W (6.5M)",
@@ -885,9 +885,9 @@ export const products: Product[] = [
     "description": "Air Jordan 1 High OG x Union LA in the Woven Sail colorway. A premium collaboration featuring cream/sail leather upper with intricate woven detailing on the midsole, teal contrast stitching, grey Swoosh overlays, and 'PS Reserve' hangtag. Nike Air tongue labels and Wings logo. Brand new with OG box. Size 8.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-high-union-woven-sail_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-high-union-woven-sail_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-high-union-woven-sail_3.png"
+      "/images/products/air-jordan-1-high-union-woven-sail/air-jordan-1-high-union-woven-sail_1.jpg",
+      "/images/products/air-jordan-1-high-union-woven-sail/air-jordan-1-high-union-woven-sail_2.jpg",
+      "/images/products/air-jordan-1-high-union-woven-sail/air-jordan-1-high-union-woven-sail_3.jpg"
     ],
     "specs": {
       "Size": "8",
@@ -918,9 +918,9 @@ export const products: Product[] = [
     "description": "Nike SB Zoom Blazer Low QS 'Lance Mountain' in Black/Metallic Silver (Style HJ6703-001). A collaboration with legendary skateboarder Lance Mountain, featuring premium black leather upper, metallic silver Swoosh, embossed logo on the tongue, and Nike SB Zoom Air insole. Includes extra insole and Nike SB sticker. Brand new with OG box. Size 10.5.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-24-10.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-24-58.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-25-29.png"
+      "/images/products/nike-sb-blazer-low-qs-lance-mountain-black/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-24-10.jpg",
+      "/images/products/nike-sb-blazer-low-qs-lance-mountain-black/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-24-58.jpg",
+      "/images/products/nike-sb-blazer-low-qs-lance-mountain-black/nike-sb-blazer-low-qs-lance-mountain-black_AI-Image-Editor-2026-02-22_19-25-29.jpg"
     ],
     "specs": {
       "Size": "10.5",
@@ -951,9 +951,9 @@ export const products: Product[] = [
     "description": "Adidas Handball Spezial in Green/Yellow colorway. A retro handball silhouette from the Adidas Originals archive, featuring green suede upper with bold yellow three-stripe branding, gum sole, and gold Trefoil insole. Brand new with OG box. Size 10.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-14-02.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-14-45.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-16-15.png"
+      "/images/products/adidas-handball-spezial-green-yellow/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-14-02.jpg",
+      "/images/products/adidas-handball-spezial-green-yellow/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-14-45.jpg",
+      "/images/products/adidas-handball-spezial-green-yellow/adidas-handball-spezial-green-yellow_AI-Image-Editor-2026-02-22_19-16-15.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -983,10 +983,10 @@ export const products: Product[] = [
     "description": "Air Jordan 1 Retro High OG in the Sail colorway. Premium leather upper in sail/white with light grey Swoosh overlays and elephant print-textured accents. Nike Air tongue labels and Wings logo. Brand new, damaged box. Size 11.",
     "shortDescription": "Brand new, damaged box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-55-35.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-56-11.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-56-49.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-57-28.png"
+      "/images/products/air-jordan-1-retro-high-og-sail/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-55-35.jpg",
+      "/images/products/air-jordan-1-retro-high-og-sail/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-56-11.jpg",
+      "/images/products/air-jordan-1-retro-high-og-sail/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-56-49.jpg",
+      "/images/products/air-jordan-1-retro-high-og-sail/air-jordan-1-retro-high-og-sail_AI-Image-Editor-2026-02-22_18-57-28.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -1008,37 +1008,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-22T20:47:47.631889+00:00"
   },
   {
-    "slug": "nike-tanjun-navy-white",
-    "name": "Nike Tanjun Navy/White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Nike Tanjun in Navy/White colorway. A lightweight everyday sneaker with a breathable mesh upper, white Nike swoosh, and cushioned midsole. Made with at least 20% recycled content (Move to Zero). Brand new with tags and OG box. Size 11. Includes FREE Adidas Adilette Aqua slides (Size 10)!",
-    "shortDescription": "Brand new with tags + FREE Adidas slides",
-    "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-tanjun-navy-white_AI-Image-Editor-2026-02-22_19-35-55.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-tanjun-navy-white_AI-Image-Editor-2026-02-22_19-35-16.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-tanjun-navy-white_AI-Image-Editor-2026-02-22_19-30-41.png"
-    ],
-    "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Navy/White",
-      "Model": "Tanjun",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "nike",
-      "tanjun",
-      "navy",
-      "white",
-      "running",
-      "lightweight"
-    ],
-    "createdAt": "2026-02-22T20:47:44.200455+00:00"
-  },
-  {
     "slug": "nike-p-6000-total-orange-black",
     "name": "Nike P-6000 Total Orange/Black",
     "price": 85,
@@ -1047,9 +1016,9 @@ export const products: Product[] = [
     "description": "Nike P-6000 in the Total Orange/Black colorway (Style CD6404-801). Features a bold orange mesh and synthetic upper with black overlays, white midsole, and a chunky retro runner silhouette inspired by the early 2000s. Brand new with OG box. Size 10.5. Retail $110.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-40-02.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-39-30.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch6/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-39-06.png"
+      "/images/products/nike-p-6000-total-orange-black/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-40-02.jpg",
+      "/images/products/nike-p-6000-total-orange-black/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-39-30.jpg",
+      "/images/products/nike-p-6000-total-orange-black/nike-p-6000-total-orange-black_AI-Image-Editor-2026-02-22_19-39-06.jpg"
     ],
     "specs": {
       "Size": "10.5",
@@ -1079,9 +1048,9 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 1 Retro High OG in the Mauve colorway. Features a premium suede and leather upper in mauve/light bone tones with signature Nike Air branding and Wings logo. Brand new with OG box. Size 10.5.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-01.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-37.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-31-21.png"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-01.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-37.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-31-21.jpg"
     ],
     "specs": {
       "Size": "10.5",
@@ -1129,9 +1098,9 @@ export const products: Product[] = [
     "description": "Air Jordan 20 (XX) in the White Stealth colorway from 2005. Features a sail/cream upper with laser-etched graphic strap panels, red collar accents, black toe cap, and the distinctive circular red pods on the outsole. Pre-owned, no box. Size 14.",
     "shortDescription": "Pre-owned, no box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-47-37.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-48-12.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-48-45.png"
+      "/images/products/air-jordan-20-white-stealth/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-47-37.jpg",
+      "/images/products/air-jordan-20-white-stealth/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-48-12.jpg",
+      "/images/products/air-jordan-20-white-stealth/air-jordan-20-white-stealth_AI-Image-Editor-2026-02-17_18-48-45.jpg"
     ],
     "specs": {
       "Size": "14",
@@ -1160,9 +1129,9 @@ export const products: Product[] = [
     "description": "Nike Air Foamposite One in White (Light Orewood Brown/Black/Pale Ivory) colorway. Features the iconic molded Foamposite shell upper in a cream/ivory tone with black accents. Pre-owned in good condition. Comes with replacement box. Size 9.",
     "shortDescription": "Pre-owned, replacement box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-45-22.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-45-46.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-46-16.png"
+      "/images/products/nike-air-foamposite-one-white/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-45-22.jpg",
+      "/images/products/nike-air-foamposite-one-white/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-45-46.jpg",
+      "/images/products/nike-air-foamposite-one-white/nike-air-foamposite-one-white_AI-Image-Editor-2026-02-17_18-46-16.jpg"
     ],
     "specs": {
       "Size": "9",
@@ -1191,9 +1160,9 @@ export const products: Product[] = [
     "description": "Q4 Sports DC2 basketball shoe in White/Black/Yellow colorway. Features a white mesh upper with black heel and midfoot accents, yellow/gold tongue lining and collar details, and a white speckled midsole. Brand new with OG box. Size 12.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-41-51.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-42-32.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-43-17.png"
+      "/images/products/q4-sports-dc2-white-black-yellow/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-41-51.jpg",
+      "/images/products/q4-sports-dc2-white-black-yellow/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-42-32.jpg",
+      "/images/products/q4-sports-dc2-white-black-yellow/q4-sports-dc2-white-black-yellow_AI-Image-Editor-2026-02-17_18-43-17.jpg"
     ],
     "specs": {
       "Size": "12",
@@ -1224,9 +1193,9 @@ export const products: Product[] = [
     "description": "Q4 Sports EMSS-II basketball shoe in a patriotic Navy/Red/Gold/White colorway. Features a navy blue mesh upper with red collar lining and lace accents, metallic gold midsole trim and branding, and a white midsole. Brand new with OG box. Size 11.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-38-44.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-39-18.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-39-55.png"
+      "/images/products/q4-sports-emss-ii-navy-red-gold/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-38-44.jpg",
+      "/images/products/q4-sports-emss-ii-navy-red-gold/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-39-18.jpg",
+      "/images/products/q4-sports-emss-ii-navy-red-gold/q4-sports-emss-ii-navy-red-gold_AI-Image-Editor-2026-02-17_18-39-55.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -1256,10 +1225,10 @@ export const products: Product[] = [
     "description": "Nike NOCTA Air Zoom Drive in Summit White colorway. Drake's signature collaboration featuring an all-white leather and mesh upper with NOCTA triple-star logo on the heel, chunky sole with visible Air unit, and perforated toe box. Includes extra set of orange laces. Brand new. Size 11.",
     "shortDescription": "Brand new",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-34-54.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-35-22.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-35-54.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch5/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-36-36.png"
+      "/images/products/nike-nocta-air-zoom-drive-summit-white/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-34-54.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-summit-white/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-35-22.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-summit-white/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-35-54.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-summit-white/nike-nocta-air-zoom-drive-summit-white_AI-Image-Editor-2026-02-17_18-36-36.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -1287,8 +1256,8 @@ export const products: Product[] = [
     "description": "Nike Revolution 7 running shoe in Black/White colorway. Features a black mesh upper with white Swoosh, white midsole, and black outsole. Lightweight and comfortable for everyday wear. Brand new with OG box. Size 10.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-revolution-7-black-white_AI-Image-Editor-2026-02-16_23-31-56.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-revolution-7-black-white_AI-Image-Editor-2026-02-16_23-33-46.png"
+      "/images/products/nike-revolution-7-black-white/nike-revolution-7-black-white_AI-Image-Editor-2026-02-16_23-31-56.jpg",
+      "/images/products/nike-revolution-7-black-white/nike-revolution-7-black-white_AI-Image-Editor-2026-02-16_23-33-46.jpg"
     ],
     "specs": {
       "Size": "10",
@@ -1317,8 +1286,8 @@ export const products: Product[] = [
     "description": "Adidas Grand Court 2.0 K in steel blue with iridescent holographic three stripes and heel tab. Clean white sole. Kids/youth sizing. Brand new with tags. Size 5 (Youth).",
     "shortDescription": "Brand new with tags",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/adidas-grand-court-2-k-blue-iridescent_AI-Image-Editor-2026-02-16_23-28-15.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/adidas-grand-court-2-k-blue-iridescent_AI-Image-Editor-2026-02-16_23-28-55.png"
+      "/images/products/adidas-grand-court-2-k-blue-iridescent/adidas-grand-court-2-k-blue-iridescent_AI-Image-Editor-2026-02-16_23-28-15.jpg",
+      "/images/products/adidas-grand-court-2-k-blue-iridescent/adidas-grand-court-2-k-blue-iridescent_AI-Image-Editor-2026-02-16_23-28-55.jpg"
     ],
     "specs": {
       "Size": "5Y",
@@ -1348,7 +1317,7 @@ export const products: Product[] = [
     "description": "Adidas Yeezy Foam Runner in the MX Crab colorway. Features the signature lattice cutout upper in a dark olive/black base with marbled gold and olive veining. Lightweight EVA foam construction. Brand new, deadstock. Size 9.",
     "shortDescription": "Brand new, no box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/adidas-yeezy-foam-runner-mx-crab_AI-Image-Editor-2026-02-16_23-23-09.png"
+      "/images/products/adidas-yeezy-foam-runner-mx-crab/adidas-yeezy-foam-runner-mx-crab_AI-Image-Editor-2026-02-16_23-23-09.jpg"
     ],
     "specs": {
       "Size": "9",
@@ -1386,9 +1355,9 @@ export const products: Product[] = [
     "description": "Q4 Sports White Streak 495 D SP basketball shoe in Black/White/Red colorway. Features a black knit upper with bold white and black striped heel panel, red accents on the tongue and collar lining, and a white rubber outsole. Brand new with OG box. Size 7 US / UK 6.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_22-57-11.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_22-57-56.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_23-01-02.png"
+      "/images/products/q4-white-streak-495-d-sp-black-white/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_22-57-11.jpg",
+      "/images/products/q4-white-streak-495-d-sp-black-white/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_22-57-56.jpg",
+      "/images/products/q4-white-streak-495-d-sp-black-white/q4-white-streak-495-d-sp-black-white_AI-Image-Editor-2026-02-16_23-01-02.jpg"
     ],
     "specs": {
       "Size": "7",
@@ -1419,9 +1388,9 @@ export const products: Product[] = [
     "description": "Q4 Sports EM55-I basketball shoe in Black/Dark Blue colorway. Features a black mesh upper with metallic gold accents, gold trim along the midsole, and a blue translucent patterned outsole. Lightweight performance basketball shoe. Brand new with OG box. Size 5.5 US / UK 5.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-07.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-47.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-43-18.png"
+      "/images/products/q4-sports-em55-i-black-dark-blue/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-07.jpg",
+      "/images/products/q4-sports-em55-i-black-dark-blue/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-42-47.jpg",
+      "/images/products/q4-sports-em55-i-black-dark-blue/nike-zoom-freak-5-black-metallic-gold_AI-Image-Editor-2026-02-16_20-43-18.jpg"
     ],
     "specs": {
       "Size": "5.5",
@@ -1452,10 +1421,10 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 1 Retro High OG 'Black Toe' 2025 release in Grade School sizing. Classic white/black/varsity red colorway with a black toe box, white mid-panel, and red heel collar. Brand new deadstock with special retro Jordan box featuring Michael Jordan photo. Size 6.5Y (Women's 8).",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-34-50.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-36-14.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-37-38.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-39-15.png"
+      "/images/products/nike-air-jordan-1-retro-high-og-black-toe-gs/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-34-50.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-black-toe-gs/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-36-14.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-black-toe-gs/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-37-38.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-black-toe-gs/nike-air-jordan-1-retro-high-og-black-toe-gs_AI-Image-Editor-2026-02-16_20-39-15.jpg"
     ],
     "specs": {
       "Size": "6.5Y",
@@ -1493,9 +1462,9 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Features smooth leather overlays in a muted mauve/plum-brown tone with sail/cream leather base panels, white midsole, and dark outsole. Brand new deadstock with original Jordan box. Size 10.5.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-01.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-37.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch4/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-31-21.png"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10-5/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-01.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10-5/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-30-37.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10-5/nike-air-jordan-1-retro-high-og-mauve-sz10-5_AI-Image-Editor-2026-02-16_20-31-21.jpg"
     ],
     "specs": {
       "Size": "10.5",
@@ -1543,9 +1512,9 @@ export const products: Product[] = [
     "description": "Nike Voxn in Wolf Grey/Infrared/Black colorway. Features a translucent mesh upper with heathered grey pattern, infrared red accents, black neoprene collar, and white midsole. Lightweight and modern silhouette. Brand new.",
     "shortDescription": "Brand new",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-54-02.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-54-32.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-55-10.png"
+      "/images/products/nike-voxn-grey-infrared-black/AI-Image-Editor-2026-02-16_15-54-02.jpg",
+      "/images/products/nike-voxn-grey-infrared-black/AI-Image-Editor-2026-02-16_15-54-32.jpg",
+      "/images/products/nike-voxn-grey-infrared-black/AI-Image-Editor-2026-02-16_15-55-10.jpg"
     ],
     "specs": {
       "Brand": "Nike",
@@ -1573,10 +1542,10 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 1 Retro High OG in Sky J Mauve/Sail colorway. White leather upper with mauve overlays and Swoosh. Brand new, deadstock with original mauve Nike box and tissue paper. Size 11.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-50-46.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-51-22.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-51-51.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_15-52-24.png"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-2/AI-Image-Editor-2026-02-16_15-50-46.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-2/AI-Image-Editor-2026-02-16_15-51-22.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-2/AI-Image-Editor-2026-02-16_15-51-51.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-2/AI-Image-Editor-2026-02-16_15-52-24.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -1623,9 +1592,9 @@ export const products: Product[] = [
     "description": "Nike Little Posite One \"Vamposite\" in Black/Gym Red colorway. Features the iconic Foamposite shell upper in black with red interior lining, dripping fangs graphic on the heel, and red outsole with gold midsole accent. Pre-owned in good condition with original box (no lid). Youth size 5Y.",
     "shortDescription": "Pre-owned with box, no lid",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-50-57.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-51-24.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_14-51-58.png"
+      "/images/products/nike-little-posite-one-vamposite-black-red/AI-Image-Editor-2026-02-16_14-50-57.jpg",
+      "/images/products/nike-little-posite-one-vamposite-black-red/AI-Image-Editor-2026-02-16_14-51-24.jpg",
+      "/images/products/nike-little-posite-one-vamposite-black-red/AI-Image-Editor-2026-02-16_14-51-58.jpg"
     ],
     "specs": {
       "Size": "5Y",
@@ -1655,9 +1624,9 @@ export const products: Product[] = [
     "description": "Nike Air Force 1 Low '07 LV8 in Light Smoke Grey colorway. Features premium leather upper with navy Swoosh, navy laces, and gum rubber outsole. Brand new with original Nike box. Size 9.5.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_13-50-50.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_13-51-13.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_13-52-43.png"
+      "/images/products/nike-air-force-1-low-07-lv8-light-smoke-grey/AI-Image-Editor-2026-02-16_13-50-50.jpg",
+      "/images/products/nike-air-force-1-low-07-lv8-light-smoke-grey/AI-Image-Editor-2026-02-16_13-51-13.jpg",
+      "/images/products/nike-air-force-1-low-07-lv8-light-smoke-grey/AI-Image-Editor-2026-02-16_13-52-43.jpg"
     ],
     "specs": {
       "Size": "9.5",
@@ -1698,9 +1667,9 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 9 Retro Low Bred in black leather with red accents and white midsole. Features iconic #23 on the heel. Pre-owned in great condition. Size 9. No original box.",
     "shortDescription": "Pre-owned, no box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_12-29-29.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_12-30-20.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch3/AI-Image-Editor-2026-02-16_12-30-54.png"
+      "/images/products/nike-air-jordan-9-low-bred/AI-Image-Editor-2026-02-16_12-29-29.jpg",
+      "/images/products/nike-air-jordan-9-low-bred/AI-Image-Editor-2026-02-16_12-30-20.jpg",
+      "/images/products/nike-air-jordan-9-low-bred/AI-Image-Editor-2026-02-16_12-30-54.jpg"
     ],
     "specs": {
       "Size": "9",
@@ -1722,32 +1691,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_3.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_bounce_white_4.png"
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
     ],
     "specs": {
       "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -1760,9 +1731,9 @@ export const products: Product[] = [
     "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
     "shortDescription": "Brand new with OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/nike_jordan1_mauve_3.png"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_1.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
     ],
     "specs": {
       "Size": "11",
@@ -1809,9 +1780,9 @@ export const products: Product[] = [
     "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
     "shortDescription": "Brand new with box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_racer_black_blue_3.png"
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_1.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
     ],
     "specs": {
       "Size": "6.5",
@@ -1831,34 +1802,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_blue_green_3.png"
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
     ],
     "specs": {
       "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -1871,9 +1840,9 @@ export const products: Product[] = [
     "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
     "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_1.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_2.png",
-      "https://ajeeaetsshqfeocosxbn.supabase.co/storage/v1/object/public/images/products/batch2/adidas_gazelle_orange_black_3.png"
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_1.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
     ],
     "specs": {
       "Size": "13",

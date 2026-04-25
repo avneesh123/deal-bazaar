@@ -23,6 +23,7 @@ export interface DbProduct {
   retail_price: number | null;
   price_sources: { name: string; price: number | null; url: string }[] | null;
   tags: string[];
+  ebay_listing_id: string | null;
   created_at: string;
   updated_at: string;
 }
