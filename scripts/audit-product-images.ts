@@ -1,14 +1,16 @@
 /**
- * Audit every in-stock product's images via the Gemini quality gate.
+ * Audit every in-stock product's images via the local-Ollama quality gate.
  *
  * For each product:
  *   - Loads each image from public/images/products/<slug>/<file> (the
  *     localized 400px thumb if present, else the full image).
- *   - Classifies it via classify-view.
+ *   - Classifies it via classify-view (Ollama on the EC2 VM).
  *   - Records flagged images (in-box, receipt, or unusable).
  *
- * Outputs a JSON report at /tmp/db-image-audit.json that the cleanup
- * script reads.
+ * No rate limits — runs on our own infra. The bottleneck is CPU inference
+ * time on the VM (~3-5s per image with qwen2.5vl:7b).
+ *
+ * Outputs a JSON report at /tmp/db-image-audit.json.
  *
  * Usage:
  *   npx tsx scripts/audit-product-images.ts [--limit N] [--from-slug SLUG]
@@ -37,7 +39,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
-const REQUEST_DELAY_MS = 4500; // stay under 15 RPM on Gemini free tier
+const REQUEST_DELAY_MS = 0; // self-hosted Ollama — no rate limit
 
 interface ImageReport {
   url: string;
@@ -105,8 +107,8 @@ async function main() {
   );
   console.log(
     `📋 ~${totalCalls} classifications, ~${Math.ceil(
-      (totalCalls * REQUEST_DELAY_MS) / 60000
-    )} min at ${REQUEST_DELAY_MS}ms/req\n`
+      (totalCalls * 4) / 60
+    )} min @ ~4s/img on Ollama VM\n`
   );
 
   const reports: ProductReport[] = [];
@@ -152,14 +154,7 @@ async function main() {
         }
       } catch (err) {
         const msg = (err as Error).message;
-        // If we hit the daily quota, save what we have and stop
-        if (msg.includes("RESOURCE_EXHAUSTED") || msg.includes("429")) {
-          console.error(
-            `\n⚠️  Hit Gemini quota at call ${callsMade}. Saving partial report.`
-          );
-          break;
-        }
-        console.error(`  ${p.slug}: ${msg}`);
+        console.error(`  ${p.slug} (${path.basename(local)}): ${msg}`);
       }
     }
 

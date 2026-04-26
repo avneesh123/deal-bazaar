@@ -1,24 +1,26 @@
 /**
- * Phase 1a — Vision quality gate for sneaker catalog photos.
+ * Vision quality gate for sneaker catalog photos — backed by a remote
+ * Ollama server running a vision-capable model (default qwen2.5vl:7b on
+ * the EC2 VM at 10.134.9.223:11434).
  *
- * Classifies each input image into one of:
- *   - catalog-good:  side / three-quarter / heel / sole / top-of-shoe
- *                    (no packing material, no box, shoe fills frame)
- *   - in-box:        shoe still inside packaging, tissue paper visible,
- *                    or box visibly framing the shot
- *   - receipt:       paper packing slip / order printout / box label only
- *   - unusable:      blurry, too dark, not a sneaker, multiple unrelated objects
+ * Categories:
+ *   - catalog-good:  clear shot of a shoe, clean background, hangtags fine
+ *   - in-box:        shoes inside an open box with packing tissue / box edges
+ *   - receipt:       paper packing slip / order printout / shipping label
+ *   - unusable:      blurry, dark, or not a sneaker
  *
- * Backend: Google Gemini 2.5 Flash. Free tier (~250 req/day) covers our scale.
- * Get a key at https://aistudio.google.com/apikey and put it in .env.local
- * as GEMINI_API_KEY=...
+ * Configure via env (in .env.local or process env):
+ *   OLLAMA_URL=http://10.134.9.223:11434   (default)
+ *   OLLAMA_MODEL=qwen2.5vl:7b              (default)
  *
- * Usage as module:
- *     import { classifyView, classifyFolder } from "./lib/classify-view";
- *     const result = await classifyView("/path/to/img.jpg");
+ * No API keys, no daily quota — runs on our own VM.
  *
- * Usage as CLI:
- *     npx tsx scripts/lib/classify-view.ts <folder>
+ * Usage:
+ *   import { classifyView, classifyFolder } from "./lib/classify-view";
+ *   const r = await classifyView("/path/to/img.jpg");
+ *
+ * CLI:
+ *   npx tsx scripts/lib/classify-view.ts <folder>
  */
 
 import fs from "fs";
@@ -26,7 +28,7 @@ import path from "path";
 import { execSync } from "child_process";
 
 // ---------------------------------------------------------------------------
-// Load .env.local for GEMINI_API_KEY
+// Load .env.local
 // ---------------------------------------------------------------------------
 function loadEnv() {
   const envPath = path.join(process.cwd(), ".env.local");
@@ -41,11 +43,10 @@ function loadEnv() {
 }
 loadEnv();
 
-const GEMINI_MODEL = "gemini-2.5-flash-lite";
-// Free-tier rate limit for flash-lite is 15 req/min. Sleep ~4s between calls
-// so we stay safely under it even with retries.
-const REQUEST_DELAY_MS = 4500;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const OLLAMA_URL =
+  process.env.OLLAMA_URL?.replace(/\/$/, "") || "http://10.134.9.223:11434";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen2.5vl:7b";
+const REQUEST_TIMEOUT_MS = 240_000;
 
 // ---------------------------------------------------------------------------
 // Types
@@ -54,116 +55,91 @@ export type ViewCategory = "catalog-good" | "in-box" | "receipt" | "unusable";
 
 export interface ClassificationResult {
   category: ViewCategory;
-  confidence: number; // 0-1
-  reason: string; // short explanation
+  confidence: number; // 0-1 (estimated — Ollama doesn't return one)
+  reason: string;
   view?: "side" | "three-quarter" | "top" | "heel" | "sole" | "other";
 }
 
 // ---------------------------------------------------------------------------
 // Image helpers — convert HEIC, downscale, base64 encode
 // ---------------------------------------------------------------------------
-function toBase64Jpeg(
-  imagePath: string,
-  maxWidth = 768
-): { base64: string; mediaType: "image/jpeg" } {
+function toBase64Jpeg(imagePath: string, maxWidth = 384): string {
   const ext = path.extname(imagePath).toLowerCase();
   if (![".heic", ".jpg", ".jpeg", ".png"].includes(ext)) {
     throw new Error(`Unsupported image type: ${ext}`);
   }
-  // Always re-encode through sips at maxWidth so we don't burn tokens on
-  // multi-MB photos and HEICs become JPEG.
   const tmp = `/tmp/classify-${path.basename(imagePath, ext)}.jpg`;
   if (!fs.existsSync(tmp)) {
     execSync(
       `sips -s format jpeg "${imagePath}" --out "${tmp}" --resampleWidth ${maxWidth} 2>/dev/null`
     );
   }
-  const buf = fs.readFileSync(tmp);
-  return { base64: buf.toString("base64"), mediaType: "image/jpeg" };
+  return fs.readFileSync(tmp).toString("base64");
 }
 
 // ---------------------------------------------------------------------------
-// Single classification via Gemini
+// Prompt — tuned to avoid the brand-new-hangtag false positive that bit us
 // ---------------------------------------------------------------------------
-const SYSTEM_PROMPT = `You are a quality gate for a sneaker e-commerce catalog. Classify each photo into ONE of these categories:
+const PROMPT = `Classify this sneaker product photo into ONE of:
+- catalog-good: clear shot of a shoe/pair, clean background (white or plain). Brand-new shoes may have small white hangtags or price tags ATTACHED to the shoe — that is NORMAL and still catalog-good.
+- in-box: shoes sitting INSIDE an open shoe box with cardboard box edges visible, packing paper STUFFED INSIDE the shoes, or a box label/SKU sticker.
+- receipt: paper packing slip, order printout, or shipping label.
+- unusable: blurry, dark, or not a sneaker.
 
-- catalog-good: a clean shot of a sneaker (or pair) suitable for a product listing. The shoe fills most of the frame. Side, three-quarter, top-of-shoe, heel, or sole views all count, as long as packing material/tissue/box is NOT visibly framing or filling the shot. A small box edge in the corner is fine. **Hangtags, price tags, and SKU stickers attached to brand-new shoes are FINE and expected — do NOT reject for these.**
+If catalog-good, also identify the camera angle: side / three-quarter / top / heel / sole / other.
 
-- in-box: the shoes are sitting inside their open box with tissue paper, packing stuffing, box flaps, or box label visibly occupying significant frame area. These should be REJECTED for catalog.
+Reply with strict JSON only:
+{"category":"<one of the four>","reason":"under 10 words","view":"<angle if catalog-good>"}`;
 
-- receipt: paper packing slip, order printout, box-label only (no shoes), or any document.
-
-- unusable: blurry, too dark, not a sneaker, hand/foot wearing the shoe, action shot, or otherwise unsuitable.
-
-Also identify the camera angle if catalog-good: side / three-quarter / top / heel / sole / other.`;
-
-const RESPONSE_SCHEMA = {
-  type: "object",
-  properties: {
-    category: {
-      type: "string",
-      enum: ["catalog-good", "in-box", "receipt", "unusable"],
-    },
-    confidence: { type: "number" },
-    reason: { type: "string" },
-    view: {
-      type: "string",
-      enum: ["side", "three-quarter", "top", "heel", "sole", "other"],
-    },
-  },
-  required: ["category", "confidence", "reason"],
-};
-
+// ---------------------------------------------------------------------------
+// Single classification via Ollama
+// ---------------------------------------------------------------------------
 export async function classifyView(
   imagePath: string
 ): Promise<ClassificationResult> {
-  if (!GEMINI_API_KEY) {
-    throw new Error(
-      "GEMINI_API_KEY not set. Get one at https://aistudio.google.com/apikey and add to .env.local"
-    );
-  }
-  const { base64, mediaType } = toBase64Jpeg(imagePath);
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+  const base64 = toBase64Jpeg(imagePath);
 
   const body = {
-    system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    contents: [
-      {
-        role: "user",
-        parts: [
-          { inline_data: { mime_type: mediaType, data: base64 } },
-          { text: "Classify this catalog photo." },
-        ],
-      },
-    ],
-    generationConfig: {
-      responseMimeType: "application/json",
-      responseSchema: RESPONSE_SCHEMA,
-      temperature: 0,
-    },
+    model: OLLAMA_MODEL,
+    prompt: PROMPT,
+    images: [base64],
+    stream: false,
+    format: "json",
+    options: { temperature: 0 },
   };
 
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Gemini API ${res.status}: ${text}`);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  try {
+    const res = await fetch(`${OLLAMA_URL}/api/generate`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`Ollama ${res.status}: ${text}`);
+    }
+    const data = (await res.json()) as { response?: string };
+    const text = data.response ?? "";
+    // Tolerate prose around the JSON
+    const match = text.match(/\{[\s\S]*\}/);
+    if (!match) throw new Error(`No JSON in response: ${text}`);
+    const parsed = JSON.parse(match[0]) as Partial<ClassificationResult>;
+    return {
+      category: (parsed.category ?? "unusable") as ViewCategory,
+      confidence: parsed.confidence ?? 0.85,
+      reason: parsed.reason ?? "",
+      view: parsed.view,
+    };
+  } finally {
+    clearTimeout(timer);
   }
-  const data = (await res.json()) as {
-    candidates?: { content?: { parts?: { text?: string }[] } }[];
-  };
-  const text =
-    data.candidates?.[0]?.content?.parts?.[0]?.text ??
-    JSON.stringify(data);
-  return JSON.parse(text) as ClassificationResult;
 }
 
 // ---------------------------------------------------------------------------
-// Folder classification with a printable report
+// Folder classification
 // ---------------------------------------------------------------------------
 export interface FolderReport {
   folder: string;
@@ -198,16 +174,13 @@ export async function classifyFolder(
     unusable: [],
   };
 
-  for (let i = 0; i < files.length; i++) {
-    const file = files[i];
+  for (const file of files) {
     const imgPath = path.join(abs, file);
-    if (i > 0) await new Promise((r) => setTimeout(r, REQUEST_DELAY_MS));
     try {
       const r = await classifyView(imgPath);
       if (options.verbose) {
         console.log(
-          `  ${file}  →  ${r.category}${r.view ? " (" + r.view + ")" : ""}  ` +
-            `[${(r.confidence * 100).toFixed(0)}%]  ${r.reason}`
+          `  ${file}  →  ${r.category}${r.view ? " (" + r.view + ")" : ""}  ${r.reason}`
         );
       }
       switch (r.category) {
@@ -245,7 +218,9 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`\nClassifying images in ${target}...\n`);
+  console.log(
+    `\nClassifying images in ${target}\nUsing Ollama at ${OLLAMA_URL} model=${OLLAMA_MODEL}\n`
+  );
   const report = await classifyFolder(target, { verbose: true });
 
   console.log(`\n=== Report ===`);
@@ -256,10 +231,9 @@ async function main() {
   console.log(`  ✗ Unusable: ${report.unusable.length}`);
 
   if (report.good.length) {
-    console.log(`\n  Catalog-good files:`);
-    for (const g of report.good) {
+    console.log(`\n  Catalog-good:`);
+    for (const g of report.good)
       console.log(`    ${g.file}${g.view ? "  (" + g.view + ")" : ""}`);
-    }
   }
   if (report.inBox.length) {
     console.log(`\n  In-box (rejected):`);
