@@ -40,3 +40,7 @@ next-env.d.ts
 
 # claude
 .claude/
+
+# python venvs in tools/
+**/.venv/
+**/__pycache__/
