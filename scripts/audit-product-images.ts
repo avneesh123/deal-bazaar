@@ -58,16 +58,20 @@ interface ProductReport {
   badImages: ImageReport[];
 }
 
-function urlToLocalThumb(url: string): string | null {
-  // We classify off the smaller -400 thumbnail when available — saves tokens
-  // and the gate doesn't need pixel-perfect detail for a category decision.
-  const m = url.match(/^\/(images\/products\/[^/]+\/[^/]+)\.(jpg|jpeg|png)$/i);
-  if (!m) return null;
-  const stem = m[1];
-  const thumb = path.join(process.cwd(), "public", `${stem}-400.jpg`);
+function urlToLocalThumb(url: string, slug: string): string | null {
+  // The classifier prefers the smaller -400 thumb. The localized public path
+  // is /images/products/<slug>/<stem>.jpg with a sibling <stem>-400.jpg.
+  // We map any URL form (full Supabase URL or already-local path) by slug +
+  // basename, since localize-image renames every source to <stem>.jpg.
+  const cleanUrl = url.split("?")[0];
+  const baseRaw = path.basename(cleanUrl);
+  const stem = baseRaw.replace(/\.(jpg|jpeg|png|webp|heic)$/i, "");
+  const dir = path.join(process.cwd(), "public", "images", "products", slug);
+  const thumb = path.join(dir, `${stem}-400.jpg`);
   if (existsSync(thumb)) return thumb;
-  const full = path.join(process.cwd(), "public", `${stem}.${m[2]}`);
-  return existsSync(full) ? full : null;
+  const full = path.join(dir, `${stem}.jpg`);
+  if (existsSync(full)) return full;
+  return null;
 }
 
 async function sleep(ms: number) {
@@ -84,6 +88,9 @@ async function main() {
     const i = args.indexOf("--from-slug");
     return i >= 0 ? args[i + 1] : null;
   })();
+  // --first-only: only classify the primary image of each product. Cuts
+  // runtime ~3x and is enough to flag any product whose hero is bad.
+  const firstOnly = args.includes("--first-only");
 
   console.log("📋 Loading products from Supabase...");
   const { data, error } = await supabase
@@ -125,8 +132,9 @@ async function main() {
       badImages: [],
     };
 
-    for (const url of images) {
-      const local = urlToLocalThumb(url);
+    const targets = firstOnly ? images.slice(0, 1) : images;
+    for (const url of targets) {
+      const local = urlToLocalThumb(url, p.slug);
       if (!local) {
         // Can't classify — non-local URL, just count as good (don't flag)
         report.goodImages++;
