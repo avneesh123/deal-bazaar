@@ -109,34 +109,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
     "currency": "USD",
     "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
     "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
     ],
     "specs": {
-      "Type": "Mesh Bracelet",
+      "Type": "Charm Bracelet",
       "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "dragon",
-      "silver",
-      "sterling",
-      "mesh",
-      "luxury"
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -170,32 +168,129 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
     "currency": "USD",
     "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
     "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bracelet",
+      "Type": "Ring",
       "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "ring",
+      "moissanite",
+      "halo",
+      "silver",
+      "engagement",
+      "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "images": [
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Mesh Bracelet",
+      "Brand": "DealBazaar",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "images": [
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Chain Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -235,99 +330,162 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
+    "slug": "air-jordan-6-retro-red-oreo-pre-owned",
+    "name": "Air Jordan 6 Retro Red Oreo (Pre-Owned)",
+    "price": 130,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "category": "sneakers",
+    "description": "Air Jordan 6 Retro in the Red Oreo colorway — white leather upper with red speckled accents and red lace lock. Comes with original box (red speckled). Pre-owned, in good condition. Size 8.5 men's.",
+    "shortDescription": "Pre-owned with original box",
     "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1958.jpg",
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1959.jpg",
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1960.jpg",
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1961.jpg"
     ],
     "specs": {
-      "Type": "Chain Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
-      "Condition": "Brand New"
+      "Size": "8.5",
+      "Brand": "Nike",
+      "Color": "White / Red (Red Oreo)",
+      "Model": "Air Jordan 6 Retro",
+      "Condition": "Pre-Owned"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
+      "nike",
+      "jordan",
+      "air-jordan-6",
+      "retro",
+      "red",
+      "oreo",
+      "pre-owned"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-04-26T01:10:11.382916+00:00"
   },
   {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
+    "slug": "random-pull-black-wave-sneaker",
+    "name": "Random Pull Black Wave Sneaker",
+    "price": 45,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "category": "sneakers",
+    "description": "Athletic high-top in black with a tonal white wave pattern across the upper, white laces, and translucent sole. From a Whatnot live $1 random pull featuring On Cloud, Nike, Hoka, and Adidas inventory.",
+    "shortDescription": "Brand new — Whatnot $1 random pull",
     "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+      "/images/products/random-pull-black-wave-sneaker/IMG_1953.jpg",
+      "/images/products/random-pull-black-wave-sneaker/IMG_1954.jpg",
+      "/images/products/random-pull-black-wave-sneaker/IMG_1955.jpg"
     ],
     "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
+      "Brand": "Random Pull",
+      "Color": "Black / White",
       "Condition": "Brand New"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "bangle",
-      "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
+      "random-pull",
+      "black",
+      "white",
+      "athletic",
+      "high-top"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-04-26T01:10:08.319311+00:00"
   },
   {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
+    "slug": "air-jordan-1-retro-high-white-red",
+    "name": "Air Jordan 1 Retro High White / Red",
+    "price": 130,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Retro High in white leather with red Nike Swoosh and red interior collar. Detailed red contrast stitching across the upper. Brand new with original box, comes with the StockX green Verified Authentic tag attached.",
+    "shortDescription": "Brand new — StockX verified authentic",
     "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+      "/images/products/air-jordan-1-retro-high-white-red/IMG_1946.jpg",
+      "/images/products/air-jordan-1-retro-high-white-red/IMG_1947.jpg",
+      "/images/products/air-jordan-1-retro-high-white-red/IMG_1948.jpg",
+      "/images/products/air-jordan-1-retro-high-white-red/IMG_1949.jpg",
+      "/images/products/air-jordan-1-retro-high-white-red/IMG_1950.jpg"
     ],
     "specs": {
-      "Type": "Ring",
-      "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
+      "Brand": "Nike",
+      "Color": "White / Red",
+      "Model": "Air Jordan 1 Retro High",
       "Condition": "Brand New"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "ring",
-      "moissanite",
-      "halo",
-      "silver",
-      "engagement",
-      "gift"
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "retro",
+      "white",
+      "red",
+      "high-top",
+      "stockx"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-04-26T01:10:06.764316+00:00"
+  },
+  {
+    "slug": "under-armour-kids-light-blue-4y",
+    "name": "Under Armour Kids Light Blue Sneaker",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Under Armour kids sneaker in light blue with white midsole. A breathable mesh runner with the classic UA logo on the tongue. Brand new from a Whatnot live random pull. Size 4Y (kids).",
+    "shortDescription": "Brand new — Whatnot random pull",
+    "images": [
+      "/images/products/under-armour-kids-light-blue-4y/IMG_1942.jpg",
+      "/images/products/under-armour-kids-light-blue-4y/IMG_1943.jpg",
+      "/images/products/under-armour-kids-light-blue-4y/IMG_1944.jpg",
+      "/images/products/under-armour-kids-light-blue-4y/IMG_1945.jpg"
+    ],
+    "specs": {
+      "Size": "4Y",
+      "Brand": "Under Armour",
+      "Color": "Light Blue / White",
+      "Model": "Random Pull",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "under-armour",
+      "kids",
+      "youth",
+      "light-blue",
+      "running"
+    ],
+    "createdAt": "2026-04-26T01:10:03.643423+00:00"
+  },
+  {
+    "slug": "adidas-top-ten-hi-white-navy",
+    "name": "Adidas Top Ten Hi White / Navy",
+    "price": 65,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Top Ten Hi in white leather with navy three-stripes and red trim accents. A retro basketball silhouette from the Adidas Originals archive, featuring the classic Top Ten branding on the tongue. Brand new with original box and tags. Size 11.",
+    "shortDescription": "Brand new with original box",
+    "images": [
+      "/images/products/adidas-top-ten-hi-white-navy/IMG_1938.jpg",
+      "/images/products/adidas-top-ten-hi-white-navy/IMG_1939.jpg",
+      "/images/products/adidas-top-ten-hi-white-navy/IMG_1940.jpg"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Adidas",
+      "Color": "White / Navy / Red",
+      "Model": "Top Ten Hi",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "top-ten",
+      "originals",
+      "retro",
+      "white",
+      "navy",
+      "high-top"
+    ],
+    "createdAt": "2026-04-26T01:09:59.197998+00:00"
   },
   {
     "slug": "nike-dunk-low-light-carbon",
@@ -1691,34 +1849,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
     ],
     "specs": {
       "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -1772,62 +1928,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_1.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
-    ],
-    "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
     ],
     "specs": {
       "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -1860,6 +1988,36 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_1.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+    ],
+    "specs": {
+      "Size": "6.5",
+      "Brand": "Adidas",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
