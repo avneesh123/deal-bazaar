@@ -13,6 +13,7 @@ import path from "path";
 import { execSync } from "child_process";
 import sharp from "sharp";
 import { removeBackground } from "@imgly/background-removal-node";
+import { classifyView } from "./classify-view";
 
 const CANVAS_SIZE = 1000;
 const PADDING_PCT = 0.1;
@@ -119,8 +120,14 @@ async function makeCatalogReady(
   return outputPath;
 }
 
+export interface ProcessOptions {
+  /** When true, skip the Gemini quality gate (for legacy / debugging). */
+  skipGate?: boolean;
+}
+
 export async function processFolderLocal(
-  folder: string
+  folder: string,
+  options: ProcessOptions = {}
 ): Promise<string[]> {
   const abs = path.resolve(folder);
   const out = path.join(abs, "catalog");
@@ -138,7 +145,14 @@ export async function processFolderLocal(
   }
 
   console.log(`\nProcessing ${files.length} images in ${abs}\n`);
+  const useGate = !options.skipGate && !!process.env.GEMINI_API_KEY;
+  if (!useGate && !options.skipGate) {
+    console.log("  (no GEMINI_API_KEY — skipping quality gate)\n");
+  }
+
   const results: string[] = [];
+  const stats = { processed: 0, skipped_existing: 0, gated_out: 0, failed: 0 };
+
   for (const file of files) {
     const filePath = path.join(abs, file);
     const ext = path.extname(file).toLowerCase();
@@ -147,18 +161,37 @@ export async function processFolderLocal(
     if (fs.existsSync(outPath)) {
       console.log(`[skip] ${stem}.png exists`);
       results.push(outPath);
+      stats.skipped_existing++;
       continue;
     }
     try {
+      if (useGate) {
+        const verdict = await classifyView(filePath);
+        if (verdict.category !== "catalog-good") {
+          console.log(
+            `  [gate] reject ${file} → ${verdict.category} (${verdict.reason})`
+          );
+          stats.gated_out++;
+          continue;
+        }
+        console.log(`  [gate] accept ${file} (${verdict.view ?? "view?"})`);
+      }
       const jpg = ext === ".heic" ? await convertHeicToJpg(filePath) : filePath;
       const noBg = await bgRemoveLocal(jpg);
       await makeCatalogReady(noBg, outPath);
       results.push(outPath);
+      stats.processed++;
       console.log(`  ✓ ${stem} done\n`);
     } catch (e) {
+      stats.failed++;
       console.error(`  ✗ ${stem}: ${(e as Error).message}\n`);
     }
   }
+
+  console.log(
+    `\nDone: ${stats.processed} processed, ${stats.skipped_existing} cached, ` +
+      `${stats.gated_out} gated out, ${stats.failed} failed`
+  );
   return results;
 }
 
@@ -169,7 +202,8 @@ if (isDirectRun) {
     console.error("Usage: npx tsx scripts/lib/process-images-local.ts <folder>");
     process.exit(1);
   }
-  processFolderLocal(target).catch((err) => {
+  const skipGate = process.argv.includes("--no-gate");
+  processFolderLocal(target, { skipGate }).catch((err) => {
     console.error("Fatal:", err.message);
     process.exit(1);
   });

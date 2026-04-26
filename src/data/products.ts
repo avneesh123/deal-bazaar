@@ -338,10 +338,8 @@ export const products: Product[] = [
     "description": "Air Jordan 6 Retro in the Red Oreo colorway — white leather upper with red speckled accents and red lace lock. Comes with original box (red speckled). Pre-owned, in good condition. Size 8.5 men's.",
     "shortDescription": "Pre-owned with original box",
     "images": [
-      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1958.jpg",
-      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1959.jpg",
-      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1960.jpg",
-      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1961.jpg"
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1961.jpg",
+      "/images/products/air-jordan-6-retro-red-oreo-pre-owned/IMG_1959.jpg"
     ],
     "specs": {
       "Size": "8.5",
