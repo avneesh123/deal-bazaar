@@ -336,9 +336,9 @@ export const products: Product[] = [
     "description": "Nike Air Force 1 Low in the bold 'Inside Out' Green Bean colorway — grey nylon mesh and maroon/purple leather upper sitting on a black-and-white houndstooth-print midsole, with a vivid green leather lining that wraps the collar and tongue (NIKE AIR debossed in green). A standout 2014 'Year of the Snake'-era pair. Pre-owned, in good condition, comes with original box. Size 11.5 men's.",
     "shortDescription": "Pre-owned with original box",
     "images": [
+      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_hero_2026-04-26.jpg",
       "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5702.jpg",
-      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5703.jpg",
-      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5704.jpg"
+      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5703.jpg"
     ],
     "specs": {
       "Size": "11.5",
