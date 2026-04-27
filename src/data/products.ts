@@ -107,37 +107,64 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
-    "slug": "emerald-peacock-necklace-set",
-    "name": "Emerald Peacock Necklace & Earring Set",
-    "price": 189,
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A breathtaking Victorian-inspired jewelry set featuring an elaborate emerald green crystal necklace with a stunning peacock pendant and matching jhumka drop earrings. The necklace showcases layers of sparkling green and clear crystals in an ornate gold-tone setting. The matching earrings feature cascading crystal drops. Perfect for weddings, formal events, or as a collector's statement piece.",
-    "shortDescription": "Ornate emerald crystal necklace with peacock pendant & earrings",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
     "images": [
-      "/images/products/jewelry/emerald-peacock-necklace-set-1.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-2.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-3.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-4.jpg"
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
     ],
     "specs": {
-      "Type": "Necklace & Earring Set",
+      "Type": "Chain Bracelet",
       "Brand": "DealBazaar",
-      "Stone": "Emerald Crystal",
-      "Style": "Victorian / Indian",
-      "Material": "Gold-Tone Alloy / Crystal",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "necklace",
-      "earrings",
-      "set",
-      "emerald",
-      "peacock",
-      "crystal",
-      "victorian",
-      "wedding"
+      "bracelet",
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
+    "images": [
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+    ],
+    "specs": {
+      "Type": "Ring",
+      "Brand": "DealBazaar",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "ring",
+      "moissanite",
+      "halo",
+      "silver",
+      "engagement",
+      "gift"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -170,39 +197,6 @@ export const products: Product[] = [
       "sterling",
       "mesh",
       "luxury"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
-    "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
-    ],
-    "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
-      "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -266,66 +260,106 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
+    "slug": "emerald-peacock-necklace-set",
+    "name": "Emerald Peacock Necklace & Earring Set",
+    "price": 189,
     "currency": "USD",
     "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "description": "A breathtaking Victorian-inspired jewelry set featuring an elaborate emerald green crystal necklace with a stunning peacock pendant and matching jhumka drop earrings. The necklace showcases layers of sparkling green and clear crystals in an ornate gold-tone setting. The matching earrings feature cascading crystal drops. Perfect for weddings, formal events, or as a collector's statement piece.",
+    "shortDescription": "Ornate emerald crystal necklace with peacock pendant & earrings",
     "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+      "/images/products/jewelry/emerald-peacock-necklace-set-1.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-2.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-3.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-4.jpg"
     ],
     "specs": {
-      "Type": "Chain Bracelet",
+      "Type": "Necklace & Earring Set",
       "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
+      "Stone": "Emerald Crystal",
+      "Style": "Victorian / Indian",
+      "Material": "Gold-Tone Alloy / Crystal",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
+      "necklace",
+      "earrings",
+      "set",
+      "emerald",
+      "peacock",
+      "crystal",
+      "victorian",
+      "wedding"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
     "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
     ],
     "specs": {
-      "Type": "Ring",
+      "Type": "Bangle",
       "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "ring",
-      "moissanite",
-      "halo",
+      "bangle",
       "silver",
-      "engagement",
-      "gift"
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "nike-air-force-1-low-inside-out-green-bean",
+    "name": "Nike Air Force 1 Low Inside Out Green Bean (Pre-Owned)",
+    "price": 100,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Force 1 Low in the bold 'Inside Out' Green Bean colorway — grey nylon mesh and maroon/purple leather upper sitting on a black-and-white houndstooth-print midsole, with a vivid green leather lining that wraps the collar and tongue (NIKE AIR debossed in green). A standout 2014 'Year of the Snake'-era pair. Pre-owned, in good condition, comes with original box. Size 11.5 men's.",
+    "shortDescription": "Pre-owned with original box",
+    "images": [
+      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5702.jpg",
+      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5703.jpg",
+      "/images/products/nike-air-force-1-low-inside-out-green-bean/IMG_5704.jpg"
+    ],
+    "specs": {
+      "Size": "11.5",
+      "Brand": "Nike",
+      "Color": "Inside Out / Green Bean (Grey / Maroon / Green)",
+      "Model": "Air Force 1 Low",
+      "Condition": "Pre-Owned"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "air-force-1",
+      "af1",
+      "inside-out",
+      "green-bean",
+      "year-of-the-snake",
+      "pre-owned",
+      "maroon",
+      "green"
+    ],
+    "createdAt": "2026-04-27T01:35:21.964158+00:00"
   },
   {
     "slug": "air-jordan-6-retro-red-oreo-pre-owned",
@@ -1835,6 +1869,54 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-blue-green",
     "name": "Adidas Gazelle Blue Green",
     "price": 35,
@@ -1897,83 +1979,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
-    ],
-    "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
-    "images": [
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
-    ],
-    "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
-      "Condition": "Brand New"
-    },
-    "retailPrice": 185,
-    "priceSources": [
-      {
-        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "Walmart",
-        "price": 169.99
-      },
-      {
-        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Poshmark",
-        "price": 185
-      },
-      {
-        "url": "https://www.ebay.com/itm/305789295020",
-        "name": "eBay",
-        "price": 119.95
-      }
-    ],
-    "featured": false,
-    "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
     "slug": "adidas-gazelle-indoor-orange-black-gum",
     "name": "Adidas Gazelle Indoor Orange Black Gum",
     "price": 85,
@@ -2001,6 +2006,35 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+    ],
+    "specs": {
+      "Size": "6.5",
+      "Brand": "Adidas",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
