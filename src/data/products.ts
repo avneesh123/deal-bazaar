@@ -682,8 +682,7 @@ export const products: Product[] = [
       "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_1.jpg",
       "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_2.jpg",
       "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_3.jpg",
-      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_4.jpg",
-      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_5.jpg"
+      "/images/products/adidas-samba-62-camel-tan/adidas-samba-62-camel-tan_4.jpg"
     ],
     "specs": {
       "Size": "9",
