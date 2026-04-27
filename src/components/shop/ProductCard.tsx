@@ -112,6 +112,35 @@ export default function ProductCard({ product, index }: ProductCardProps) {
             </span>
           )}
         </div>
+
+        {/* Inline metadata pills — Skechers' size/swatch row, our flavor.
+            Size + condition are surfaced for fast scanning. */}
+        <div className="mt-3 flex flex-wrap items-center gap-1.5">
+          {size && (
+            <span className="numeral text-[10px] tracking-wider border border-ink/20 text-ink px-2 py-0.5">
+              US {size}
+            </span>
+          )}
+          {product.specs?.Condition && (
+            <span className="text-[10px] uppercase tracking-[0.22em] border border-ink/20 text-ink-soft px-2 py-0.5">
+              {product.specs.Condition}
+            </span>
+          )}
+          {product.specs?.Brand && !size && (
+            <span className="text-[10px] uppercase tracking-[0.22em] border border-ink/20 text-ink-soft px-2 py-0.5">
+              {product.specs.Brand}
+            </span>
+          )}
+        </div>
+
+        {/* Persistent micro-promo line — Skechers had buy-one-get-50, ours
+            is a quiet authentication callout. */}
+        <p className="mt-2 text-[10px] uppercase tracking-[0.22em] text-oxblood/85 flex items-center gap-1.5">
+          <span aria-hidden className="text-brass">
+            ✦
+          </span>
+          Bench-checked &amp; ships within 48h
+        </p>
       </div>
     </Link>
   );

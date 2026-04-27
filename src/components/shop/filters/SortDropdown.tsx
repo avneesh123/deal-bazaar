@@ -38,7 +38,7 @@ export default function SortDropdown({ value, onChange }: SortDropdownProps) {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 px-4 py-2 text-sm border border-dark-border rounded-sm text-text-secondary hover:border-gold/50 hover:text-gold transition-colors duration-200"
+        className="flex items-center gap-2 px-4 py-2 text-[11px] uppercase tracking-[0.24em] border border-ink/25 text-ink hover:border-ink hover:bg-ink/5 transition-colors duration-200"
       >
         <svg
           className="w-4 h-4"
@@ -75,7 +75,7 @@ export default function SortDropdown({ value, onChange }: SortDropdownProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.15 }}
-            className="absolute right-0 top-full mt-1 z-50 w-52 bg-dark-card border border-dark-border rounded-sm shadow-xl overflow-hidden"
+            className="absolute right-0 top-full mt-1 z-50 w-56 bg-paper border border-ink/20 shadow-[0_8px_24px_rgba(13,13,13,0.12)] overflow-hidden"
           >
             {sortOptions.map((opt) => {
               const isActive = opt.value === value;
@@ -86,16 +86,16 @@ export default function SortDropdown({ value, onChange }: SortDropdownProps) {
                     onChange(opt.value);
                     setOpen(false);
                   }}
-                  className={`flex items-center justify-between w-full px-4 py-2.5 text-sm transition-colors duration-150 ${
+                  className={`flex items-center justify-between w-full px-4 py-2.5 text-[11px] uppercase tracking-[0.22em] transition-colors duration-150 ${
                     isActive
-                      ? "text-gold bg-gold/5"
-                      : "text-text-secondary hover:text-text-primary hover:bg-white/5"
+                      ? "text-oxblood bg-oxblood/5"
+                      : "text-ink-soft hover:text-ink hover:bg-ink/5"
                   }`}
                 >
                   {opt.label}
                   {isActive && (
                     <svg
-                      className="w-4 h-4 text-gold"
+                      className="w-4 h-4 text-oxblood"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

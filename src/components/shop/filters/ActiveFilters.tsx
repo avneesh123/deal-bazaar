@@ -64,7 +64,7 @@ export default function ActiveFilters({
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.15 }}
             onClick={() => onRemove(f.dimension, f.value)}
-            className="flex items-center gap-1.5 px-3 py-1 bg-gold/10 border border-gold/30 text-gold text-xs uppercase tracking-wide rounded-sm whitespace-nowrap hover:bg-gold/20 transition-colors duration-200"
+            className="flex items-center gap-1.5 px-3 py-1 bg-oxblood/10 border border-oxblood/40 text-oxblood text-[10px] uppercase tracking-[0.22em] whitespace-nowrap hover:bg-oxblood hover:text-paper transition-colors duration-200"
           >
             {f.label}
             <svg
@@ -83,12 +83,6 @@ export default function ActiveFilters({
           </motion.button>
         ))}
       </AnimatePresence>
-      <button
-        onClick={onClearAll}
-        className="text-xs text-text-secondary hover:text-gold transition-colors duration-200 whitespace-nowrap ml-1"
-      >
-        Clear all
-      </button>
     </div>
   );
 }

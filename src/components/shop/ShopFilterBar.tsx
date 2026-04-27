@@ -33,20 +33,20 @@ export default function ShopFilterBar({
   onClearAll,
 }: ShopFilterBarProps) {
   return (
-    <div className="mb-6">
-      <div className="flex items-center justify-between gap-4">
-        {/* Left side: filter toggle + result count */}
-        <div className="flex items-center gap-4">
+    <div className="mb-8 border-y border-ink/15 py-3">
+      <div className="flex items-center justify-between gap-4 flex-wrap">
+        {/* Left: Filter toggle + result count + clear all */}
+        <div className="flex items-center gap-4 flex-wrap">
           <button
             onClick={onTogglePanel}
-            className={`flex items-center gap-2 px-4 py-2 text-sm border rounded-sm transition-all duration-200 ${
+            className={`flex items-center gap-2 px-4 py-2 text-[11px] uppercase tracking-[0.24em] border transition-colors duration-200 ${
               panelOpen
-                ? "border-gold text-gold bg-gold/5"
-                : "border-dark-border text-text-secondary hover:border-gold/50 hover:text-gold"
+                ? "bg-ink text-paper border-ink"
+                : "border-ink/25 text-ink hover:border-ink hover:bg-ink/5"
             }`}
           >
             <svg
-              className="w-4 h-4"
+              className="w-3.5 h-3.5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -60,17 +60,31 @@ export default function ShopFilterBar({
             </svg>
             <span>Filters</span>
             {meta.activeCount > 0 && (
-              <span className="text-[10px] bg-gold text-dark font-bold px-1.5 py-0.5 rounded-sm min-w-[18px] text-center">
+              <span
+                className={`numeral text-[10px] px-1.5 py-0.5 tabular-nums ${
+                  panelOpen ? "bg-paper text-ink" : "bg-oxblood text-paper"
+                }`}
+              >
                 {meta.activeCount}
               </span>
             )}
           </button>
-          <span className="text-sm text-text-secondary hidden sm:inline">
-            {meta.totalResults} product{meta.totalResults !== 1 ? "s" : ""}
+
+          <span className="numeral text-[11px] tracking-wider text-ink-soft">
+            {meta.totalResults} {meta.totalResults === 1 ? "piece" : "pieces"}
           </span>
+
+          {meta.activeCount > 0 && (
+            <button
+              onClick={onClearAll}
+              className="text-[11px] uppercase tracking-[0.24em] text-oxblood link-underline pb-0.5"
+            >
+              Clear all
+            </button>
+          )}
         </div>
 
-        {/* Right side: sort */}
+        {/* Right: sort */}
         <SortDropdown value={sort} onChange={onSort} />
       </div>
 

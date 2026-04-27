@@ -81,26 +81,28 @@ function ShopContentInner() {
             <div className="space-y-16">
               {sneakers.length > 0 && (
                 <div>
-                  <div className="flex items-baseline gap-3 mb-8">
-                    <h2 className="text-xl font-semibold text-white tracking-wide">
+                  <div className="flex items-baseline gap-3 mb-6">
+                    <h2 className="font-serif display-soft text-2xl md:text-3xl text-ink">
                       Sneakers
                     </h2>
-                    <span className="text-text-secondary text-sm">
-                      {sneakers.length} items
+                    <span className="numeral text-[11px] tracking-wider text-ink-soft">
+                      {sneakers.length} pieces
                     </span>
+                    <span className="flex-1 h-px bg-ink/15" />
                   </div>
                   <ProductGrid products={sneakers} />
                 </div>
               )}
               {jewelry.length > 0 && (
                 <div>
-                  <div className="flex items-baseline gap-3 mb-8">
-                    <h2 className="text-xl font-semibold text-white tracking-wide">
+                  <div className="flex items-baseline gap-3 mb-6">
+                    <h2 className="font-serif display-soft text-2xl md:text-3xl text-ink">
                       Jewelry
                     </h2>
-                    <span className="text-text-secondary text-sm">
-                      {jewelry.length} items
+                    <span className="numeral text-[11px] tracking-wider text-ink-soft">
+                      {jewelry.length} pieces
                     </span>
+                    <span className="flex-1 h-px bg-ink/15" />
                   </div>
                   <ProductGrid products={jewelry} />
                 </div>
