@@ -27,17 +27,44 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string>("all");
   const [statusFilter, setStatusFilter] = useState<string>("all");
+  const [batchFilter, setBatchFilter] = useState<string>("all");
   const [editingPrice, setEditingPrice] = useState<string | null>(null);
   const [priceValue, setPriceValue] = useState("");
   const [selected, setSelected] = useState<Set<string>>(new Set());
 
+  // Distinct batch prefixes — e.g. "B9-1", "B9-2", "B8-3" → ["B8", "B9"]
+  // Falls back to using the box_number itself when there's no "-".
+  const batchPrefixes = (() => {
+    const seen = new Set<string>();
+    for (const p of products) {
+      const box = (p.box_number ?? "").trim();
+      if (!box) continue;
+      const dash = box.indexOf("-");
+      seen.add(dash > 0 ? box.slice(0, dash) : box);
+    }
+    return [...seen].sort((a, b) => {
+      const an = parseInt(a.replace(/\D/g, ""), 10);
+      const bn = parseInt(b.replace(/\D/g, ""), 10);
+      if (!isNaN(an) && !isNaN(bn)) return bn - an;
+      return a.localeCompare(b);
+    });
+  })();
+
   const filtered = products.filter((p) => {
+    const q = search.toLowerCase();
+    const box = (p.box_number ?? "").toLowerCase();
     const matchesSearch =
-      p.name.toLowerCase().includes(search.toLowerCase()) ||
-      p.slug.toLowerCase().includes(search.toLowerCase());
+      !q ||
+      p.name.toLowerCase().includes(q) ||
+      p.slug.toLowerCase().includes(q) ||
+      box.includes(q);
     const matchesCategory = categoryFilter === "all" || p.category === categoryFilter;
     const matchesStatus = statusFilter === "all" || p.status === statusFilter;
-    return matchesSearch && matchesCategory && matchesStatus;
+    const matchesBatch =
+      batchFilter === "all" ||
+      box === batchFilter.toLowerCase() ||
+      box.startsWith(batchFilter.toLowerCase() + "-");
+    return matchesSearch && matchesCategory && matchesStatus && matchesBatch;
   });
 
   const fmt = (n: number) =>
@@ -94,7 +121,7 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search products..."
+          placeholder="Search name, slug, or box # (try B9-1)..."
           className="bg-gray-950 border border-gray-700 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-gold flex-1 min-w-[200px]"
         />
         <select
@@ -116,6 +143,18 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
           <option value="sold">Sold</option>
           <option value="reserved">Reserved</option>
           <option value="unlisted">Unlisted</option>
+        </select>
+        <select
+          value={batchFilter}
+          onChange={(e) => setBatchFilter(e.target.value)}
+          className="bg-gray-950 border border-gray-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-gold cursor-pointer"
+        >
+          <option value="all">All Batches</option>
+          {batchPrefixes.map((b) => (
+            <option key={b} value={b}>
+              Batch {b}
+            </option>
+          ))}
         </select>
       </div>
 
