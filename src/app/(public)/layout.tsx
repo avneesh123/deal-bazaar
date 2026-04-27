@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import { ClipPathDefs } from "@/components/ui/clipped-shape-image";
 
 export default function PublicLayout({
   children,
@@ -9,6 +10,7 @@ export default function PublicLayout({
 }) {
   return (
     <div className="paper-grain min-h-screen bg-paper text-ink">
+      <ClipPathDefs />
       <AnnouncementBar />
       <Navbar />
       <main className="relative z-10 pt-[5.25rem] md:pt-[5.75rem]">

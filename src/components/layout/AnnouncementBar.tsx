@@ -11,7 +11,7 @@ export default function AnnouncementBar() {
   const track = [...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS];
 
   return (
-    <div className="fixed top-0 inset-x-0 z-50 bg-ink text-paper border-b border-ink/30">
+    <div className="fixed top-0 inset-x-0 z-50 bg-paper-deep text-ink border-b border-ink/15">
       <div className="overflow-hidden">
         <div className="marquee-track py-2 text-[11px] uppercase tracking-[0.22em]">
           {track.map((item, i) => (

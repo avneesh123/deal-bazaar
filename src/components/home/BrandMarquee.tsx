@@ -19,8 +19,8 @@ export default function BrandMarquee() {
   const track = [...BRANDS, ...BRANDS];
 
   return (
-    <section className="relative bg-ink text-paper py-10 md:py-14 overflow-hidden border-y border-ink">
-      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 mb-6 flex items-end justify-between text-[10px] uppercase tracking-[0.32em] text-paper/55">
+    <section className="relative bg-paper-deep text-ink py-10 md:py-14 overflow-hidden border-y border-ink/15">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 mb-6 flex items-end justify-between text-[10px] uppercase tracking-[0.32em] text-ink/55">
         <span className="numeral">— Houses we authenticate</span>
         <span>13 of 40+</span>
       </div>

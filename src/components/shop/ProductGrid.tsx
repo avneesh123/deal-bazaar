@@ -59,15 +59,15 @@ export default function ProductGrid({
 
       {showBreak && (
         <aside
-          className="my-12 md:my-16 py-10 md:py-14 px-6 md:px-10 bg-ink text-paper relative overflow-hidden"
+          className="my-12 md:my-16 py-10 md:py-14 px-6 md:px-10 bg-paper-deep border border-ink/15 text-ink relative overflow-hidden"
           aria-label="House manifesto"
         >
           <div className="grid grid-cols-12 gap-4 items-end">
             <div className="col-span-12 md:col-span-2">
-              <div className="numeral text-[10px] tracking-[0.3em] text-paper/55 mb-2">
+              <div className="numeral text-[10px] tracking-[0.3em] text-ink/55 mb-2">
                 § Mid-floor
               </div>
-              <div className="text-[10px] uppercase tracking-[0.32em] text-paper/55">
+              <div className="text-[10px] uppercase tracking-[0.32em] text-ink/55">
                 The thesis
               </div>
             </div>

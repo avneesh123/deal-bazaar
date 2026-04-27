@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
 import { formatPrice, thumbnailUrl } from "@/lib/utils";
+import { clipForIndex } from "@/components/ui/clipped-shape-image";
 
 interface ProductCardProps {
   product: Product;
@@ -47,46 +48,51 @@ export default function ProductCard({ product, index }: ProductCardProps) {
         </div>
       )}
 
-      {/* Image */}
-      <div className="relative aspect-[4/5] overflow-hidden bg-paper-deep border border-ink/10">
-        {product.images[0] && !product.images[0].includes("placeholder") ? (
-          <Image
-            src={thumbnailUrl(product.images[0])}
-            alt={product.name}
-            fill
-            loading="lazy"
-            className="object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-serif display-italic text-3xl text-ink-mute/40 text-center px-6">
-              {product.name}
-            </span>
-          </div>
-        )}
+      {/* Image — clipped to one of three editorial shapes */}
+      <div className="relative aspect-[4/5]">
+        <figure
+          className="absolute inset-0 overflow-hidden bg-paper-edge"
+          style={{ clipPath: `url(#${clipForIndex(index ?? 0)})` }}
+        >
+          {product.images[0] && !product.images[0].includes("placeholder") ? (
+            <Image
+              src={thumbnailUrl(product.images[0])}
+              alt={product.name}
+              fill
+              loading="lazy"
+              className="object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="font-serif display-italic text-3xl text-ink-mute/40 text-center px-6">
+                {product.name}
+              </span>
+            </div>
+          )}
+        </figure>
 
         {/* Top badges */}
-        <div className="absolute top-3 left-3 flex flex-col items-start gap-1.5">
+        <div className="absolute top-3 left-3 flex flex-col items-start gap-1.5 z-10">
           {discount > 0 && (
-            <span className="bg-oxblood text-paper text-[10px] font-medium uppercase tracking-[0.2em] px-2.5 py-1">
+            <span className="bg-oxblood text-ink text-[10px] font-medium uppercase tracking-[0.2em] px-2.5 py-1">
               −{discount}%
             </span>
           )}
-          <span className="bg-paper/85 text-ink text-[10px] uppercase tracking-[0.22em] px-2.5 py-1 backdrop-blur-sm">
+          <span className="bg-paper/85 text-ink text-[10px] uppercase tracking-[0.22em] px-2.5 py-1 backdrop-blur-sm border border-ink/15">
             {product.specs?.Condition || product.category}
           </span>
         </div>
 
         {size && (
-          <span className="absolute top-3 right-3 numeral text-[10px] tracking-wider bg-paper/85 text-ink px-2.5 py-1 backdrop-blur-sm">
+          <span className="absolute top-3 right-3 z-10 numeral text-[10px] tracking-wider bg-paper/85 text-ink px-2.5 py-1 backdrop-blur-sm border border-ink/15">
             US {size}
           </span>
         )}
 
         {/* Hover scrim — brand watermark fades in */}
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute bottom-3 right-3 text-[10px] uppercase tracking-[0.28em] text-paper opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-paper/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[5]" />
+        <div className="absolute bottom-3 right-3 z-10 text-[10px] uppercase tracking-[0.28em] text-ink opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           View piece →
         </div>
       </div>
