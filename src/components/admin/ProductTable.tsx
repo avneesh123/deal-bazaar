@@ -28,9 +28,32 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
   const [categoryFilter, setCategoryFilter] = useState<string>("all");
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const [batchFilter, setBatchFilter] = useState<string>("all");
+  const [sortField, setSortField] = useState<
+    "created_at" | "name" | "price" | "box"
+  >("created_at");
+  const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
   const [editingPrice, setEditingPrice] = useState<string | null>(null);
   const [priceValue, setPriceValue] = useState("");
   const [selected, setSelected] = useState<Set<string>>(new Set());
+
+  function toggleSort(field: typeof sortField) {
+    if (sortField === field) {
+      setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setSortField(field);
+      setSortDir(field === "created_at" ? "desc" : "asc");
+    }
+  }
+
+  function formatAdded(iso: string): string {
+    if (!iso) return "—";
+    const d = new Date(iso);
+    const days = (Date.now() - d.getTime()) / 86_400_000;
+    if (days < 1) return "today";
+    if (days < 2) return "yesterday";
+    if (days < 30) return `${Math.floor(days)}d ago`;
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
 
   // Distinct batch prefixes — e.g. "B9-1", "B9-2", "B8-3" → ["B8", "B9"]
   // Falls back to using the box_number itself when there's no "-".
@@ -50,22 +73,49 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
     });
   })();
 
-  const filtered = products.filter((p) => {
-    const q = search.toLowerCase();
-    const box = (p.box_number ?? "").toLowerCase();
-    const matchesSearch =
-      !q ||
-      p.name.toLowerCase().includes(q) ||
-      p.slug.toLowerCase().includes(q) ||
-      box.includes(q);
-    const matchesCategory = categoryFilter === "all" || p.category === categoryFilter;
-    const matchesStatus = statusFilter === "all" || p.status === statusFilter;
-    const matchesBatch =
-      batchFilter === "all" ||
-      box === batchFilter.toLowerCase() ||
-      box.startsWith(batchFilter.toLowerCase() + "-");
-    return matchesSearch && matchesCategory && matchesStatus && matchesBatch;
-  });
+  const filtered = products
+    .filter((p) => {
+      const q = search.toLowerCase();
+      const box = (p.box_number ?? "").toLowerCase();
+      const matchesSearch =
+        !q ||
+        p.name.toLowerCase().includes(q) ||
+        p.slug.toLowerCase().includes(q) ||
+        box.includes(q);
+      const matchesCategory =
+        categoryFilter === "all" || p.category === categoryFilter;
+      const matchesStatus = statusFilter === "all" || p.status === statusFilter;
+      const matchesBatch =
+        batchFilter === "all" ||
+        box === batchFilter.toLowerCase() ||
+        box.startsWith(batchFilter.toLowerCase() + "-");
+      return matchesSearch && matchesCategory && matchesStatus && matchesBatch;
+    })
+    .sort((a, b) => {
+      const dir = sortDir === "asc" ? 1 : -1;
+      switch (sortField) {
+        case "name":
+          return a.name.localeCompare(b.name) * dir;
+        case "price":
+          return (a.selling_price - b.selling_price) * dir;
+        case "box":
+          return (a.box_number ?? "").localeCompare(b.box_number ?? "", undefined, {
+            numeric: true,
+          }) * dir;
+        case "created_at":
+        default:
+          return (
+            (new Date(a.created_at).getTime() - new Date(b.created_at).getTime()) * dir
+          );
+      }
+    });
+
+  function arrow(field: typeof sortField) {
+    if (sortField !== field) return null;
+    return (
+      <span className="ml-1 text-gold">{sortDir === "asc" ? "↑" : "↓"}</span>
+    );
+  }
 
   const fmt = (n: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
@@ -197,12 +247,33 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                     className="cursor-pointer"
                   />
                 </th>
-                <th className="p-4 font-medium">Product</th>
+                <th
+                  className="p-4 font-medium cursor-pointer hover:text-gray-300 select-none"
+                  onClick={() => toggleSort("name")}
+                >
+                  Product{arrow("name")}
+                </th>
                 <th className="p-4 font-medium">Category</th>
-                <th className="p-4 font-medium">Price</th>
+                <th
+                  className="p-4 font-medium cursor-pointer hover:text-gray-300 select-none"
+                  onClick={() => toggleSort("price")}
+                >
+                  Price{arrow("price")}
+                </th>
                 <th className="p-4 font-medium">Status</th>
                 <th className="p-4 font-medium">Qty</th>
-                <th className="p-4 font-medium">Box #</th>
+                <th
+                  className="p-4 font-medium cursor-pointer hover:text-gray-300 select-none"
+                  onClick={() => toggleSort("box")}
+                >
+                  Box #{arrow("box")}
+                </th>
+                <th
+                  className="p-4 font-medium cursor-pointer hover:text-gray-300 select-none"
+                  onClick={() => toggleSort("created_at")}
+                >
+                  Added{arrow("created_at")}
+                </th>
                 <th className="p-4 font-medium">Actions</th>
               </tr>
             </thead>
@@ -287,6 +358,12 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
                   </td>
                   <td className="p-4 text-gray-300">{product.quantity}</td>
                   <td className="p-4 text-gray-400 text-xs">{product.box_number || "—"}</td>
+                  <td
+                    className="p-4 text-gray-400 text-xs whitespace-nowrap"
+                    title={new Date(product.created_at).toLocaleString()}
+                  >
+                    {formatAdded(product.created_at)}
+                  </td>
                   <td className="p-4">
                     <div className="flex gap-3">
                       <a
@@ -307,7 +384,7 @@ export default function ProductTable({ products, onRefresh }: ProductTableProps)
               ))}
               {filtered.length === 0 && (
                 <tr>
-                  <td colSpan={8} className="p-8 text-center text-gray-500">
+                  <td colSpan={9} className="p-8 text-center text-gray-500">
                     No products found.
                   </td>
                 </tr>
