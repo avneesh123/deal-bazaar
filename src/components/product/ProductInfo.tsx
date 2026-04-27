@@ -19,47 +19,67 @@ export default function ProductInfo({ product }: ProductInfoProps) {
 
   return (
     <div>
-      <span className="text-gold uppercase tracking-widest text-sm">
+      <span className="text-[10px] uppercase tracking-[0.32em] text-ink-soft">
         {product.category}
       </span>
 
-      <h1 className="font-serif text-3xl md:text-4xl text-text-primary mt-2 mb-4">
+      <h1 className="font-serif display-soft text-[clamp(2rem,4vw,3.25rem)] leading-[1.05] text-ink mt-2 mb-5">
         {product.name}
       </h1>
 
-      <div className="mb-6">
-        <div className="flex items-center gap-3">
-          <p className="text-gold text-3xl font-semibold">
+      <div className="mb-7">
+        <div className="flex items-baseline gap-3">
+          <p className="numeral text-3xl md:text-4xl text-ink leading-none">
             {formatPrice(product.price, product.currency)}
           </p>
           {discount > 0 && (
-            <span className="text-red-500 text-lg font-bold italic">
-              {discount}% OFF
+            <span className="text-oxblood text-sm font-medium uppercase tracking-[0.22em]">
+              −{discount}%
             </span>
           )}
         </div>
         {discount > 0 && retailPrice && (
-          <p className="text-text-secondary text-sm mt-1">
-            reg. <span className="line-through">{formatPrice(retailPrice, product.currency)}</span>
+          <p className="text-ink-mute text-sm mt-2">
+            reg.{" "}
+            <span className="line-through numeral">
+              {formatPrice(retailPrice, product.currency)}
+            </span>
           </p>
         )}
+        <p className="mt-3 text-[10px] uppercase tracking-[0.22em] text-oxblood/85 flex items-center gap-1.5">
+          <span aria-hidden className="text-brass">
+            ✦
+          </span>
+          Bench-checked &amp; ships within 48h
+        </p>
       </div>
 
-      <p className="text-text-secondary leading-relaxed mb-8">
+      <p className="text-ink-soft text-[15px] leading-relaxed mb-8">
         {product.description}
       </p>
 
       {/* Specs */}
       {Object.keys(product.specs).length > 0 && (
-        <div className="border-t border-dark-border pt-6">
-          <h3 className="text-text-primary font-semibold uppercase tracking-widest text-sm mb-4">
-            Specifications
-          </h3>
-          <dl className="space-y-3">
+        <div className="border-t border-ink/15 pt-6">
+          <div className="flex items-baseline gap-3 mb-4">
+            <span className="numeral text-[10px] tracking-[0.3em] text-ink-mute">
+              §
+            </span>
+            <h3 className="text-[10px] uppercase tracking-[0.32em] text-ink">
+              Specifications
+            </h3>
+            <span className="flex-1 h-px bg-ink/15" />
+          </div>
+          <dl className="space-y-2.5">
             {Object.entries(product.specs).map(([key, value]) => (
-              <div key={key} className="flex justify-between text-sm">
-                <dt className="text-text-secondary">{key}</dt>
-                <dd className="text-text-primary">{value}</dd>
+              <div
+                key={key}
+                className="flex justify-between text-sm gap-4 pb-2.5 border-b border-ink/10 last:border-b-0"
+              >
+                <dt className="text-ink-soft uppercase tracking-[0.18em] text-[11px]">
+                  {key}
+                </dt>
+                <dd className="text-ink font-medium text-right">{value}</dd>
               </div>
             ))}
           </dl>
@@ -68,23 +88,29 @@ export default function ProductInfo({ product }: ProductInfoProps) {
 
       {/* Price Comparison */}
       {product.priceSources && product.priceSources.length > 0 && (
-        <div className="border-t border-dark-border pt-6 mt-6">
-          <h3 className="text-text-primary font-semibold uppercase tracking-widest text-sm mb-4">
-            Price Comparison
-          </h3>
-          <div className="bg-dark-secondary/50 rounded-lg border border-dark-border overflow-hidden">
+        <div className="border-t border-ink/15 pt-6 mt-8">
+          <div className="flex items-baseline gap-3 mb-4">
+            <span className="numeral text-[10px] tracking-[0.3em] text-ink-mute">
+              §
+            </span>
+            <h3 className="text-[10px] uppercase tracking-[0.32em] text-ink">
+              Compare retail
+            </h3>
+            <span className="flex-1 h-px bg-ink/15" />
+          </div>
+          <div className="bg-paper-deep/40 border border-ink/10 overflow-hidden">
             {product.priceSources.map((source, i) => (
               <div
                 key={i}
                 className={`flex items-center justify-between px-4 py-3 ${
-                  i > 0 ? "border-t border-dark-border" : ""
+                  i > 0 ? "border-t border-ink/10" : ""
                 }`}
               >
-                <span className="text-text-primary font-medium text-sm">
+                <span className="text-ink font-medium text-sm">
                   {source.name}
                 </span>
                 <div className="flex items-center gap-4">
-                  <span className="text-text-secondary text-sm">
+                  <span className="text-ink-soft text-sm numeral">
                     {source.price
                       ? formatPrice(source.price, product.currency)
                       : "—"}
@@ -93,9 +119,9 @@ export default function ProductInfo({ product }: ProductInfoProps) {
                     href={source.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gold text-sm hover:text-gold-light transition-colors"
+                    className="text-oxblood text-[10px] uppercase tracking-[0.22em] hover:text-oxblood-deep link-underline pb-0.5"
                   >
-                    {source.price ? `View on ${source.name}` : "Check Price"} &rarr;
+                    {source.price ? `View on ${source.name}` : "Check price"} →
                   </a>
                 </div>
               </div>

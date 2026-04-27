@@ -15,7 +15,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
   return (
     <div>
       {/* Main Image */}
-      <div className="aspect-square rounded-sm bg-dark-card border border-dark-border overflow-hidden mb-4 flex items-center justify-center relative">
+      <div className="aspect-square bg-paper-deep border border-ink/10 overflow-hidden mb-4 flex items-center justify-center relative">
         {hasRealImage ? (
           <Image
             src={images[activeIndex] || images[0]}
@@ -26,7 +26,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
             priority
           />
         ) : (
-          <span className="text-text-secondary/30 text-sm uppercase tracking-widest">
+          <span className="font-serif display-italic text-2xl text-ink-mute/40 text-center px-6">
             {productName}
           </span>
         )}
@@ -34,15 +34,15 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
 
       {/* Thumbnails */}
       {images.length > 1 && (
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap">
           {images.map((img, i) => (
             <button
               key={i}
               onClick={() => setActiveIndex(i)}
-              className={`relative aspect-square w-20 rounded-sm bg-dark-card border overflow-hidden transition-all cursor-pointer ${
+              className={`relative aspect-square w-20 bg-paper-deep border overflow-hidden transition-all cursor-pointer ${
                 i === activeIndex
-                  ? "border-gold"
-                  : "border-dark-border hover:border-gold/50"
+                  ? "border-oxblood ring-1 ring-oxblood/30"
+                  : "border-ink/15 hover:border-ink/40"
               }`}
             >
               {hasRealImage ? (
@@ -54,7 +54,7 @@ export default function ProductGallery({ images, productName }: ProductGalleryPr
                   sizes="80px"
                 />
               ) : (
-                <span className="flex items-center justify-center h-full text-xs text-text-secondary/30">
+                <span className="flex items-center justify-center h-full numeral text-xs text-ink-mute">
                   {i + 1}
                 </span>
               )}

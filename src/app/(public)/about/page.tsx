@@ -68,10 +68,10 @@ export default function AboutPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <h2 className="font-serif text-3xl md:text-4xl text-text-primary mb-6">
-                Where Luxury Meets <span className="text-gold">The Streets</span>
+              <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6">
+                Where Luxury Meets <span className="text-oxblood">The Streets</span>
               </h2>
-              <div className="space-y-4 text-text-secondary leading-relaxed">
+              <div className="space-y-4 text-ink-soft leading-relaxed">
                 <p>
                   Deal Bazaar started with a simple idea: why should premium
                   style be out of reach? We believe that everyone deserves
@@ -128,10 +128,10 @@ export default function AboutPage() {
       <section className="py-20 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <AnimatedSection>
-            <h2 className="font-serif text-3xl md:text-4xl text-text-primary mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl text-ink mb-6">
               Ready to Explore?
             </h2>
-            <p className="text-text-secondary mb-8">
+            <p className="text-ink-soft mb-8">
               Browse our curated collection and find your next statement piece.
             </p>
             <Button href="/shop" variant="primary">

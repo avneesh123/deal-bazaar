@@ -50,13 +50,15 @@ export default function RequestForm({ productName, category }: RequestFormProps)
   };
 
   const inputClass =
-    "w-full bg-dark-card border border-dark-border rounded-sm px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold transition-colors";
+    "w-full bg-paper border border-ink/20 px-4 py-2.5 text-sm text-ink placeholder:text-ink-mute focus:outline-none focus:border-oxblood transition-colors";
+  const labelClass =
+    "block text-[10px] uppercase tracking-[0.24em] text-ink-soft mb-1.5";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-text-secondary text-sm mb-1.5">Category</label>
+          <label className={labelClass}>Category</label>
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
@@ -71,7 +73,7 @@ export default function RequestForm({ productName, category }: RequestFormProps)
           </select>
         </div>
         <div>
-          <label className="block text-text-secondary text-sm mb-1.5">Size</label>
+          <label className={labelClass}>Size</label>
           <input
             type="text"
             value={size}
@@ -83,9 +85,7 @@ export default function RequestForm({ productName, category }: RequestFormProps)
       </div>
 
       <div>
-        <label className="block text-text-secondary text-sm mb-1.5">
-          What are you looking for? *
-        </label>
+        <label className={labelClass}>What are you looking for? *</label>
         <input
           type="text"
           value={item}
@@ -98,7 +98,7 @@ export default function RequestForm({ productName, category }: RequestFormProps)
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-text-secondary text-sm mb-1.5">Your Name</label>
+          <label className={labelClass}>Your Name</label>
           <input
             type="text"
             value={name}
@@ -108,9 +108,7 @@ export default function RequestForm({ productName, category }: RequestFormProps)
           />
         </div>
         <div>
-          <label className="block text-text-secondary text-sm mb-1.5">
-            Phone or Email
-          </label>
+          <label className={labelClass}>Phone or Email</label>
           <input
             type="text"
             value={contact}
@@ -122,9 +120,7 @@ export default function RequestForm({ productName, category }: RequestFormProps)
       </div>
 
       <div>
-        <label className="block text-text-secondary text-sm mb-1.5">
-          Additional Notes
-        </label>
+        <label className={labelClass}>Additional Notes</label>
         <textarea
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
@@ -136,9 +132,9 @@ export default function RequestForm({ productName, category }: RequestFormProps)
 
       <button
         type="submit"
-        className="w-full sm:w-auto bg-gold text-dark font-semibold rounded-sm px-8 py-3 text-sm uppercase tracking-wider hover:bg-gold-light transition-colors cursor-pointer"
+        className="inline-flex items-center justify-center gap-2 bg-ink text-paper px-7 py-4 text-[11px] uppercase tracking-[0.28em] hover:bg-oxblood transition-colors duration-300 cursor-pointer"
       >
-        Send Request via WhatsApp
+        Send request via WhatsApp →
       </button>
     </form>
   );

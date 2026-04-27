@@ -45,9 +45,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const related = await fetchRelatedProducts(product);
 
   return (
-    <section className="py-12 md:py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+    <section className="py-12 md:py-20 px-5 sm:px-8 lg:px-12">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 mb-20">
           <AnimatedSection>
             <ProductGallery images={product.images} productName={product.name} />
           </AnimatedSection>
@@ -55,9 +55,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <AnimatedSection delay={0.2}>
             <ProductInfo product={product} />
             <WhatsAppCTA productName={product.name} />
-            <div className="border-t border-dark-border pt-6 mt-6">
-              <p className="text-white font-medium mb-1">Need a different size?</p>
-              <p className="text-text-secondary text-sm mb-4">
+            <div className="border-t border-ink/15 pt-6 mt-8">
+              <div className="flex items-baseline gap-3 mb-3">
+                <span className="numeral text-[10px] tracking-[0.3em] text-ink-mute">
+                  §
+                </span>
+                <p className="text-[10px] uppercase tracking-[0.32em] text-ink">
+                  Need a different size?
+                </p>
+                <span className="flex-1 h-px bg-ink/15" />
+              </div>
+              <p className="text-ink-soft text-sm mb-5 max-w-md">
                 Let us know what you&apos;re looking for and we&apos;ll try to source it.
               </p>
               <RequestForm productName={product.name} category={product.category} />
@@ -68,7 +76,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
         {/* Related Products */}
         {related.length > 0 && (
           <div>
-            <SectionHeading title="You May Also Like" />
+            <SectionHeading
+              number="04"
+              eyebrow="From the same floor"
+              title="You may also like"
+            />
             <ProductGrid products={related} />
           </div>
         )}

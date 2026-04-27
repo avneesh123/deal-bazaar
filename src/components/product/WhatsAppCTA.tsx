@@ -7,8 +7,8 @@ interface WhatsAppCTAProps {
 
 export default function WhatsAppCTA({ productName }: WhatsAppCTAProps) {
   return (
-    <div className="border-t border-dark-border pt-6 mt-6 space-y-4">
-      <p className="text-text-secondary text-sm">
+    <div className="border-t border-ink/15 pt-6 mt-8 space-y-4">
+      <p className="text-ink-soft text-sm">
         Interested? Get in touch for pricing details and availability.
       </p>
       <div className="flex flex-col sm:flex-row gap-3">

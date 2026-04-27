@@ -32,7 +32,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
             <AnimatedSection>
-              <h2 className="font-serif text-2xl text-text-primary mb-6">
+              <h2 className="font-serif text-2xl text-ink mb-6">
                 Send Us a Message
               </h2>
               <ContactForm />
@@ -40,7 +40,7 @@ export default function ContactPage() {
 
             {/* Info */}
             <AnimatedSection delay={0.2}>
-              <h2 className="font-serif text-2xl text-text-primary mb-6">
+              <h2 className="font-serif text-2xl text-ink mb-6">
                 Other Ways to Reach Us
               </h2>
 
