@@ -107,71 +107,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
-    "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
-    ],
-    "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
-      "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
-    "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
-    ],
-    "specs": {
-      "Type": "Ring",
-      "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "ring",
-      "moissanite",
-      "halo",
-      "silver",
-      "engagement",
-      "gift"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
     "slug": "makeup-charm-bangle",
     "name": "Makeup Charm Bangle",
     "price": 65,
@@ -296,6 +231,39 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
     "slug": "dragon-mesh-bracelet",
     "name": "Dragon Head Sterling Silver Mesh Bracelet",
     "price": 350,
@@ -326,6 +294,74 @@ export const products: Product[] = [
       "luxury"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
+    "images": [
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+    ],
+    "specs": {
+      "Type": "Ring",
+      "Brand": "DealBazaar",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "ring",
+      "moissanite",
+      "halo",
+      "silver",
+      "engagement",
+      "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "q4-sports-em55-i-black-gold-navy-uk-4-5",
+    "name": "Q4 Sports EM55-I Black Gold Navy (UK 4.5)",
+    "price": 45,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Q4 Sports EM55-I mid-top basketball sneaker in black / gold / navy. Black breathable mesh upper, gold metallic toe overlay and tongue tag, gold stylized monogram on the lateral side panel, and a navy heel wrap printed with a metallic-gold sneaker-icon pattern. Brand new with the original Q4 Sports patterned box (lot #83). Style code Q4-EM01. Sourced from a Whatnot $1 sneaker auction (sneakerhustle / 5 Trillion Shoes). Size UK 4.5 (≈ US 5).",
+    "shortDescription": "Brand new with original Q4 Sports box",
+    "images": [
+      "/images/products/q4-sports-em55-i-black-gold-navy-uk-4-5/IMG_5710.jpg",
+      "/images/products/q4-sports-em55-i-black-gold-navy-uk-4-5/IMG_5711.jpg",
+      "/images/products/q4-sports-em55-i-black-gold-navy-uk-4-5/IMG_5712.jpg"
+    ],
+    "specs": {
+      "Size": "UK 4.5",
+      "Brand": "Q4 Sports",
+      "Color": "Black / Gold / Navy",
+      "Model": "EM55-I",
+      "Source": "Whatnot — sneakerhustle pull #83",
+      "Condition": "Brand New",
+      "Style Code": "Q4-EM01"
+    },
+    "featured": false,
+    "tags": [
+      "q4-sports",
+      "em55-i",
+      "basketball",
+      "mid-top",
+      "black",
+      "gold",
+      "navy",
+      "uk-4-5",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-04-28T01:54:26.308283+00:00"
   },
   {
     "slug": "air-jordan-1-retro-high-og-team-red-gs",
@@ -1936,38 +1972,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
     "slug": "adidas-racer-tr23-black-royal-blue",
     "name": "Adidas Racer TR23 Black Royal Blue",
     "price": 50,
@@ -2023,6 +2027,38 @@ export const products: Product[] = [
       "cloudfoam",
       "white",
       "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
