@@ -107,6 +107,38 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
+    "images": [
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+    ],
+    "specs": {
+      "Type": "Ring",
+      "Brand": "DealBazaar",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "ring",
+      "moissanite",
+      "halo",
+      "silver",
+      "engagement",
+      "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
     "slug": "makeup-charm-bangle",
     "name": "Makeup Charm Bangle",
     "price": 65,
@@ -296,36 +328,41 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
+    "slug": "air-jordan-1-retro-high-og-sail-sz8",
+    "name": "Air Jordan 1 Retro High OG Sail (Size 8)",
+    "price": 275,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Retro High OG in the tonal Sail colorway — premium sail leather upper with subtle textured side panels, tonal sail Swoosh and Wings logo, Sail collar and toe, classic red NIKE AIR tongue tags and red Air Jordan hangtag. Cream midsole and white rubber outsole. Brand new with original elephant-print box (box may show minor damage from shipping). Size US 8 (EU 41 / UK 7 / 26 cm).",
+    "shortDescription": "Brand new with OG box (box may be damaged)",
     "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+      "/images/products/air-jordan-1-retro-high-og-sail-sz8/01-side.jpg",
+      "/images/products/air-jordan-1-retro-high-og-sail-sz8/02-front.jpg",
+      "/images/products/air-jordan-1-retro-high-og-sail-sz8/03-rear.jpg"
     ],
     "specs": {
-      "Type": "Ring",
-      "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
+      "EU": "41",
+      "UK": "7",
+      "Size": "8",
+      "Brand": "Nike / Jordan",
+      "Color": "Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Source": "Whatnot — stewsshoes 16 Oct 2025",
       "Condition": "Brand New"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "ring",
-      "moissanite",
-      "halo",
-      "silver",
-      "engagement",
-      "gift"
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "retro-high-og",
+      "sail",
+      "cream",
+      "off-white",
+      "size-8",
+      "whatnot-pull"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-05-01T20:39:18.394535+00:00"
   },
   {
     "slug": "q4-sports-em55-i-black-gold-navy-uk-4-5",
@@ -1941,37 +1978,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
-    ],
-    "specs": {
-      "Size": "13",
-      "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
     "slug": "adidas-racer-tr23-black-royal-blue",
     "name": "Adidas Racer TR23 Black Royal Blue",
     "price": 50,
@@ -1997,68 +2003,6 @@ export const products: Product[] = [
       "black",
       "blue",
       "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -2107,6 +2051,99 @@ export const products: Product[] = [
       "mauve",
       "retro",
       "high-og"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
+    ],
+    "specs": {
+      "Size": "13",
+      "Brand": "Adidas",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
