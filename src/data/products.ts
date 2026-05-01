@@ -107,6 +107,39 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
     "slug": "moissanite-halo-ring",
     "name": "Moissanite Double Halo Swirl Ring",
     "price": 159,
@@ -135,6 +168,38 @@ export const products: Product[] = [
       "silver",
       "engagement",
       "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "images": [
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Mesh Bracelet",
+      "Brand": "DealBazaar",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -263,69 +328,39 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
+    "slug": "nike-air-jordan-1-retro-high-og-mauve-sz10",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve (Size 10)",
+    "price": 95,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Retro High OG in the Mauve colorway — white leather toe and quarter panels with dusty mauve overlays on the Swoosh, collar, eyestay, and heel. White midsole, white rubber outsole, classic red NIKE AIR tongue tag, mauve laces. Brand new with original Nike kraft box. Size US 10 (EU 44 / UK 9 / 28 cm).",
+    "shortDescription": "Brand new with OG box",
     "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10/01-pair-on-box.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10/02-top.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve-sz10/03-rear.jpg"
     ],
     "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
+      "EU": "44",
+      "UK": "9",
+      "Size": "10",
+      "Brand": "Nike / Jordan",
+      "Color": "Mauve / White",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Source": "Whatnot — stewsshoes 16 Oct 2025",
       "Condition": "Brand New"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "bangle",
-      "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "retro-high-og",
+      "mauve",
+      "size-10",
+      "whatnot-pull"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
-    "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Mesh Bracelet",
-      "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "dragon",
-      "silver",
-      "sterling",
-      "mesh",
-      "luxury"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-05-01T21:27:35.994926+00:00"
   },
   {
     "slug": "air-jordan-1-retro-high-og-sail-sz8",
@@ -2007,50 +2042,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
     ],
     "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
       "Condition": "Brand New"
     },
-    "retailPrice": 185,
-    "priceSources": [
-      {
-        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "Walmart",
-        "price": 169.99
-      },
-      {
-        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Poshmark",
-        "price": 185
-      },
-      {
-        "url": "https://www.ebay.com/itm/305789295020",
-        "name": "eBay",
-        "price": 119.95
-      }
-    ],
     "featured": false,
     "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -2118,32 +2135,50 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
     "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
     ],
     "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
       "Condition": "Brand New"
     },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
     "featured": false,
     "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
