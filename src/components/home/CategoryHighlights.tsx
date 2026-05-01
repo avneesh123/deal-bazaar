@@ -13,7 +13,7 @@ const categories = [
       "Limited drops, deadstock pairs, and grail-tier silhouettes — every pair authenticated by hand before it ships.",
     spec: "Jordan · Nike · Adidas · NB · Yeezy",
     accent: "text-oxblood",
-    swatch: "from-[#3a1f1f] to-[#1a0f0f]",
+    tintRgb: "var(--primary)",
   },
   {
     number: "02",
@@ -24,7 +24,7 @@ const categories = [
       "Cuban links, tennis chains, signet rings, and fine pieces — gold, diamond, and stones graded under loupe.",
     spec: "Cuban · Tennis · Solitaire · Signet",
     accent: "text-brass",
-    swatch: "from-[#2a200d] to-[#13100a]",
+    tintRgb: "var(--brass)",
   },
 ];
 
@@ -56,15 +56,19 @@ export default function CategoryHighlights() {
             >
               <Link
                 href={cat.href}
-                className="group relative block aspect-[4/5] md:aspect-[5/6] overflow-hidden bg-paper-deep"
+                className="group relative block aspect-[4/5] md:aspect-[5/6] overflow-hidden bg-muted text-foreground"
               >
-                {/* Swatch panel — stands in for a photographic backdrop */}
+                {/* Brand-tinted color wash — adapts to light/dark via primary/brass tokens */}
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${cat.swatch}`}
+                  aria-hidden
+                  className="absolute inset-0 opacity-[0.18]"
+                  style={{
+                    backgroundImage: `radial-gradient(ellipse at 70% 80%, ${cat.tintRgb} 0%, transparent 65%)`,
+                  }}
                 />
                 <div
                   aria-hidden
-                  className="absolute inset-0 opacity-30"
+                  className="absolute inset-0 opacity-30 mix-blend-overlay"
                   style={{
                     backgroundImage:
                       "radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.18) 0%, transparent 60%)",
@@ -73,25 +77,25 @@ export default function CategoryHighlights() {
 
                 {/* Number — top left */}
                 <div className="absolute top-6 md:top-10 left-6 md:left-10 z-10">
-                  <div className="numeral text-ink/70 text-[11px] tracking-[0.3em]">
+                  <div className="numeral text-foreground/70 text-[11px] tracking-[0.3em]">
                     N°
                   </div>
-                  <div className="numeral text-ink text-7xl md:text-[8rem] leading-none mt-1 transition-transform duration-700 group-hover:-translate-y-1">
+                  <div className="numeral text-foreground text-7xl md:text-[8rem] leading-none mt-1 transition-transform duration-700 group-hover:-translate-y-1">
                     {cat.number}
                   </div>
                 </div>
 
                 {/* Spec — top right */}
-                <div className="absolute top-6 md:top-10 right-6 md:right-10 z-10 text-right text-[10px] uppercase tracking-[0.28em] text-ink/55 max-w-[140px]">
+                <div className="absolute top-6 md:top-10 right-6 md:right-10 z-10 text-right text-[10px] uppercase tracking-[0.28em] text-foreground/55 max-w-[140px]">
                   {cat.spec}
                 </div>
 
                 {/* Big italic title — center-bottom */}
                 <div className="absolute inset-x-6 md:inset-x-10 bottom-6 md:bottom-10 z-10">
-                  <div className="text-[10px] uppercase tracking-[0.32em] text-ink/55 mb-3">
+                  <div className="text-[10px] uppercase tracking-[0.32em] text-foreground/55 mb-3">
                     Department
                   </div>
-                  <h3 className="font-serif text-ink">
+                  <h3 className="font-serif text-foreground">
                     <span className="display-soft text-5xl md:text-7xl block leading-[0.95]">
                       {cat.name}
                     </span>
@@ -101,10 +105,10 @@ export default function CategoryHighlights() {
                       &amp; the {cat.italic} we love.
                     </em>
                   </h3>
-                  <p className="mt-5 text-ink/70 text-sm leading-relaxed max-w-md">
+                  <p className="mt-5 text-foreground/70 text-sm leading-relaxed max-w-md">
                     {cat.blurb}
                   </p>
-                  <span className="mt-6 inline-flex items-center gap-3 text-ink text-[11px] uppercase tracking-[0.28em]">
+                  <span className="mt-6 inline-flex items-center gap-3 text-foreground text-[11px] uppercase tracking-[0.28em]">
                     <span className="link-underline pb-0.5">Enter the floor</span>
                     <span className="inline-block transition-transform duration-500 group-hover:translate-x-2">
                       →

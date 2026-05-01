@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { href: "/shop?category=sneakers", label: "Sneakers" },
@@ -41,6 +42,7 @@ export default function Navbar() {
             <Link href="/shop" className="link-underline hover:text-ink">
               Index
             </Link>
+            <ThemeToggle />
           </div>
 
           {/* Logo — center */}

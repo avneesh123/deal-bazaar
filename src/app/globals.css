@@ -1,25 +1,153 @@
 @import "tailwindcss";
 
-@theme {
-  /* Surfaces — deep, warm dark (not pure black) so brass + oxblood read warm */
-  --color-paper: #0b0a09;
-  --color-paper-deep: #141210;
-  --color-paper-edge: #1f1c19;
+/* ─────────────────────────────────────────────
+   Theme variables — shadcn/Anthropic-style.
+   :root carries the LIGHT palette; .dark overrides
+   for dark mode. We default dark by adding class="dark"
+   on <html> in src/app/layout.tsx; a navbar toggle
+   flips to light + persists in localStorage.
+   ───────────────────────────────────────────── */
 
-  /* Ink — off-white text on dark surfaces */
-  --color-ink: #f4ede1;
-  --color-ink-soft: #b9b0a0;
-  --color-ink-mute: #847b6d;
+:root {
+  --card: #faf9f5;
+  --ring: #c96442;
+  --input: #b4b2a7;
+  --muted: #ede9de;
+  --accent: #e9e6dc;
+  --border: #dad9d4;
+  --radius: 0.5rem;
+  --chart-1: #b05730;
+  --chart-2: #9c87f5;
+  --chart-3: #ded8c4;
+  --chart-4: #dbd3f0;
+  --chart-5: #b4552d;
+  --popover: #ffffff;
+  --primary: #c96442;
+  --sidebar: #f5f4ee;
+  --secondary: #e9e6dc;
+  --background: #faf9f5;
+  --foreground: #3d3929;
+  --destructive: #141413;
+  --sidebar-ring: #b5b5b5;
+  --sidebar-accent: #e9e6dc;
+  --sidebar-border: #ebebeb;
+  --card-foreground: #141413;
+  --sidebar-primary: #c96442;
+  --muted-foreground: #83827d;
+  --accent-foreground: #28261b;
+  --popover-foreground: #28261b;
+  --primary-foreground: #ffffff;
+  --sidebar-foreground: #3d3d3a;
+  --secondary-foreground: #535146;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #343434;
+  --sidebar-primary-foreground: #fbfbfb;
 
-  /* Accents — oxblood + brass, brightened so they still pop on dark */
-  --color-oxblood: #c4332a;
-  --color-oxblood-deep: #8b1a1a;
-  --color-brass: #d4a256;
-  --color-brass-light: #e8c084;
+  /* Brand-specific extras (no shadcn equivalent) */
+  --brass: #a87c3a;
+  --brass-light: #c69a55;
+  --primary-deep: #a8512f;
+  --ink-mute: #9a9888;
+}
 
-  /* Legacy gold tokens — retained so admin pages keep working */
-  --color-gold: #a87c3a;
-  --color-gold-light: #c69a55;
+.dark {
+  --card: #262624;
+  --ring: #d97757;
+  --input: #52514a;
+  --muted: #1b1b19;
+  --accent: #1a1915;
+  --border: #3e3e38;
+  --chart-1: #b05730;
+  --chart-2: #9c87f5;
+  --chart-3: #1a1915;
+  --chart-4: #2f2b48;
+  --chart-5: #b4552d;
+  --popover: #30302e;
+  --primary: #d97757;
+  --sidebar: #1f1e1d;
+  --secondary: #faf9f5;
+  --background: #262624;
+  --foreground: #c3c0b6;
+  --destructive: #ef4444;
+  --sidebar-ring: #b5b5b5;
+  --sidebar-accent: #0f0f0e;
+  --sidebar-border: #ebebeb;
+  --card-foreground: #faf9f5;
+  --sidebar-primary: #343434;
+  --muted-foreground: #b7b5a9;
+  --accent-foreground: #f5f4ee;
+  --popover-foreground: #e5e5e2;
+  --primary-foreground: #ffffff;
+  --sidebar-foreground: #c3c0b6;
+  --secondary-foreground: #30302e;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #c3c0b6;
+  --sidebar-primary-foreground: #fbfbfb;
+
+  /* Brand-specific extras — slightly brightened for dark surfaces */
+  --brass: #d4a256;
+  --brass-light: #e8c084;
+  --primary-deep: #b5613f;
+  --ink-mute: #847b6d;
+}
+
+/* ─────────────────────────────────────────────
+   @theme inline — exposes vars as Tailwind utility
+   classes. `bg-background`, `text-foreground`,
+   `text-primary`, etc. plus aliases for the legacy
+   paper/ink/oxblood/brass token names so existing
+   components continue working unchanged.
+   ───────────────────────────────────────────── */
+@theme inline {
+  /* shadcn semantic tokens */
+  --color-card: var(--card);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-popover: var(--popover);
+  --color-primary: var(--primary);
+  --color-sidebar: var(--sidebar);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-destructive: var(--destructive);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-card-foreground: var(--card-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+  /* Legacy aliases — keep existing markup working */
+  --color-paper: var(--background);
+  --color-paper-deep: var(--muted);
+  --color-paper-edge: var(--accent);
+  --color-ink: var(--foreground);
+  --color-ink-soft: var(--muted-foreground);
+  --color-ink-mute: var(--ink-mute);
+  --color-oxblood: var(--primary);
+  --color-oxblood-deep: var(--primary-deep);
+  --color-brass: var(--brass);
+  --color-brass-light: var(--brass-light);
+
+  /* Legacy admin-only tokens — preserved for /admin routes */
+  --color-gold: var(--brass);
+  --color-gold-light: var(--brass-light);
   --color-gold-dark: #7d5a26;
   --color-silver: #c0c0c0;
   --color-dark: #0a0a0a;
@@ -30,7 +158,7 @@
   --color-text-secondary: #a0a0a0;
   --color-whatsapp: #25d366;
 
-  /* Typography — Fraunces (display, soft, optical), Archivo (sans), JetBrains (mono) */
+  /* Typography */
   --font-serif: var(--font-fraunces), "Fraunces", ui-serif, Georgia, serif;
   --font-sans: var(--font-archivo), "Archivo", system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
@@ -41,41 +169,27 @@
 }
 
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 html {
-  background-color: var(--color-paper);
+  background-color: var(--background);
 }
 
 body {
-  background-color: var(--color-paper);
-  color: var(--color-ink);
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: var(--font-sans);
   font-feature-settings: "ss01", "ss02", "kern", "liga";
   -webkit-font-smoothing: antialiased;
@@ -84,35 +198,39 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-oxblood);
-  color: var(--color-paper);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
 }
 
-/* Subtle paper grain — applied as a fixed pseudo-overlay on the public site */
+/* Subtle paper grain — luminance flips with the mode (.dark uses screen, light uses multiply) */
 .paper-grain::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.04 0 0 0 0 0.03 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.07;
+  mix-blend-mode: multiply;
+}
+
+.dark .paper-grain::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.92 0 0 0 0 0.86 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   opacity: 0.05;
   mix-blend-mode: screen;
 }
 
-/* Hairline rule used in editorial dividers */
 .editorial-rule {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--color-ink) 6%,
-    var(--color-ink) 94%,
+    var(--foreground) 6%,
+    var(--foreground) 94%,
     transparent 100%
   );
   height: 1px;
 }
 
-/* Marquee: keep a "gap" between repeating tracks */
 .marquee-track {
   display: flex;
   width: max-content;
@@ -123,7 +241,6 @@ body {
   animation-play-state: paused;
 }
 
-/* Display headlines — opt into Fraunces' soft mode + optical sizing */
 .display-soft {
   font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 500;
 }
@@ -133,14 +250,12 @@ body {
   font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
 }
 
-/* Editorial numbering — large mono numerals */
 .numeral {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
   font-feature-settings: "ss01" on;
 }
 
-/* Smooth, intentional underline that draws on hover */
 .link-underline {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 0% 1px;
@@ -153,7 +268,6 @@ body {
   background-size: 100% 1px;
 }
 
-/* Scroll-triggered word stagger */
 .word-stagger > span {
   display: inline-block;
   opacity: 0;

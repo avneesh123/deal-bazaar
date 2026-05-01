@@ -39,6 +39,10 @@ export const metadata: Metadata = {
   },
 };
 
+// Runs before React hydrates so the saved theme preference applies before
+// first paint. Default is dark; light is opt-in via the navbar toggle.
+const themeBootScript = `(function(){try{var s=localStorage.getItem('theme');if(s==='light'){document.documentElement.classList.remove('dark')}else{document.documentElement.classList.add('dark')}}catch(e){document.documentElement.classList.add('dark')}})();`;
+
 export default function RootLayout({
   children,
 }: {
@@ -47,8 +51,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${archivo.variable} ${jetbrains.variable}`}
+      className={`dark ${fraunces.variable} ${archivo.variable} ${jetbrains.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
+      </head>
       <body>{children}</body>
     </html>
   );
