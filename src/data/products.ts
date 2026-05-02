@@ -328,6 +328,39 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "adidas-avryn-black-pink-sz9",
+    "name": "Adidas Avryn Black / Pink (Size 9)",
+    "price": 70,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Avryn-style runner in black mesh / soft pink — black engineered mesh upper, soft pink heel cap and tongue/lace tabs, white 3-stripe accent, chunky speckled white midsole and translucent rubber outsole. Brand new with original Adidas box. Size US 9.",
+    "shortDescription": "Brand new with original Adidas box",
+    "images": [
+      "/images/products/adidas-avryn-black-pink-sz9/01-pair-on-box.jpg",
+      "/images/products/adidas-avryn-black-pink-sz9/02-front.jpg",
+      "/images/products/adidas-avryn-black-pink-sz9/03-rear.jpg"
+    ],
+    "specs": {
+      "Size": "9",
+      "Brand": "Adidas",
+      "Color": "Black / Pink / White",
+      "Model": "Avryn",
+      "Source": "Whatnot — essensola pull #301",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "avryn",
+      "runner",
+      "black",
+      "pink",
+      "size-9",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T23:40:14.640975+00:00"
+  },
+  {
     "slug": "adidas-run-60s-3-0-black-grey-sz65",
     "name": "Adidas Run 60s 3.0 Black / Grey (Size 6.5)",
     "price": 60,
@@ -2522,6 +2555,96 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+    ],
+    "specs": {
+      "Size": "6.5",
+      "Brand": "Adidas",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
+    ],
+    "specs": {
+      "Size": "13",
+      "Brand": "Adidas",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "nike-air-jordan-1-retro-high-og-mauve",
     "name": "Nike Air Jordan 1 Retro High OG Mauve",
     "price": 95,
@@ -2598,96 +2721,6 @@ export const products: Product[] = [
       "green",
       "originals",
       "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
-    ],
-    "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
-    ],
-    "specs": {
-      "Size": "13",
-      "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
