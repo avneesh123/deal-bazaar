@@ -107,6 +107,36 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
+    "images": [
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+    ],
+    "specs": {
+      "Type": "Charm Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
     "slug": "jaguar-panther-bangle",
     "name": "Jaguar Panther Sterling Silver Bangle",
     "price": 129,
@@ -136,6 +166,100 @@ export const products: Product[] = [
       "jaguar",
       "cz",
       "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "images": [
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Chain Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "makeup-charm-bangle",
+    "name": "Makeup Charm Bangle",
+    "price": 65,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
+    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "images": [
+      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
+      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+    ],
+    "specs": {
+      "Type": "Charm Bangle",
+      "Brand": "DealBazaar",
+      "Style": "Makeup / Beauty",
+      "Material": "Silver Alloy",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "charm",
+      "makeup",
+      "silver",
+      "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "emerald-peacock-necklace-set",
+    "name": "Emerald Peacock Necklace & Earring Set",
+    "price": 189,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A breathtaking Victorian-inspired jewelry set featuring an elaborate emerald green crystal necklace with a stunning peacock pendant and matching jhumka drop earrings. The necklace showcases layers of sparkling green and clear crystals in an ornate gold-tone setting. The matching earrings feature cascading crystal drops. Perfect for weddings, formal events, or as a collector's statement piece.",
+    "shortDescription": "Ornate emerald crystal necklace with peacock pendant & earrings",
+    "images": [
+      "/images/products/jewelry/emerald-peacock-necklace-set-1.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-2.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-3.jpg",
+      "/images/products/jewelry/emerald-peacock-necklace-set-4.jpg"
+    ],
+    "specs": {
+      "Type": "Necklace & Earring Set",
+      "Brand": "DealBazaar",
+      "Stone": "Emerald Crystal",
+      "Style": "Victorian / Indian",
+      "Material": "Gold-Tone Alloy / Crystal",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "necklace",
+      "earrings",
+      "set",
+      "emerald",
+      "peacock",
+      "crystal",
+      "victorian",
+      "wedding"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -204,128 +328,39 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "makeup-charm-bangle",
-    "name": "Makeup Charm Bangle",
-    "price": 65,
+    "slug": "adidas-nizza-rj-black-canvas-sz8",
+    "name": "Adidas Originals Nizza RJ Black Canvas (Size 8)",
+    "price": 45,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
-    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "category": "sneakers",
+    "description": "Adidas Originals Nizza RJ in classic black canvas — heritage low-top with white 3-stripe stitching, cream rubber toe cap and cream vulcanized cupsole, gum tread, and a Nizza heel patch. Brand new with hangtag attached and original Adidas Originals box (lot label #293 on the side). Size US 8.",
+    "shortDescription": "Brand new with hangtag and OG box",
     "images": [
-      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
-      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+      "/images/products/adidas-nizza-rj-black-canvas-sz8/01-front.jpg",
+      "/images/products/adidas-nizza-rj-black-canvas-sz8/02-rear.jpg",
+      "/images/products/adidas-nizza-rj-black-canvas-sz8/03-sole.jpg"
     ],
     "specs": {
-      "Type": "Charm Bangle",
-      "Brand": "DealBazaar",
-      "Style": "Makeup / Beauty",
-      "Material": "Silver Alloy",
+      "Size": "8",
+      "Brand": "Adidas Originals",
+      "Color": "Black / Cream",
+      "Model": "Nizza RJ",
+      "Source": "Whatnot — waaaaalid_ pull #293",
       "Condition": "Brand New"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "bangle",
-      "charm",
-      "makeup",
-      "silver",
-      "gift"
+      "adidas",
+      "adidas-originals",
+      "nizza",
+      "nizza-rj",
+      "low-top",
+      "canvas",
+      "black",
+      "size-8",
+      "whatnot-pull"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
-    "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
-    ],
-    "specs": {
-      "Type": "Charm Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "emerald-peacock-necklace-set",
-    "name": "Emerald Peacock Necklace & Earring Set",
-    "price": 189,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A breathtaking Victorian-inspired jewelry set featuring an elaborate emerald green crystal necklace with a stunning peacock pendant and matching jhumka drop earrings. The necklace showcases layers of sparkling green and clear crystals in an ornate gold-tone setting. The matching earrings feature cascading crystal drops. Perfect for weddings, formal events, or as a collector's statement piece.",
-    "shortDescription": "Ornate emerald crystal necklace with peacock pendant & earrings",
-    "images": [
-      "/images/products/jewelry/emerald-peacock-necklace-set-1.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-2.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-3.jpg",
-      "/images/products/jewelry/emerald-peacock-necklace-set-4.jpg"
-    ],
-    "specs": {
-      "Type": "Necklace & Earring Set",
-      "Brand": "DealBazaar",
-      "Stone": "Emerald Crystal",
-      "Style": "Victorian / Indian",
-      "Material": "Gold-Tone Alloy / Crystal",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "necklace",
-      "earrings",
-      "set",
-      "emerald",
-      "peacock",
-      "crystal",
-      "victorian",
-      "wedding"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
-    "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Chain Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-05-02T01:21:44.01268+00:00"
   },
   {
     "slug": "nike-air-jordan-1-retro-high-og-mauve-sz10",
@@ -2013,6 +2048,37 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
+    ],
+    "specs": {
+      "Size": "13",
+      "Brand": "Adidas",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-racer-tr23-black-royal-blue",
     "name": "Adidas Racer TR23 Black Royal Blue",
     "price": 50,
@@ -2068,37 +2134,6 @@ export const products: Product[] = [
       "cloudfoam",
       "white",
       "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
-    ],
-    "specs": {
-      "Size": "13",
-      "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
