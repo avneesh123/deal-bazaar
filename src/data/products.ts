@@ -328,6 +328,44 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "nike-vomero-5-total-orange-black-sz11",
+    "name": "Nike Vomero 5 Total Orange / Black (Size 11)",
+    "price": 130,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Vomero 5 in the Total Orange / Black / White colorway — early-2000s running heritage with chunky layered Phylon midsole, Zoom Air heel, breathable orange engineered mesh upper, black TPU support cage, and a chrome-finished diamond-pattern heel counter. Brand new with hangtag and original Nike box. Size US 11 (UK 10 / EU 45 / 29 cm).",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "/images/products/nike-vomero-5-total-orange-black-sz11/01-top.jpg",
+      "/images/products/nike-vomero-5-total-orange-black-sz11/02-front.jpg",
+      "/images/products/nike-vomero-5-total-orange-black-sz11/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "45",
+      "UK": "10",
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Total Orange / Black / White",
+      "Model": "Vomero 5",
+      "Source": "Whatnot — sneakerhustle pull #106",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "vomero",
+      "vomero-5",
+      "running",
+      "y2k",
+      "total-orange",
+      "orange",
+      "black",
+      "size-11",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T03:19:39.637481+00:00"
+  },
+  {
     "slug": "adidas-ae-1-cloud-white-sz8-pre-owned",
     "name": "Adidas AE 1 Cloud White — Pre-Owned (Size 8)",
     "price": 95,
