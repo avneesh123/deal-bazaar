@@ -328,6 +328,43 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "q4-sports-g4-be2-ii-white-yellow-sz12",
+    "name": "Q4 Sports G4 BE2-II White / Yellow (Size 12)",
+    "price": 45,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Q4 Sports G4 BE2-II basketball mid in White / Yellow / Black — white mesh upper with black side overlays, bright yellow heel collar and outsole accents, Q4 Sports brand mark on the lateral side panel and tongue. Brand new with original Q4 Sports patterned box (lot #72). Style code 81821028622. Size US 12 (UK 11.5 / EU 45 / 28.6 cm).",
+    "shortDescription": "Brand new with original Q4 Sports box",
+    "images": [
+      "/images/products/q4-sports-g4-be2-ii-white-yellow-sz12/01-pair.jpg",
+      "/images/products/q4-sports-g4-be2-ii-white-yellow-sz12/02-front.jpg",
+      "/images/products/q4-sports-g4-be2-ii-white-yellow-sz12/03-rear.jpg"
+    ],
+    "specs": {
+      "EU": "45",
+      "UK": "11.5",
+      "Size": "12",
+      "Brand": "Q4 Sports",
+      "Color": "White / Yellow / Black",
+      "Model": "G4 BE2-II",
+      "Source": "Whatnot — sneakerhustle pull #72",
+      "Condition": "Brand New",
+      "Style Code": "81821028622"
+    },
+    "featured": false,
+    "tags": [
+      "q4-sports",
+      "g4-be2-ii",
+      "basketball",
+      "mid-top",
+      "white",
+      "yellow",
+      "size-12",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T22:36:13.418781+00:00"
+  },
+  {
     "slug": "tretorn-serve-white-grey-w7",
     "name": "Tretorn Serve White / Grey (Women's 7)",
     "price": 50,
@@ -2379,81 +2416,31 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
     ],
     "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
-      "Condition": "Brand New"
-    },
-    "retailPrice": 185,
-    "priceSources": [
-      {
-        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "Walmart",
-        "price": 169.99
-      },
-      {
-        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Poshmark",
-        "price": 185
-      },
-      {
-        "url": "https://www.ebay.com/itm/305789295020",
-        "name": "eBay",
-        "price": 119.95
-      }
-    ],
-    "featured": false,
-    "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
-    ],
-    "specs": {
-      "Size": "13",
+      "Size": "6.5",
       "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
+      "racer",
       "black",
-      "gum",
-      "originals"
+      "blue",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -2520,31 +2507,81 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
     ],
     "specs": {
-      "Size": "6.5",
+      "Size": "13",
       "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "racer",
+      "gazelle",
+      "indoor",
+      "orange",
       "black",
-      "blue",
-      "running"
+      "gum",
+      "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
