@@ -328,6 +328,45 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "air-jordan-1-retro-high-og-gs-metallic-gold-7y",
+    "name": "Air Jordan 1 Retro High OG GS Metallic Gold (Size 7Y)",
+    "price": 145,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Retro High OG GS in the White / Metallic Gold colorway — premium white tumbled leather upper with bright metallic-gold collar, eyestay, heel tab, and Wings logo, gold satin Nike Air tongue tag with hanging gold Jumpman charm. White rubber midsole, gum outsole. Brand new with original Nike box. Size 7Y (US Youth — fits women's US 8.5 / EU 40 / UK 6.5).",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/air-jordan-1-retro-high-og-gs-metallic-gold-7y/01-top.jpg",
+      "/images/products/air-jordan-1-retro-high-og-gs-metallic-gold-7y/02-front.jpg",
+      "/images/products/air-jordan-1-retro-high-og-gs-metallic-gold-7y/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "40",
+      "UK": "6.5",
+      "Size": "7Y",
+      "Brand": "Nike / Jordan",
+      "Color": "White / Metallic Gold",
+      "Model": "Air Jordan 1 Retro High OG GS",
+      "Source": "Whatnot — stewsshoes pull #212",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "retro-high-og",
+      "metallic-gold",
+      "white",
+      "gold",
+      "gs",
+      "youth",
+      "size-7y",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T04:09:19.999512+00:00"
+  },
+  {
     "slug": "nike-wmns-legend-essential-2-light-soft-pink-w95",
     "name": "Nike Wmns Legend Essential 2 Light Soft Pink (W 9.5)",
     "price": 55,
@@ -2328,6 +2367,36 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-blue-green",
     "name": "Adidas Gazelle Blue Green",
     "price": 35,
@@ -2356,36 +2425,6 @@ export const products: Product[] = [
       "green",
       "originals",
       "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
