@@ -139,97 +139,61 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
+    "slug": "makeup-charm-bangle",
+    "name": "Makeup Charm Bangle",
+    "price": 65,
     "currency": "USD",
     "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
+    "shortDescription": "Handcrafted silver bangle with makeup charms",
     "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
+      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
     ],
     "specs": {
-      "Type": "Mesh Bracelet",
+      "Type": "Charm Bangle",
       "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "dragon",
-      "silver",
-      "sterling",
-      "mesh",
-      "luxury"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
-    "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
-    ],
-    "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
+      "Style": "Makeup / Beauty",
+      "Material": "Silver Alloy",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bangle",
+      "charm",
+      "makeup",
       "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
+      "gift"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
     "currency": "USD",
     "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
     "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
     ],
     "specs": {
-      "Type": "Chain Bracelet",
+      "Type": "Charm Bracelet",
       "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -269,63 +233,137 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
     "currency": "USD",
     "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
     "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bracelet",
+      "Type": "Chain Bracelet",
       "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "makeup-charm-bangle",
-    "name": "Makeup Charm Bangle",
-    "price": 65,
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
-    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
     "images": [
-      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
-      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bangle",
+      "Type": "Bangle",
       "Brand": "DealBazaar",
-      "Style": "Makeup / Beauty",
-      "Material": "Silver Alloy",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bangle",
-      "charm",
-      "makeup",
       "silver",
-      "gift"
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "images": [
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Mesh Bracelet",
+      "Brand": "DealBazaar",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "adidas-ae-1-cloud-white-sz8-pre-owned",
+    "name": "Adidas AE 1 Cloud White — Pre-Owned (Size 8)",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas AE 1 in the Cloud White colorway — Anthony Edwards' debut signature basketball shoe. Black engineered mesh upper, translucent / cloud-white bubble-textured Lightstrike Pro midsole, neon-green Adidas logo accents on the heel and tongue, and the signature 'A' brand mark on the lateral side panel. Pre-owned with original Adidas box (lot label BX949). Size US 8 (UK 7½ / EU 43⅓ / W 9).",
+    "shortDescription": "Pre-owned with original Adidas box",
+    "images": [
+      "/images/products/adidas-ae-1-cloud-white-sz8-pre-owned/01-pair.jpg",
+      "/images/products/adidas-ae-1-cloud-white-sz8-pre-owned/02-front.jpg",
+      "/images/products/adidas-ae-1-cloud-white-sz8-pre-owned/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "43⅓",
+      "UK": "7.5",
+      "Size": "8",
+      "Brand": "Adidas",
+      "Color": "Cloud White / Black",
+      "Model": "AE 1",
+      "Source": "Whatnot — fragmented_soles BX949",
+      "Condition": "Pre-Owned"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "ae-1",
+      "anthony-edwards",
+      "basketball",
+      "signature",
+      "cloud-white",
+      "black",
+      "size-8",
+      "pre-owned",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T03:08:25.073366+00:00"
   },
   {
     "slug": "adidas-top-ten-hi-carolina-blue-sz12",
@@ -2198,6 +2236,36 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-indoor-orange-black-gum",
     "name": "Adidas Gazelle Indoor Orange Black Gum",
     "price": 85,
@@ -2225,36 +2293,6 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
