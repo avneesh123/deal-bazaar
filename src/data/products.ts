@@ -107,95 +107,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T03:14:48.787704+00:00"
   },
   {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
+    "slug": "moissanite-halo-ring",
+    "name": "Moissanite Double Halo Swirl Ring",
+    "price": 159,
     "currency": "USD",
     "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
+    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
+    "shortDescription": "Round moissanite with double halo, swirl band",
     "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
+      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bracelet",
+      "Type": "Ring",
       "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
+      "Stone": "Moissanite",
+      "Setting": "Double Halo Pavé",
+      "Material": "Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
-    "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
-    ],
-    "specs": {
-      "Type": "Bangle",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
+      "ring",
+      "moissanite",
+      "halo",
       "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
-    "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
-    ],
-    "specs": {
-      "Type": "Chain Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
+      "engagement",
+      "gift"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -225,6 +164,36 @@ export const products: Product[] = [
       "makeup",
       "silver",
       "gift"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
+    "images": [
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
+    ],
+    "specs": {
+      "Type": "Charm Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -264,34 +233,65 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "moissanite-halo-ring",
-    "name": "Moissanite Double Halo Swirl Ring",
-    "price": 159,
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A stunning sterling silver ring featuring a brilliant round moissanite center stone surrounded by a double halo of pavé-set micro stones. The elegant swirl band design adds a modern twist to a classic halo setting. Comes beautifully presented in a heart-shaped pink gift box — perfect for engagements, anniversaries, or a luxurious self-purchase.",
-    "shortDescription": "Round moissanite with double halo, swirl band",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
     "images": [
-      "/images/products/jewelry/moissanite-halo-ring-1.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-2.jpg",
-      "/images/products/jewelry/moissanite-halo-ring-3.jpg"
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
     ],
     "specs": {
-      "Type": "Ring",
+      "Type": "Chain Bracelet",
       "Brand": "DealBazaar",
-      "Stone": "Moissanite",
-      "Setting": "Double Halo Pavé",
-      "Material": "Sterling Silver",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
-      "ring",
-      "moissanite",
-      "halo",
+      "bracelet",
+      "cz",
+      "cubic zirconia",
       "silver",
-      "engagement",
-      "gift"
+      "oval"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -326,6 +326,43 @@ export const products: Product[] = [
       "luxury"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "adidas-adizero-aruku-olive-brown-sz8",
+    "name": "Adidas Adizero Aruku Olive / Brown (Size 8)",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Adizero Aruku — chunky retro-runner silhouette in an earthy olive / brown / cream colorway. Olive mesh and nubuck panels, brown leather toe and side overlays, cream EVA midsole, black rubber outsole. Brushed silver 3-stripes on the lateral side. Brand new with hangtag and original Adidas Originals box (lot label #311 on the side). Size US 8 (UK 7.5 / EU 43⅓ / W9).",
+    "shortDescription": "Brand new with hangtag and OG box",
+    "images": [
+      "/images/products/adidas-adizero-aruku-olive-brown-sz8/01-pair.jpg",
+      "/images/products/adidas-adizero-aruku-olive-brown-sz8/02-top.jpg",
+      "/images/products/adidas-adizero-aruku-olive-brown-sz8/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "43⅓",
+      "UK": "7.5",
+      "Size": "8",
+      "Brand": "Adidas Originals",
+      "Color": "Olive / Brown / Cream",
+      "Model": "Adizero Aruku",
+      "Source": "Whatnot — essensola pull #311",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "adidas-originals",
+      "adizero",
+      "adizero-aruku",
+      "runner",
+      "olive",
+      "brown",
+      "size-8",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-02T02:47:17.161736+00:00"
   },
   {
     "slug": "adidas-nizza-rj-black-canvas-sz8",
@@ -2079,35 +2116,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
-    ],
-    "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
     "slug": "adidas-cloudfoam-bounce-triple-white",
     "name": "Adidas Cloudfoam Bounce Triple White",
     "price": 55,
@@ -2214,6 +2222,35 @@ export const products: Product[] = [
       "mauve",
       "retro",
       "high-og"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+    ],
+    "specs": {
+      "Size": "6.5",
+      "Brand": "Adidas",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
