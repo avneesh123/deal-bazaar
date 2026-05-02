@@ -139,61 +139,97 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "makeup-charm-bangle",
-    "name": "Makeup Charm Bangle",
-    "price": 65,
+    "slug": "dragon-mesh-bracelet",
+    "name": "Dragon Head Sterling Silver Mesh Bracelet",
+    "price": 350,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
-    "shortDescription": "Handcrafted silver bangle with makeup charms",
+    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
+    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
     "images": [
-      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
-      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
+      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
+      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
     ],
     "specs": {
-      "Type": "Charm Bangle",
+      "Type": "Mesh Bracelet",
       "Brand": "DealBazaar",
-      "Style": "Makeup / Beauty",
-      "Material": "Silver Alloy",
-      "Condition": "Brand New"
-    },
-    "featured": true,
-    "tags": [
-      "bangle",
-      "charm",
-      "makeup",
-      "silver",
-      "gift"
-    ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
-  },
-  {
-    "slug": "purple-crystal-charm-bracelet",
-    "name": "Purple Crystal Charm Bracelet",
-    "price": 75,
-    "currency": "USD",
-    "category": "jewelry",
-    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
-    "shortDescription": "Silver snake chain with purple crystal charms",
-    "images": [
-      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
-      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
-    ],
-    "specs": {
-      "Type": "Charm Bracelet",
-      "Brand": "DealBazaar",
-      "Stone": "Amethyst Crystal",
-      "Material": "Sterling Silver / Crystal",
+      "Style": "Dragon",
+      "Weight": "Heavy",
+      "Material": "Sterling Silver",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "charm",
-      "crystal",
-      "purple",
-      "amethyst",
-      "silver"
+      "dragon",
+      "silver",
+      "sterling",
+      "mesh",
+      "luxury"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "jaguar-panther-bangle",
+    "name": "Jaguar Panther Sterling Silver Bangle",
+    "price": 129,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
+    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "images": [
+      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
+      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+    ],
+    "specs": {
+      "Type": "Bangle",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Style": "Panther / Jaguar",
+      "Material": "S925 Sterling Silver",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bangle",
+      "silver",
+      "sterling",
+      "panther",
+      "jaguar",
+      "cz",
+      "s925"
+    ],
+    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+  },
+  {
+    "slug": "oval-radiance-cz-bracelet",
+    "name": "Oval Radiance Cubic Zirconia Bracelet",
+    "price": 89,
+    "currency": "USD",
+    "category": "jewelry",
+    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
+    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "images": [
+      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
+      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+    ],
+    "specs": {
+      "Type": "Chain Bracelet",
+      "Brand": "DealBazaar",
+      "Stone": "Cubic Zirconia",
+      "Material": "Sterling Silver / CZ",
+      "Condition": "Brand New"
+    },
+    "featured": true,
+    "tags": [
+      "bracelet",
+      "cz",
+      "cubic zirconia",
+      "silver",
+      "oval"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
@@ -233,99 +269,99 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "oval-radiance-cz-bracelet",
-    "name": "Oval Radiance Cubic Zirconia Bracelet",
-    "price": 89,
+    "slug": "purple-crystal-charm-bracelet",
+    "name": "Purple Crystal Charm Bracelet",
+    "price": 75,
     "currency": "USD",
     "category": "jewelry",
-    "description": "The Oval Radiance bracelet features a dazzling oval centerpiece encrusted with sparkling cubic zirconia stones, set in a polished silver-tone chain link band. The brilliant stones catch light from every angle, creating a radiant sparkle that elevates any outfit. Secure clasp closure ensures a comfortable and safe fit.",
-    "shortDescription": "CZ-encrusted oval centerpiece on silver chain",
+    "description": "An elegant silver snake chain bracelet loaded with stunning purple and amethyst crystal charms. Features a pavé crystal ball charm, faceted glass beads, and delicate enamel flower accents. The rich purple tones make this a standout statement piece for any occasion.",
+    "shortDescription": "Silver snake chain with purple crystal charms",
     "images": [
-      "/images/products/jewelry/oval-radiance-cz-bracelet-1.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-2.jpg",
-      "/images/products/jewelry/oval-radiance-cz-bracelet-3.jpg"
+      "/images/products/jewelry/purple-crystal-charm-bracelet-1.jpg",
+      "/images/products/jewelry/purple-crystal-charm-bracelet-2.jpg"
     ],
     "specs": {
-      "Type": "Chain Bracelet",
+      "Type": "Charm Bracelet",
       "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Material": "Sterling Silver / CZ",
+      "Stone": "Amethyst Crystal",
+      "Material": "Sterling Silver / Crystal",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bracelet",
-      "cz",
-      "cubic zirconia",
-      "silver",
-      "oval"
+      "charm",
+      "crystal",
+      "purple",
+      "amethyst",
+      "silver"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "jaguar-panther-bangle",
-    "name": "Jaguar Panther Sterling Silver Bangle",
-    "price": 129,
+    "slug": "makeup-charm-bangle",
+    "name": "Makeup Charm Bangle",
+    "price": 65,
     "currency": "USD",
     "category": "jewelry",
-    "description": "A bold and striking S925 sterling silver bangle featuring an intricately detailed black panther/jaguar motif. The design showcases pavé-set cubic zirconia sections that contrast beautifully with the oxidized black panther detail. A powerful statement piece that commands attention. Stamped S925 for authenticity.",
-    "shortDescription": "S925 silver bangle with black panther motif & CZ",
+    "description": "A playful handcrafted silver bangle adorned with beautifully detailed makeup-themed charms — a miniature lipstick, eyeshadow palette, crystal heart, and a 'Soulmate' engraved tag. Each charm is hand-finished with enamel detail and crystal accents. Comes with a 'Handmade with Love' tag. A perfect gift for the beauty lover in your life.",
+    "shortDescription": "Handcrafted silver bangle with makeup charms",
     "images": [
-      "/images/products/jewelry/jaguar-panther-bangle-1.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-2.jpg",
-      "/images/products/jewelry/jaguar-panther-bangle-3.jpg"
+      "/images/products/jewelry/makeup-charm-bangle-1.jpg",
+      "/images/products/jewelry/makeup-charm-bangle-2.jpg"
     ],
     "specs": {
-      "Type": "Bangle",
+      "Type": "Charm Bangle",
       "Brand": "DealBazaar",
-      "Stone": "Cubic Zirconia",
-      "Style": "Panther / Jaguar",
-      "Material": "S925 Sterling Silver",
+      "Style": "Makeup / Beauty",
+      "Material": "Silver Alloy",
       "Condition": "Brand New"
     },
     "featured": true,
     "tags": [
       "bangle",
+      "charm",
+      "makeup",
       "silver",
-      "sterling",
-      "panther",
-      "jaguar",
-      "cz",
-      "s925"
+      "gift"
     ],
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
-    "slug": "dragon-mesh-bracelet",
-    "name": "Dragon Head Sterling Silver Mesh Bracelet",
-    "price": 350,
+    "slug": "adidas-top-ten-hi-carolina-blue-sz12",
+    "name": "Adidas Top Ten Hi Carolina Blue (Size 12)",
+    "price": 85,
     "currency": "USD",
-    "category": "jewelry",
-    "description": "An extraordinary sterling silver mesh bracelet crowned with an exquisitely detailed dragon head. The woven silver mesh band flows seamlessly into the sculpted dragon with piercing eyes and intricate scale work. This museum-quality piece is a conversation starter and a collector's dream. Heavy, solid construction with a premium feel.",
-    "shortDescription": "Sterling silver mesh band with sculpted dragon head",
+    "category": "sneakers",
+    "description": "Adidas Top Ten Hi in the Carolina Blue / White colorway — heritage hardcourt high-top with all-blue leather upper, white 3-stripes on the lateral side, padded white collar wrap, and a tonal blue rubber outsole. Trefoil tongue patch with the original Top Ten basketball graphic. Brand new with original Adidas Originals box. Style code GW1616. Size US 12 (UK 11½ / EU 46⅔).",
+    "shortDescription": "Brand new with original Adidas box",
     "images": [
-      "/images/products/jewelry/dragon-mesh-bracelet-1.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-2.jpg",
-      "/images/products/jewelry/dragon-mesh-bracelet-3.jpg"
+      "/images/products/adidas-top-ten-hi-carolina-blue-sz12/01-front.jpg",
+      "/images/products/adidas-top-ten-hi-carolina-blue-sz12/02-rear.jpg",
+      "/images/products/adidas-top-ten-hi-carolina-blue-sz12/03-top.jpg"
     ],
     "specs": {
-      "Type": "Mesh Bracelet",
-      "Brand": "DealBazaar",
-      "Style": "Dragon",
-      "Weight": "Heavy",
-      "Material": "Sterling Silver",
-      "Condition": "Brand New"
+      "EU": "46⅔",
+      "UK": "11½",
+      "Size": "12",
+      "Brand": "Adidas Originals",
+      "Color": "Carolina Blue / White",
+      "Model": "Top Ten Hi",
+      "Condition": "Brand New",
+      "Style Code": "GW1616"
     },
-    "featured": true,
+    "featured": false,
     "tags": [
-      "bracelet",
-      "dragon",
-      "silver",
-      "sterling",
-      "mesh",
-      "luxury"
+      "adidas",
+      "adidas-originals",
+      "top-ten",
+      "top-ten-hi",
+      "high-top",
+      "carolina-blue",
+      "light-blue",
+      "size-12"
     ],
-    "createdAt": "2026-02-14T19:53:25.046249+00:00"
+    "createdAt": "2026-05-02T02:58:16.1139+00:00"
   },
   {
     "slug": "adidas-adizero-aruku-olive-brown-sz8",
@@ -2085,6 +2121,83 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-racer-tr23-black-royal-blue",
+    "name": "Adidas Racer TR23 Black Royal Blue",
+    "price": 50,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
+      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
+    ],
+    "specs": {
+      "Size": "6.5",
+      "Brand": "Adidas",
+      "Color": "Black/Royal Blue",
+      "Model": "Racer TR23",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "racer",
+      "black",
+      "blue",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-indoor-orange-black-gum",
     "name": "Adidas Gazelle Indoor Orange Black Gum",
     "price": 85,
@@ -2174,83 +2287,6 @@ export const products: Product[] = [
       "green",
       "originals",
       "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
-    "images": [
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
-    ],
-    "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
-      "Condition": "Brand New"
-    },
-    "retailPrice": 185,
-    "priceSources": [
-      {
-        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "Walmart",
-        "price": 169.99
-      },
-      {
-        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Poshmark",
-        "price": 185
-      },
-      {
-        "url": "https://www.ebay.com/itm/305789295020",
-        "name": "eBay",
-        "price": 119.95
-      }
-    ],
-    "featured": false,
-    "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-racer-tr23-black-royal-blue",
-    "name": "Adidas Racer TR23 Black Royal Blue",
-    "price": 50,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Racer TR23 in black mesh with royal blue Adidas pull tab accents. Lightweight running shoe. Size 6.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_2.jpg",
-      "/images/products/adidas-racer-tr23-black-royal-blue/adidas_racer_black_blue_3.jpg"
-    ],
-    "specs": {
-      "Size": "6.5",
-      "Brand": "Adidas",
-      "Color": "Black/Royal Blue",
-      "Model": "Racer TR23",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "racer",
-      "black",
-      "blue",
-      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
