@@ -328,6 +328,79 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "adidas-yeezy-350-v2-blue-tint-pre-owned-sz4",
+    "name": "Adidas Yeezy Boost 350 V2 Blue Tint — Pre-Owned (Size 4M)",
+    "price": 130,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Yeezy Boost 350 V2 in the 'Blue Tint' colorway — Primeknit upper in pale grey/cream with subtle blue-tinted side stripe and the iconic red 'SPLY-350' text on the lateral side, soft cream Boost midsole, translucent rubber sole. Pre-owned (used) with natural midsole patina; sold WITHOUT original box. Size US M 4 (small). Style code B37571.",
+    "shortDescription": "Pre-owned — used, no original box",
+    "images": [
+      "/images/products/adidas-yeezy-350-v2-blue-tint-pre-owned-sz4/01-pair.jpg",
+      "/images/products/adidas-yeezy-350-v2-blue-tint-pre-owned-sz4/02-front.jpg",
+      "/images/products/adidas-yeezy-350-v2-blue-tint-pre-owned-sz4/03-top.jpg"
+    ],
+    "specs": {
+      "Size": "4",
+      "Brand": "Adidas Yeezy",
+      "Color": "Blue Tint",
+      "Model": "Yeezy Boost 350 V2",
+      "Source": "Whatnot — stewsshoes A-32484",
+      "Condition": "Pre-Owned (no box)",
+      "Style Code": "B37571"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "yeezy",
+      "yeezy-350",
+      "yeezy-350-v2",
+      "blue-tint",
+      "pre-owned",
+      "no-box",
+      "size-4",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-03T02:08:39.079924+00:00"
+  },
+  {
+    "slug": "nike-dunk-low-court-purple-pre-owned-sz85",
+    "name": "Nike Dunk Low Court Purple — Pre-Owned (Size 8.5)",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Dunk Low Retro in the 'Championship Court Purple' colorway — white tumbled-leather base with rich Court Purple overlays, white Swoosh, embossed white 'NIKE' on the purple heel, white midsole and purple rubber outsole. Pre-owned with the original Nike box (lot label BY340). Size US M 8.5. Style code DD1391-104.",
+    "shortDescription": "Pre-owned with original Nike box",
+    "images": [
+      "/images/products/nike-dunk-low-court-purple-pre-owned-sz85/01-pair-on-box.jpg",
+      "/images/products/nike-dunk-low-court-purple-pre-owned-sz85/02-top.jpg",
+      "/images/products/nike-dunk-low-court-purple-pre-owned-sz85/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "Size": "8.5",
+      "Brand": "Nike",
+      "Color": "White / Court Purple",
+      "Model": "Dunk Low Retro",
+      "Source": "Whatnot — fragmented_soles BY340",
+      "Condition": "Pre-Owned",
+      "Style Code": "DD1391-104"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "dunk",
+      "dunk-low",
+      "court-purple",
+      "championship",
+      "purple",
+      "white",
+      "size-8-5",
+      "pre-owned",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-03T02:08:34.816908+00:00"
+  },
+  {
     "slug": "air-jordan-1-retro-high-og-yellow-ochre-sz9",
     "name": "Air Jordan 1 Retro High OG Yellow Ochre — Pre-Owned (Size 9)",
     "price": 220,
@@ -2592,6 +2665,86 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "nike-air-jordan-1-retro-high-og-mauve",
+    "name": "Nike Air Jordan 1 Retro High OG Mauve",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
+    "shortDescription": "Brand new with OG box",
+    "images": [
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
+      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
+    ],
+    "specs": {
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Mauve/Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New"
+    },
+    "retailPrice": 185,
+    "priceSources": [
+      {
+        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
+        "name": "Walmart",
+        "price": 169.99
+      },
+      {
+        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
+        "name": "Poshmark",
+        "price": 185
+      },
+      {
+        "url": "https://www.ebay.com/itm/305789295020",
+        "name": "eBay",
+        "price": 119.95
+      }
+    ],
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "jordan-1",
+      "mauve",
+      "retro",
+      "high-og"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-racer-tr23-black-royal-blue",
     "name": "Adidas Racer TR23 Black Royal Blue",
     "price": 50,
@@ -2678,86 +2831,6 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "nike-air-jordan-1-retro-high-og-mauve",
-    "name": "Nike Air Jordan 1 Retro High OG Mauve",
-    "price": 95,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Nike Air Jordan 1 Retro High OG in Mauve/Sail colorway. Brand new, deadstock with original pink box. Size 11.",
-    "shortDescription": "Brand new with OG box",
-    "images": [
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_2.jpg",
-      "/images/products/nike-air-jordan-1-retro-high-og-mauve/nike_jordan1_mauve_3.jpg"
-    ],
-    "specs": {
-      "Size": "11",
-      "Brand": "Nike",
-      "Color": "Mauve/Sail",
-      "Model": "Air Jordan 1 Retro High OG",
-      "Condition": "Brand New"
-    },
-    "retailPrice": 185,
-    "priceSources": [
-      {
-        "url": "https://www.walmart.com/ip/Air-Jordan-1-Retro-High-Og-Mauve-Mens-Style-Dz5485/5077084066",
-        "name": "Walmart",
-        "price": 169.99
-      },
-      {
-        "url": "https://poshmark.com/listing/Jordan-1-High-OG-White-Sky-Deadstock-size-12-6664c04287aeb6fb6c21f2d7",
-        "name": "Poshmark",
-        "price": 185
-      },
-      {
-        "url": "https://www.ebay.com/itm/305789295020",
-        "name": "eBay",
-        "price": 119.95
-      }
-    ],
-    "featured": false,
-    "tags": [
-      "nike",
-      "jordan",
-      "jordan-1",
-      "mauve",
-      "retro",
-      "high-og"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
