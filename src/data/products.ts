@@ -328,6 +328,41 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "air-jordan-1-retro-high-og-yellow-ochre-sz9",
+    "name": "Air Jordan 1 Retro High OG Yellow Ochre (Size 9)",
+    "price": 260,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Retro High OG in the 'Yellow Ochre' colorway — black leather quarter panels and Swoosh, bright yellow-ochre toe and side overlays, sail/cream Nike Air collar lining, sail midsole, gum-tinted outsole. Brand new with original Nike box. Style code FQ2941-701. Size US M 9.",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/01-pair-on-box.jpg",
+      "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/02-front.jpg",
+      "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/03-side.jpg",
+      "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/04-in-box.jpg"
+    ],
+    "specs": {
+      "Size": "9",
+      "Brand": "Nike / Jordan",
+      "Color": "Yellow Ochre / Black / Sail",
+      "Model": "Air Jordan 1 Retro High OG",
+      "Condition": "Brand New",
+      "Style Code": "FQ2941-701"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "retro-high-og",
+      "yellow-ochre",
+      "yellow",
+      "black",
+      "size-9"
+    ],
+    "createdAt": "2026-05-03T00:17:38.402692+00:00"
+  },
+  {
     "slug": "adidas-avryn-black-pink-sz9",
     "name": "Adidas Avryn Black / Pink (Size 9)",
     "price": 70,
@@ -2584,6 +2619,36 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-indoor-orange-black-gum",
     "name": "Adidas Gazelle Indoor Orange Black Gum",
     "price": 85,
@@ -2615,32 +2680,34 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
     ],
     "specs": {
       "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -2689,38 +2756,6 @@ export const products: Product[] = [
       "mauve",
       "retro",
       "high-og"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
