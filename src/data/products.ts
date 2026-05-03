@@ -329,12 +329,12 @@ export const products: Product[] = [
   },
   {
     "slug": "air-jordan-1-retro-high-og-yellow-ochre-sz9",
-    "name": "Air Jordan 1 Retro High OG Yellow Ochre (Size 9)",
-    "price": 260,
+    "name": "Air Jordan 1 Retro High OG Yellow Ochre — Pre-Owned (Size 9)",
+    "price": 220,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Air Jordan 1 Retro High OG in the 'Yellow Ochre' colorway — black leather quarter panels and Swoosh, bright yellow-ochre toe and side overlays, sail/cream Nike Air collar lining, sail midsole, gum-tinted outsole. Brand new with original Nike box. Style code FQ2941-701. Size US M 9.",
-    "shortDescription": "Brand new with original Nike box",
+    "description": "Air Jordan 1 Retro High OG in the 'Yellow Ochre' colorway — black leather quarter panels and Swoosh, bright yellow-ochre toe and side overlays, sail/cream Nike Air collar lining, sail midsole, gum-tinted outsole. Pre-owned in excellent condition with original Nike box. Style code FQ2941-701. Size US M 9.",
+    "shortDescription": "Pre-owned — excellent condition with OG box",
     "images": [
       "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/01-pair-on-box.jpg",
       "/images/products/air-jordan-1-retro-high-og-yellow-ochre-sz9/02-front.jpg",
@@ -346,7 +346,7 @@ export const products: Product[] = [
       "Brand": "Nike / Jordan",
       "Color": "Yellow Ochre / Black / Sail",
       "Model": "Air Jordan 1 Retro High OG",
-      "Condition": "Brand New",
+      "Condition": "Pre-Owned (Excellent)",
       "Style Code": "FQ2941-701"
     },
     "featured": false,
@@ -358,7 +358,9 @@ export const products: Product[] = [
       "yellow-ochre",
       "yellow",
       "black",
-      "size-9"
+      "size-9",
+      "pre-owned",
+      "excellent-condition"
     ],
     "createdAt": "2026-05-03T00:17:38.402692+00:00"
   },
