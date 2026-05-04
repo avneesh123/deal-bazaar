@@ -328,6 +328,80 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "nike-w-dunk-low-stadium-green-w7",
+    "name": "Nike (W) Dunk Low Stadium Green (Women's 7)",
+    "price": 110,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike (W) Dunk Low in the 'Stadium Green' colorway — sail/white tumbled-leather toe and quarter panels with vivid Stadium-Green Swoosh, eyestay, collar, and heel overlay, sail laces, white midsole and green rubber outsole. Brand new with original Nike box. Women's US 7 (Men's 5.5 / EU 38 / UK 4.5).",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/nike-w-dunk-low-stadium-green-w7/01-pair-on-box.jpg",
+      "/images/products/nike-w-dunk-low-stadium-green-w7/02-top.jpg",
+      "/images/products/nike-w-dunk-low-stadium-green-w7/03-side-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "38",
+      "UK": "4.5",
+      "Size": "7W",
+      "Brand": "Nike",
+      "Color": "Stadium Green / White",
+      "Model": "(W) Dunk Low",
+      "Source": "Whatnot — stewsshoes pull #116",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "dunk",
+      "dunk-low",
+      "stadium-green",
+      "green",
+      "womens",
+      "size-7w",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-04T02:32:26.740799+00:00"
+  },
+  {
+    "slug": "nike-w-air-max-sunder-sundial-w75",
+    "name": "Nike (W) Air Max Sunder Sundial (Women's 7.5)",
+    "price": 130,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike (W) Air Max Sunder in the 'Sundial' colorway — sundial-yellow stretchy neoprene zip-up upper, navy 'AIR' midfoot strap, grey TPU support cage, white midsole and chunky black trail-style outsole. The Sunder is Nike's late-90s zip-front trail runner reissued for 2024+. Brand new with original Nike box. Women's US 7.5 (Men's 6 / EU 38.5 / UK 5). Style code HJ8080-700.",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/nike-w-air-max-sunder-sundial-w75/01-pair.jpg",
+      "/images/products/nike-w-air-max-sunder-sundial-w75/02-top.jpg",
+      "/images/products/nike-w-air-max-sunder-sundial-w75/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "38.5",
+      "UK": "5",
+      "Size": "7.5W",
+      "Brand": "Nike",
+      "Color": "Sundial / Navy",
+      "Model": "(W) Air Max Sunder",
+      "Source": "Whatnot — sneakerhustle pull #73",
+      "Condition": "Brand New",
+      "Style Code": "HJ8080-700"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "air-max",
+      "sunder",
+      "sndr",
+      "sundial",
+      "yellow",
+      "womens",
+      "size-7-5w",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-04T02:32:23.303706+00:00"
+  },
+  {
     "slug": "adidas-yeezy-350-v2-blue-tint-pre-owned-sz4",
     "name": "Adidas Yeezy Boost 350 V2 Blue Tint — Pre-Owned (Size 4M)",
     "price": 130,
@@ -2665,6 +2739,67 @@ export const products: Product[] = [
     "createdAt": "2026-02-16T18:42:13.535181+00:00"
   },
   {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
+    ],
+    "specs": {
+      "Size": "13",
+      "Brand": "Adidas",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
     "slug": "adidas-gazelle-blue-green",
     "name": "Adidas Gazelle Blue Green",
     "price": 35,
@@ -2770,67 +2905,6 @@ export const products: Product[] = [
       "black",
       "blue",
       "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
-    ],
-    "specs": {
-      "Size": "13",
-      "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
