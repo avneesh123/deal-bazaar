@@ -328,6 +328,73 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "adidas-run-80s-grey-maroon-sz9",
+    "name": "Adidas Run 80s Grey / Maroon (Size 9)",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Run 80s in a clean Grey / Maroon colorway — light-grey suede mudguard and toe overlays, grey mesh panels, deep maroon 3-stripes on the lateral side, navy heel block with embossed 'adidas' lettering, white EVA midsole and black rubber outsole. Brand new with hangtag still attached and original Adidas box. Size US 9.",
+    "shortDescription": "Brand new with hangtag and OG box",
+    "images": [
+      "/images/products/adidas-run-80s-grey-maroon-sz9/01-pair-on-box.jpg",
+      "/images/products/adidas-run-80s-grey-maroon-sz9/02-top.jpg",
+      "/images/products/adidas-run-80s-grey-maroon-sz9/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "Size": "9",
+      "Brand": "Adidas",
+      "Color": "Grey / Maroon / Navy",
+      "Model": "Run 80s",
+      "Source": "Whatnot — fulfilledbymama pull #276",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "run-80s",
+      "runner",
+      "retro",
+      "grey",
+      "maroon",
+      "size-9",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-04T03:35:35.312887+00:00"
+  },
+  {
+    "slug": "adidas-vl-court-navy-light-blue-sz95",
+    "name": "Adidas VL Court Navy / Light Blue (Size 9.5)",
+    "price": 60,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas VL Court (3.0) in Navy / Light Blue — navy nubuck-finish synthetic upper with light-blue 3-stripes and matching light-blue heel patch, navy laces, light-blue printed tongue label, gum rubber cupsole. Brand new with original Adidas box. Size US 9.5.",
+    "shortDescription": "Brand new with OG box (slightly damaged from bundle ship)",
+    "images": [
+      "/images/products/adidas-vl-court-navy-light-blue-sz95/01-pair-on-box.jpg",
+      "/images/products/adidas-vl-court-navy-light-blue-sz95/02-top.jpg",
+      "/images/products/adidas-vl-court-navy-light-blue-sz95/03-rear.jpg"
+    ],
+    "specs": {
+      "Size": "9.5",
+      "Brand": "Adidas",
+      "Color": "Navy / Light Blue",
+      "Model": "VL Court 3.0 (likely)",
+      "Source": "Whatnot — fulfilledbymama pull #273",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "vl-court",
+      "navy",
+      "light-blue",
+      "gum-sole",
+      "size-9-5",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-04T03:35:30.371989+00:00"
+  },
+  {
     "slug": "adidas-gazelle-wonder-quartz-pink-sz10",
     "name": "Adidas Gazelle Wonder Quartz Pink (Size 10)",
     "price": 80,
@@ -2932,33 +2999,32 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-indoor-orange-black-gum",
-    "name": "Adidas Gazelle Indoor Orange Black Gum",
-    "price": 85,
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
-    "shortDescription": "Brand new with tags and OG box",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
     "images": [
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
-      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
     ],
     "specs": {
-      "Size": "13",
+      "Size": "10.5",
       "Brand": "Adidas",
-      "Color": "Orange/Black/Gum",
-      "Model": "Gazelle Indoor",
+      "Color": "Triple White",
+      "Style": "Running",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "gazelle",
-      "indoor",
-      "orange",
-      "black",
-      "gum",
-      "originals"
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
@@ -2992,32 +3058,33 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
+    "slug": "adidas-gazelle-indoor-orange-black-gum",
+    "name": "Adidas Gazelle Indoor Orange Black Gum",
+    "price": 85,
     "currency": "USD",
     "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
+    "description": "Adidas Originals Gazelle Indoor in bright orange suede with black three stripes and gum sole. Size 13.",
+    "shortDescription": "Brand new with tags and OG box",
     "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_2.jpg",
+      "/images/products/adidas-gazelle-indoor-orange-black-gum/adidas_gazelle_orange_black_3.jpg"
     ],
     "specs": {
-      "Size": "10.5",
+      "Size": "13",
       "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
+      "Color": "Orange/Black/Gum",
+      "Model": "Gazelle Indoor",
       "Condition": "Brand New"
     },
     "featured": false,
     "tags": [
       "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
+      "gazelle",
+      "indoor",
+      "orange",
+      "black",
+      "gum",
+      "originals"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
