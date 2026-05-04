@@ -27,8 +27,8 @@ const supabase = createClient(
 );
 
 const FOLDER = "/tmp/db-batchF/f1-1-cream-hi-top-canvas-studded";
-const SLUG = "cream-canvas-hi-top-leopard-studded-pre-owned";
-const NAME = "Cream Canvas Hi-Top — Leopard / Studded — Pre-Owned";
+const SLUG = "ash-bowie-cream-leopard-studded-hi-top-pre-owned";
+const NAME = "Ash Bowie Cream Leopard Studded Hi-Top — Pre-Owned";
 
 async function uploadCatalogImages(): Promise<string[]> {
   const dir = path.join(FOLDER, "catalog");
