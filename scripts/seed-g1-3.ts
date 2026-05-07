@@ -52,7 +52,7 @@ async function main() {
     currency: "USD", category: "sneakers",
     description: "Nike x NOCTA Air Zoom Drive in the Black / Triple Black colorway — Drake's NOCTA collab. Black engineered mesh and synthetic upper with white-stitch laces, sculpted black midsole, NOCTA woven heel pull tab in white-on-black, NOCTA snowflake mark on the lateral side. Brand new with original Nike box (matte black box). Size US M 10.5 (W 11 / UK 9.5 / EU 44.5). First black NOCTA Drive in inventory.",
     short_description: "Brand new with original Nike box",
-    status: "in_stock", quantity: 1, featured: false, box_number: "F1-11",
+    status: "in_stock", quantity: 1, featured: false, box_number: "G1-3",
     tags: ["nike","nocta","drake","air-zoom-drive","black","triple-black","size-10-5","whatnot-pull"],
     images: imageUrls,
     specs: {

@@ -52,7 +52,7 @@ async function main() {
     currency: "USD", category: "sneakers",
     description: "Adidas Forum 84 Low — cream/off-white tumbled-leather upper with snake-embossed black-and-cream toe guard and heel panel, white perforated 3-stripes, gold-stitched edge tape, padded ankle strap with squared eyelet. Brand new with hangtags still attached and original Adidas Originals blue box (lot label CB807). Size US M 12 (UK 11.5 / EU 46⅔).",
     short_description: "Brand new with hangtag and OG box",
-    status: "in_stock", quantity: 1, featured: false, box_number: "F1-12",
+    status: "in_stock", quantity: 1, featured: false, box_number: "G1-4",
     tags: ["adidas","adidas-originals","forum","forum-84","forum-84-low","snake-print","cream","off-white","size-12","whatnot-pull"],
     images: imageUrls,
     specs: {

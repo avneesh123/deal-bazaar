@@ -1,7 +1,8 @@
 /**
- * Seed Batch F1-9: Air Jordan 1 Mid Gym Red — Pre-Owned, Size 10.5.
- * $31 Whatnot pull from fragmented_soles "$50,000 OF HEAT AT $1 / FREE
- * JORDANS" livestream (24 Oct 2025), lot CB491. Pre-owned with OG box.
+ * Seed Batch F1-10: Nike NOCTA Air Zoom Drive Summit White — M 11.
+ * SECOND M11 pair (B5-1 is the first; kept as separate listing because cost
+ * basis differs). $54 Whatnot pull #5 from stewsshoes "FREE TRAVIS SCOTT +
+ * 500 SHOES AT $1" livestream (3 Nov 2025). Brand new with OG box.
  */
 
 import { createClient } from "@supabase/supabase-js";
@@ -18,19 +19,19 @@ if (existsSync(envPath)) {
   }
 }
 const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!);
-const FOLDER = "/tmp/db-batchF/f1-9-aj1-mid-gym-red-105-pre-owned";
-const SLUG = "air-jordan-1-mid-gym-red-pre-owned-sz105";
-const NAME = "Air Jordan 1 Mid Gym Red — Pre-Owned (Size 10.5)";
+const FOLDER = "/tmp/db-batchF/f1-10-nocta-zoom-drive-white-m11";
+const SLUG = "nike-nocta-air-zoom-drive-summit-white-m11-f1";
+const NAME = "Nike NOCTA Air Zoom Drive Summit White (M 11) — F1";
 
 async function uploadCatalogImages(): Promise<string[]> {
   const dir = path.join(FOLDER, "catalog");
   const files = readdirSync(dir).filter((f) => f.endsWith(".png")).sort();
   const urls: string[] = [];
   for (const f of files) {
-    const storagePath = `products/batchF/${SLUG}/${f}`;
-    const { error } = await supabase.storage.from("images").upload(storagePath, readFileSync(path.join(dir, f)), { upsert: true, contentType: "image/png" });
+    const sp = `products/batchF/${SLUG}/${f}`;
+    const { error } = await supabase.storage.from("images").upload(sp, readFileSync(path.join(dir, f)), { upsert: true, contentType: "image/png" });
     if (error) { console.error(`  ✗ ${f}: ${error.message}`); continue; }
-    urls.push(supabase.storage.from("images").getPublicUrl(storagePath).data.publicUrl);
+    urls.push(supabase.storage.from("images").getPublicUrl(sp).data.publicUrl);
     console.log(`  ✓ ${f}`);
   }
   return urls;
@@ -42,28 +43,28 @@ async function main() {
   if (existing) { console.log("Already exists. Aborting."); return; }
   const imageUrls = await uploadCatalogImages();
   if (imageUrls.length === 0) { process.exit(1); }
-  const COST_PRICE = 31;
-  const SELLING_PRICE = 110;
+  const COST_PRICE = 54;
+  const SELLING_PRICE = 145;
   const { data: product, error: prodErr } = await supabase.from("products").insert({
     slug: SLUG, name: NAME, cost_price: COST_PRICE, selling_price: SELLING_PRICE,
-    shipping_cost: 12, tax_amount: parseFloat((COST_PRICE * 0.06625).toFixed(2)),
+    shipping_cost: 14, tax_amount: parseFloat((COST_PRICE * 0.06625).toFixed(2)),
     currency: "USD", category: "sneakers",
-    description: "Air Jordan 1 Mid in the 'Gym Red Black' colorway — white tumbled-leather toe and quarter panels with black overlays and Swoosh, Gym Red trim accent stripe, sail-cream midsole, black/red heel collar with Wings logo. Pre-owned with original Nike Jordan box. Size US M 10.5.",
-    short_description: "Pre-owned with original Nike box",
-    status: "in_stock", quantity: 1, featured: false, box_number: "F1-9",
-    tags: ["nike","jordan","air-jordan-1","aj1-mid","gym-red","black","white","red","size-10-5","pre-owned","whatnot-pull"],
+    description: "Nike x NOCTA Air Zoom Drive Summit White — Drake's NOCTA collab in tonal white. Tonal white mesh and synthetic upper, sculpted Summit White midsole, NOCTA woven heel pull tab, NOCTA snowflake mark on the lateral side. Brand new with original Nike box. Size US M 11 (W 12.5 / UK 10 / EU 45). This is the second pair of this exact size in inventory (separate listing from B5-1 to preserve distinct cost basis).",
+    short_description: "Brand new with original Nike box",
+    status: "in_stock", quantity: 1, featured: false, box_number: "G1-2",
+    tags: ["nike","nocta","drake","air-zoom-drive","summit-white","white","size-11","whatnot-pull"],
     images: imageUrls,
     specs: {
-      Brand: "Nike / Jordan", Model: "Air Jordan 1 Mid",
-      Color: "Gym Red / Black / White", Size: "10.5",
-      Condition: "Pre-Owned",
-      Source: "Whatnot — fragmented_soles CB491",
+      Brand: "Nike", Model: "NOCTA Air Zoom Drive",
+      Color: "Summit White", Size: "11", EU: "45", UK: "10",
+      Condition: "Brand New",
+      Source: "Whatnot — stewsshoes pull #5",
     },
   }).select("id").single();
   if (prodErr || !product) { console.error(`✗ ${prodErr?.message}`); process.exit(1); }
   console.log(`✓ product id=${product.id}`);
 
-  const heic = path.join(FOLDER, "_receipt", "IMG_5911.HEIC");
+  const heic = path.join(FOLDER, "_receipt", "IMG_5916.HEIC");
   if (existsSync(heic)) {
     const jpg = heic.replace(/\.HEIC$/i, ".jpg");
     if (!existsSync(jpg)) execSync(`sips -s format jpeg "${heic}" --out "${jpg}" 2>/dev/null`);
@@ -72,8 +73,8 @@ async function main() {
     if (!error) {
       const ru = supabase.storage.from("receipts").getPublicUrl(sp).data.publicUrl;
       const { data: r } = await supabase.from("receipts").insert({
-        file_url: ru, vendor: "Whatnot — fragmented_soles", purchase_date: "2025-10-24", total_amount: COST_PRICE,
-        notes: "Whatnot packing slip — order #600302288 from fragmented_soles' '$50,000 OF HEAT AT $1 / FREE JORDANS' livestream on 24 October 2025. Listed as 'AIR JORDAN 1 MID GYM RED — SIZE 10.5 PRE OWNED ORIGINAL BOX — CB491'. Won for $31.",
+        file_url: ru, vendor: "Whatnot — stewsshoes", purchase_date: "2025-11-03", total_amount: COST_PRICE,
+        notes: "Whatnot packing slip — order #616629306 from stewsshoes' 'FREE TRAVIS SCOTT + 500 SHOES AT $1' livestream on 3 November 2025. Listed as 'Nike Air Zoom Drive Drake NOCTA White SZ: 11M/12.5W #5 — Brand New 55CZK0PQKC'. Won for $54.",
       }).select("id").single();
       if (r) await supabase.from("receipt_items").insert({ receipt_id: r.id, product_id: product.id, item_name: NAME, quantity: 1, unit_price: COST_PRICE });
       console.log(`✓ receipt id=${r?.id}`);
