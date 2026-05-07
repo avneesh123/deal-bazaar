@@ -328,6 +328,153 @@ export const products: Product[] = [
     "createdAt": "2026-02-14T19:53:25.046249+00:00"
   },
   {
+    "slug": "adidas-forum-84-low-snake-print-cream-sz12",
+    "name": "Adidas Forum 84 Low Snake Print Cream (Size 12)",
+    "price": 95,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Forum 84 Low — cream/off-white tumbled-leather upper with snake-embossed black-and-cream toe guard and heel panel, white perforated 3-stripes, gold-stitched edge tape, padded ankle strap with squared eyelet. Brand new with hangtags still attached and original Adidas Originals blue box (lot label CB807). Size US M 12 (UK 11.5 / EU 46⅔).",
+    "shortDescription": "Brand new with hangtag and OG box",
+    "images": [
+      "/images/products/adidas-forum-84-low-snake-print-cream-sz12/01-front.jpg",
+      "/images/products/adidas-forum-84-low-snake-print-cream-sz12/02-top.jpg",
+      "/images/products/adidas-forum-84-low-snake-print-cream-sz12/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "46⅔",
+      "UK": "11.5",
+      "Size": "12",
+      "Brand": "Adidas Originals",
+      "Color": "Cream / Snake Print",
+      "Model": "Forum 84 Low",
+      "Source": "Whatnot — vendor pull (lot CB807; receipt missing from batch)",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "adidas-originals",
+      "forum",
+      "forum-84",
+      "forum-84-low",
+      "snake-print",
+      "cream",
+      "off-white",
+      "size-12",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-07T03:20:22.345593+00:00"
+  },
+  {
+    "slug": "nike-nocta-air-zoom-drive-black-m105",
+    "name": "Nike NOCTA Air Zoom Drive Black (M 10.5)",
+    "price": 165,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike x NOCTA Air Zoom Drive in the Black / Triple Black colorway — Drake's NOCTA collab. Black engineered mesh and synthetic upper with white-stitch laces, sculpted black midsole, NOCTA woven heel pull tab in white-on-black, NOCTA snowflake mark on the lateral side. Brand new with original Nike box (matte black box). Size US M 10.5 (W 11 / UK 9.5 / EU 44.5). First black NOCTA Drive in inventory.",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/nike-nocta-air-zoom-drive-black-m105/01-pair-on-box.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-black-m105/02-front.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-black-m105/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "44.5",
+      "UK": "9.5",
+      "Size": "10.5",
+      "Brand": "Nike",
+      "Color": "Black / Triple Black",
+      "Model": "NOCTA Air Zoom Drive",
+      "Source": "Whatnot — stewsshoes pull #8",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "nocta",
+      "drake",
+      "air-zoom-drive",
+      "black",
+      "triple-black",
+      "size-10-5",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-07T03:20:17.127857+00:00"
+  },
+  {
+    "slug": "nike-nocta-air-zoom-drive-summit-white-m11-f1",
+    "name": "Nike NOCTA Air Zoom Drive Summit White (M 11) — F1",
+    "price": 145,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Nike x NOCTA Air Zoom Drive Summit White — Drake's NOCTA collab in tonal white. Tonal white mesh and synthetic upper, sculpted Summit White midsole, NOCTA woven heel pull tab, NOCTA snowflake mark on the lateral side. Brand new with original Nike box. Size US M 11 (W 12.5 / UK 10 / EU 45). This is the second pair of this exact size in inventory (separate listing from B5-1 to preserve distinct cost basis).",
+    "shortDescription": "Brand new with original Nike box",
+    "images": [
+      "/images/products/nike-nocta-air-zoom-drive-summit-white-m11-f1/01-front.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-summit-white-m11-f1/02-pair.jpg",
+      "/images/products/nike-nocta-air-zoom-drive-summit-white-m11-f1/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "EU": "45",
+      "UK": "10",
+      "Size": "11",
+      "Brand": "Nike",
+      "Color": "Summit White",
+      "Model": "NOCTA Air Zoom Drive",
+      "Source": "Whatnot — stewsshoes pull #5",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "nocta",
+      "drake",
+      "air-zoom-drive",
+      "summit-white",
+      "white",
+      "size-11",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-07T03:20:12.179649+00:00"
+  },
+  {
+    "slug": "air-jordan-1-mid-gym-red-pre-owned-sz105",
+    "name": "Air Jordan 1 Mid Gym Red — Pre-Owned (Size 10.5)",
+    "price": 110,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Air Jordan 1 Mid in the 'Gym Red Black' colorway — white tumbled-leather toe and quarter panels with black overlays and Swoosh, Gym Red trim accent stripe, sail-cream midsole, black/red heel collar with Wings logo. Pre-owned with original Nike Jordan box. Size US M 10.5.",
+    "shortDescription": "Pre-owned with original Nike box",
+    "images": [
+      "/images/products/air-jordan-1-mid-gym-red-pre-owned-sz105/01-pair.jpg",
+      "/images/products/air-jordan-1-mid-gym-red-pre-owned-sz105/02-pair-on-box.jpg",
+      "/images/products/air-jordan-1-mid-gym-red-pre-owned-sz105/03-rear-on-box.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Nike / Jordan",
+      "Color": "Gym Red / Black / White",
+      "Model": "Air Jordan 1 Mid",
+      "Source": "Whatnot — fragmented_soles CB491",
+      "Condition": "Pre-Owned"
+    },
+    "featured": false,
+    "tags": [
+      "nike",
+      "jordan",
+      "air-jordan-1",
+      "aj1-mid",
+      "gym-red",
+      "black",
+      "white",
+      "red",
+      "size-10-5",
+      "pre-owned",
+      "whatnot-pull"
+    ],
+    "createdAt": "2026-05-07T03:20:06.41045+00:00"
+  },
+  {
     "slug": "adidas-run-80s-grey-maroon-sz9",
     "name": "Adidas Run 80s Grey / Maroon (Size 9)",
     "price": 55,
@@ -2967,68 +3114,6 @@ export const products: Product[] = [
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
   {
-    "slug": "adidas-gazelle-blue-green",
-    "name": "Adidas Gazelle Blue Green",
-    "price": 35,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
-    "shortDescription": "Brand new with tags and OG box",
-    "images": [
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
-      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Blue/Green/White",
-      "Model": "Gazelle",
-      "Condition": "Brand New",
-      "Style Code": "IH5389"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "gazelle",
-      "blue",
-      "green",
-      "originals",
-      "suede"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
-    "slug": "adidas-cloudfoam-bounce-triple-white",
-    "name": "Adidas Cloudfoam Bounce Triple White",
-    "price": 55,
-    "currency": "USD",
-    "category": "sneakers",
-    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
-    "shortDescription": "Brand new with box",
-    "images": [
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
-      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
-    ],
-    "specs": {
-      "Size": "10.5",
-      "Brand": "Adidas",
-      "Color": "Triple White",
-      "Style": "Running",
-      "Condition": "Brand New"
-    },
-    "featured": false,
-    "tags": [
-      "adidas",
-      "bounce",
-      "cloudfoam",
-      "white",
-      "running"
-    ],
-    "createdAt": "2026-02-15T19:43:10.189572+00:00"
-  },
-  {
     "slug": "adidas-racer-tr23-black-royal-blue",
     "name": "Adidas Racer TR23 Black Royal Blue",
     "price": 50,
@@ -3085,6 +3170,68 @@ export const products: Product[] = [
       "black",
       "gum",
       "originals"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-cloudfoam-bounce-triple-white",
+    "name": "Adidas Cloudfoam Bounce Triple White",
+    "price": 55,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Cloudfoam Bounce running shoes in triple white colorway. Lightweight and comfortable with Bounce cushioning technology. Size 10.5.",
+    "shortDescription": "Brand new with box",
+    "images": [
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_2.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_3.jpg",
+      "/images/products/adidas-cloudfoam-bounce-triple-white/adidas_bounce_white_4.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Triple White",
+      "Style": "Running",
+      "Condition": "Brand New"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "bounce",
+      "cloudfoam",
+      "white",
+      "running"
+    ],
+    "createdAt": "2026-02-15T19:43:10.189572+00:00"
+  },
+  {
+    "slug": "adidas-gazelle-blue-green",
+    "name": "Adidas Gazelle Blue Green",
+    "price": 35,
+    "currency": "USD",
+    "category": "sneakers",
+    "description": "Adidas Originals Gazelle in royal blue suede with green three stripes. Style IH5389. Deadstock with original tags. Size 11.5 US.",
+    "shortDescription": "Brand new with tags and OG box",
+    "images": [
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_1.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_2.jpg",
+      "/images/products/adidas-gazelle-blue-green/adidas_gazelle_blue_green_3.jpg"
+    ],
+    "specs": {
+      "Size": "10.5",
+      "Brand": "Adidas",
+      "Color": "Blue/Green/White",
+      "Model": "Gazelle",
+      "Condition": "Brand New",
+      "Style Code": "IH5389"
+    },
+    "featured": false,
+    "tags": [
+      "adidas",
+      "gazelle",
+      "blue",
+      "green",
+      "originals",
+      "suede"
     ],
     "createdAt": "2026-02-15T19:43:10.189572+00:00"
   },
