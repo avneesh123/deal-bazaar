@@ -153,7 +153,7 @@ async function main() {
     `🖼️  Localized ${downloadedCount}/${totalImages} images (rest were already local or external)`
   );
 
-  const tsContent = `export type ProductCategory = "jewelry" | "sneakers";
+  const tsContent = `export type ProductCategory = "jewelry" | "sneakers" | "electronics";
 
 export interface Product {
   slug: string;
