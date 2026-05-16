@@ -1,5 +1,5 @@
 export type ProductStatus = "in_stock" | "sold" | "reserved" | "unlisted";
-export type ProductCategory = "jewelry" | "sneakers";
+export type ProductCategory = "jewelry" | "sneakers" | "electronics";
 export type PaymentMethod = "cash" | "zelle" | "venmo" | "paypal" | "card" | "other";
 
 export interface DbProduct {

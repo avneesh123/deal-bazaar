@@ -29,11 +29,13 @@ function ShopContentInner() {
 
   const sneakers = products.filter((p) => p.category === "sneakers");
   const jewelry = products.filter((p) => p.category === "jewelry");
+  const electronics = products.filter((p) => p.category === "electronics");
 
   const counts = {
     all: products.length,
     sneakers: sneakers.length,
     jewelry: jewelry.length,
+    electronics: electronics.length,
   };
 
   const handleRemoveFilter = (

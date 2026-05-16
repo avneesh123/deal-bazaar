@@ -8,6 +8,7 @@ interface CategoryFilterProps {
     all: number;
     sneakers: number;
     jewelry: number;
+    electronics: number;
   };
 }
 
@@ -18,6 +19,7 @@ const CATEGORY_CHIPS = [
   { label: "All", category: "" as const, key: "all" as const },
   { label: "Sneakers", category: "sneakers" as const, key: "sneakers" as const },
   { label: "Jewelry", category: "jewelry" as const, key: "jewelry" as const },
+  { label: "Electronics", category: "electronics" as const, key: "electronics" as const },
 ];
 
 const QUICK_CHIPS = [
