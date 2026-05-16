@@ -1,4 +1,4 @@
-export type ProductCategory = "jewelry" | "sneakers";
+export type ProductCategory = "jewelry" | "sneakers" | "electronics";
 
 export interface Product {
   slug: string;
